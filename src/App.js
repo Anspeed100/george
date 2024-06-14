@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { Route, Routes, useNavigate } from "react-router-dom";
+import Loader from './components/loader';
 
-function App() {
+const LandingPage = React.lazy(() => import('./pages/landing'))
+const AboutPage = React.lazy(() => import('./pages/about'))
+const TakeActionPage = React.lazy(() => import('./pages/take_action'))
+const EventsPage = React.lazy(() => import('./pages/events'))
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Suspense>
+      <Routes>
+        <Route exact path='/' element={<LandingPage/>}></Route>
+        <Route exact path='/about' element={<AboutPage/>}></Route>
+        <Route exact path='/take-action' element={<TakeActionPage/>}></Route>
+        <Route exact path='/events' element={<EventsPage/>}></Route>
+      </Routes>
+    </React.Suspense>
   );
 }
 
