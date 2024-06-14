@@ -41,7 +41,7 @@ export default function AboutPage(){
     setIsLoading(true)
     const fetchData = async () => {
       const sheetId = '1N6E4SXmY38agoGfr23YDg98wZlB2U_Z4d8xDevQlPM8';
-      const apiKey = 'AIzaSyCtsfiTL9DQGycRaHn-I9NVjcVFDwg7IZ0';
+      const apiKey = '';
       const range = 'Sheet3';
       
       try {
