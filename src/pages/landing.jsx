@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar";
 import ClientImg from "../assets/asset_1.png"
 import BackgroundAlt from "../assets/background_2.png"
-
+import Vote4UGImg from "../assets/assets_11.png"
 import BackgroundImgMobile from "../assets/flag.png"
 import CandidateMobile from "../assets/candidate.png"
 
@@ -18,6 +18,7 @@ export default function LandingPage(){
      <div className="hidden lg:flex md:flex relative home-h">
       <div className="home-banner"></div>
       <div className="home-banner-alt">
+     
       <img src={BackgroundAlt} alt="Candidate" className="w-3/4	h-3/4"/>
       </div>
       <div className="home-banner-user">
@@ -33,7 +34,7 @@ export default function LandingPage(){
         </div>
         <h1 className="home-p">George Twum-Barimah-Adu (Uncle George) was born on 18 August 1963, the third child of the late Frank Brako Adu Snr, (Teacher Adu), a public servant and the late Beatrice Mariam Ama Acheampong, a government school teacher at Old Tafo.(former MP of Abuakwa North Constituency)</h1>
         <h1 className="home-p-alt">- READ MORE</h1>
-       
+        
       </div>
       <div className="socials-position flex flex-row gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256"
@@ -57,6 +58,9 @@ export default function LandingPage(){
           <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style={{ MixBlendMode: 'normal'}}><g transform="scale(10.66667,10.66667)"><path d="M10.053,7.988l5.631,8.024h-1.497l-5.621,-8.024zM21,6v12c0,1.657 -1.343,3 -3,3h-12c-1.657,0 -3,-1.343 -3,-3v-12c0,-1.657 1.343,-3 3,-3h12c1.657,0 3,1.343 3,3zM17.538,17l-4.186,-5.99l3.422,-4.01h-1.311l-2.704,3.16l-2.207,-3.16h-3.85l3.941,5.633l-3.737,4.367h1.333l3.001,-3.516l2.458,3.516z"></path></g></g>
         </svg>
       </div>
+      <div className="vote-for-ug">
+          <img src={Vote4UGImg} alt="vote for UG" />
+        </div>
      </div>
      <div className="flex relative lg:hidden md:hidden home-h no-scroll z-0">
         <img src={BackgroundImgMobile} className="absolute top-0"/>

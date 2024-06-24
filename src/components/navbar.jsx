@@ -6,6 +6,7 @@ import LogoAlt from "../assets/assets_4.png"
 
 const navigation = [
   { name: "Home", href: "/", current: false },
+  { name: "#Breakingthe2", href: "/breakingthe2", current: false },
   { name: "About", href: "/about", current: false },
   { name: "Take Action", href: "/take-action", current: false },
   { name: "Events/Roadmap", href: "/events", current: false },
@@ -13,6 +14,7 @@ const navigation = [
 
 const mobile_navigation = [
   { name: "Home", href: "/", current: false },
+  { name: "#Breakingthe2", href: "/breakingthe2", current: false },
   { name: "About", href: "/about", current: false },
   { name: "Take Action", href: "/take-action", current: false },
   { name: "Events/Roadmap", href: "/events", current: false },
@@ -22,7 +24,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Navbar() {
+export default function Navbar({ useRed }) {
   const location = useLocation();
   const currentPath = location.pathname;
 
@@ -32,10 +34,10 @@ export default function Navbar() {
   }));
 
   return (
-    <Disclosure as="nav" className="bg-transparent nav-bg">
+    <Disclosure as="nav" className={`bg-transparent nav-bg ${useRed ? '' : 'trans-nav-bg-fixed'}`}>
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-24">
+          <div className="mx-auto px-2 sm:px-6 lg:px-8 h-24">
             <div className="relative grid grid-cols-4 items-center justify-between h-16">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -52,7 +54,8 @@ export default function Navbar() {
               <div className="justify-center flex-shrink-0 flex sm:justify-start">
                 <h6 className="uppercase font-semibold text-black flex items-center justify-center md:justify-start">
                   <Link to={'/'}>
-                    <img alt="" className="w-60 p-4 hidden lg:block md:block" src={Logo} />
+                    { useRed ? <img alt="" className="w-60 p-4 hidden lg:block md:block" src={LogoAlt} /> : <img alt="" className="w-60 p-4 hidden lg:block md:block" src={Logo} />}
+                    
                     <img alt="" className="w-60 p-4 block lg:hidden md:hidden" src={LogoAlt}/>
                   </Link>
                 </h6>
@@ -67,7 +70,7 @@ export default function Navbar() {
                           item.current
                             ? "nav-text"
                             : "cursor-pointer",
-                          "px-3 py-2 rounded-md text-lg font-normal"
+                            `px-3 py-2 rounded-md text-lg font-normal ${useRed ? 'text-white' : 'text-black'}`
                         )}
                       >
                         {item.name}

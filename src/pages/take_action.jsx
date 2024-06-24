@@ -3,7 +3,7 @@ import BackgroundAlt from "../assets/background_2.png"
 import { useEffect } from "react";
 import RedFooter from "../components/red_footer";
 import AssetImg from "../assets/assets_5.png"
-import Asset6Img from "../assets/assets_6.png"
+import Asset6Img from "../assets/assets_10.png"
 import FooterImg from "../assets/assets7.png"
 
 export default function TakeActionPage(){
@@ -14,27 +14,33 @@ export default function TakeActionPage(){
   return (
     <div>
      <AltNavbar useRed={false}/>
-     <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 home-h ">
+     <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 home-h">
         <div className="">
           <div className="take-banner-alt z-10">
             <img src={BackgroundAlt} alt="Candidate" className="w-4/5	h-full img-opacity"/>
           </div>
           <div className="container take-action-page take-action-page-padding take-action-page-red z-0 flex flex-col gap-1 justify-center items-end relative">
-            <img src={AssetImg} className="w-3/5 h-18"/>
-            <div className="flex flex-col gap-2 justify-center">
-              <h1 className="header-text-sub header-text-sub-green header-text-sub-alt">Become A Volunteer</h1>
-              <p className="take-p take-p-color">Be a part of the Team George Volunteers who believe in #Breakingthe2 to create an Inclusive and a future ready people to build a stronger Ghana.</p>
+            <div className="flex flex-col justify-end items-end">
+              <img src={AssetImg} className="w-3/5 h-18"/>
+              <h1 className="flex justify-end mb-4 header-text-sub-alt-size header-text-sub header-text-sub-green">#CommonProsperity4all</h1>
+            </div>
+            
+            <div className="flex flex-col gap-2 justify-center z-10">
+              <h1 className="header-text-sub header-text-sub-green header-text-sub-alt z-10">Become A Volunteer</h1>
+              <p className="take-p take-p-color z-10">Be a part of the Team George Volunteers who believe in #Breakingthe2 to create an Inclusive and a future ready people to build a stronger Ghana.</p>
               <div className="flex justify-end">
               <a href="#" spy={true} smooth={true} className={"button-primary-alt button-primary button-primary-text"}>
                 <span className='button-text'>Volunteer</span>
               </a>
               </div>
             </div>
-            
           </div>
         </div>
         <div className="container take-action-page take-action-page-padding-alt flex flex-col gap-1 justify-center items-start">
-          <img src={AssetImg} className="w-3/5 h-18 invisible"/>
+          <div className="flex flex-col justify-end items-end invisible">
+            <img src={AssetImg} className="w-3/5 h-18"/>
+            <h1 className="flex justify-end mb-4 header-text-sub-alt-size header-text-sub header-text-sub-green">#CommonProsperity4all</h1>
+          </div>
           <div className="flex flex-col gap-2 justify-start mt-24">
             <h1 className="header-text-sub header-text-sub-alt-2">Adopt An Electoral Area</h1>
             <p className="take-p take-p-alt">Be part of the Grass Root Campaign by adopting one or many Electoral Areas and support them with your Ideas, Time and Resources.</p>
@@ -46,7 +52,7 @@ export default function TakeActionPage(){
             <h1 className="take-action-p">TAKE ACTION!!</h1>
           </div>
         </div>
-        <img src={Asset6Img} className="z-0 absolute bottom-0 w-2/5" />
+        <img src={Asset6Img} className="z-0 absolute bottom-0 hero-width"/>
         <div className="absolute bottom-10 left-10 z-10 flex flex-row gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256"
             style={{ fill: '#000000' }}>

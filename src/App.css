@@ -52,15 +52,79 @@ body {
   height: 8rem;
 }
 
+.trans-nav-bg-fixed{
+  position: fixed !important;
+}
+
 .no-red-nav-bg{
+  position: fixed !important;
   background: transparent !important;
 }
 
+.breaking-position{
+  position: absolute;
+  top: 37%;
+  right: 10rem;
+}
+
+.manifesto-bg{
+  background-color: #000000de;
+}
+
+.page-text-alt{
+  color: #000 !important;
+}
+
+.page-text{
+  font-size: 35px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.manifesto-p {
+  font-weight: 100;
+  font-size: 16px;
+  color: #fff;
+}
+
+.policy-header{
+  font-size: 6rem;
+  color: #fff;
+  position: absolute;
+  font-weight: 600;
+  bottom: 5rem;
+  left: 5rem;
+}
+
+.policy-header-sub{
+  font-size: 2rem;
+  color: #fff;
+  position: absolute;
+  font-weight: 600;
+  bottom: 2rem;
+  left: 16rem;
+}
+
+.manifesto-p-alt{
+  color: #000;
+}
+
 .nav-bg{
-  position: fixed;
+  position: relative;
   top: 0;
-  z-index: 9;
+  z-index: 11;
   width: 100%;
+}
+
+.the-idea-text{
+  color: #009844;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.policy-banner-img{
+  border-radius: 15px;
+  width: 80%;
 }
 
 .active-nav-text{
@@ -85,6 +149,29 @@ body {
   left: 20%; /* Center the underline */
   background-color: #009844;
   transform-origin: center;
+}
+
+.ug-speech-img{
+  margin-left: 10rem;
+  width: 35rem;
+  height: 70vh;
+}
+
+.ug-speech-bg{
+  background-color: #ebf8f8;
+}
+
+.breaking-img-width{
+  width: 40rem;
+}
+
+.text-lg{
+  font-size: 1rem !important;
+  line-height: 1.75rem !important;
+}
+
+.font-normal{
+  font-weight: 600 !important;
 }
 
 .nav-text {
@@ -163,6 +250,10 @@ body {
   opacity: 0.4;
 }
 
+.header-text-sub-alt-size{
+  font-size: 2.3rem !important;
+}
+
 .header-text-sub{
   color: #b91f26;
   font-size: 24px;
@@ -235,6 +326,7 @@ body {
   font-size: 18px;
   text-align: justify;
   width: 90%;
+  font-weight: 100;
 }
 
 .button-primary-text{
@@ -303,17 +395,29 @@ body {
 }
 
 .take-action-page-padding-alt{
-  padding-left: 3rem;
+  padding-left: 2.5rem;
 }
 
 .take-action-page-padding{
-  padding-right: 3rem;
+  padding-right: 2.5rem;
+}
+
+.vote-for-ug{
+  position: absolute;
+  bottom: 2rem;
+  right: 20rem;
+  width: 50%;
+  z-index: 99;
 }
 
 .take-banner-alt {
   position: absolute;
-  top: 120px;
+  top: 90px;
   left: 350px;
+}
+
+.hero-width{
+  width: 30%;
 }
 
 .home-banner {
@@ -513,4 +617,73 @@ body {
     align-items: center;
     font-size: 2rem;
   }
+}
+
+.scrollable-div {
+  height: 30rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  white-space: normal;
+  position: relative;
+}
+/* 
+.text-wrap{
+  text-wrap: wrap
+} */
+
+.scrollable-div::-webkit-scrollbar {
+  width: 10px;
+  padding-left: 5rem;
+	background-color: #fff;
+}
+
+.scrollable-div::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #fff ;
+	border-radius: 10px;
+  width: 30rem !important;
+	background-color: #fff  ;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+	-webkit-box-shadow: inset 0 0 px #b71d24 ;
+	background-color: #b71d24;
+  padding-top: 20px;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+  background-color: #b71d24;
+}
+
+.manifesto-header-sub {
+  color: #fff !important;
+}
+
+.manifesto-header{
+  font-weight: 900;
+  font-size: 45px;
+  margin-top: 2rem;
+  color: #b71d24;
+  margin-bottom: 2rem;
+  line-height: 46px;
+  text-wrap: wrap
+}
+
+.support-text-alt{
+  color: #fff !important;
+}
+
+.support-text{
+  font-weight: 400;
+  font-size: 24px;
+  /* margin-top: 1rem; */
+  /* margin-bottom: 2rem; */
+  line-height: 30px;
+  text-wrap: wrap
+}
+
+.scrollable-div::-webkit-scrollbar:vertical {
+  display: block;
 }

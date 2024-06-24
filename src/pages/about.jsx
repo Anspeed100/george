@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AltNavbar from "../components/alt_navbar";
-import Bio1Img from "../assets/assets_3.png"
-import Bio2Img from "../assets/assets_2.png"
+import Bio1Img from "../assets/assets_9.png"
+import Bio2Img from "../assets/assets_8.png"
 import Bio3Img from "../assets/assets_5.png"
 import RedFooter from "../components/red_footer";
 
@@ -13,8 +13,8 @@ export default function AboutPage(){
   return (
     <div className="">
       <AltNavbar useRed={true}/>
-      <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 mt-24 lg:mt-40 md:mt-28">
-        <img src={Bio1Img} alt=""/>
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
+        <img src={Bio1Img} alt="" className="ml-12 w-10/12 h-full"/>
         <div className="flex flex-col gap-2">
           <h1 className="bio-header">Biography</h1>
           <h1 className="bio-header-sub">EARLY LIFE AND EDUCATION</h1>
@@ -24,15 +24,15 @@ export default function AboutPage(){
           </p>
         </div>
         <div className="flex flex-col gap-2">
-          <p className="bio-p ml-2 lg:ml-12 md:ml-12">
+          <p className="bio-p ml-0 lg:ml-12 md:ml-12">
           After secondary school uncle George pursued a bachelor’s degree in International Relations from the College of Arts and Sciences, Florida International University (FIU), Miami, Florida. And later a Master of Arts in International Studies at the same university; graduating on April 19, 1991. At FIU he was a student Senator, rep- resenting the College of Arts and Sciences, Chairman of the Board of Governors for the North Miami Campus, a Faculty Scholar, Member Faculty Scholars Executive Board and Chairman of the Faculty Scholars Committee on Housing.
           </p>
           <h1 className="bio-header-sub ml-12 mt-4 lg:mt-12 md:mt-12">WORK AND BUSINESS</h1>
-          <p className="bio-p ml-2 lg:ml-12 md:ml-12">
+          <p className="bio-p ml-0 lg:ml-12 md:ml-12">
           Uncle George returned to Ghana in 1993 and started worked with National Insurance Commission in October of the same year. He left the Commission in April 2000 to prepare to enter the private sector. In 2001 he became an Executive Director of Cypress In- vestments Limited. A position he held until 31 April 2023. In 2006 in authored the HIV and AIDS book titled, “Behaviour Brings Success”, which is currently in its Fourth Edition. In 2009 he de- veloped the Road User Playing Cards (which is the Ghana High- way Code in a card game format), Bonanza card game, and Nudu Board Game which are currently licensed to Dominion Games Limited, developers of WordMeetsTee mobile Word game and other digital products.<br/><br/>Uncle George is a Tech Enthusiast!
           </p>
           <h1 className="bio-header-sub ml-12 mt-4 lg:mt-12 md:mt-12">PERSONAL LIFE</h1>
-          <p className="bio-p ml-2 lg:ml-12 md:ml-12">
+          <p className="bio-p ml-0 lg:ml-12 md:ml-12">
           Uncle George is a practicing Christian, married to Winifred Twum-Barimah-Adu and they are blessed with three children: Nana Afia, Kweku Nhyira and Kwadwo Odoi.
           </p>
           <div className="flex flex-col gap-2 justify-center items-center mt-12">

@@ -5,6 +5,7 @@ import Logo from "../assets/assets_4.png"
 
 const navigation = [
   { name: "Home", href: "/", current: false },
+  { name: "#Breakingthe2", href: "/breakingthe2", current: false },
   { name: "About", href: "/about", current: false },
   { name: "Take Action", href: "/take-action", current: false },
   { name: "Events/Roadmap", href: "/events", current: false },
@@ -12,6 +13,7 @@ const navigation = [
 
 const mobile_navigation = [
   { name: "Home", href: "/", current: false },
+  { name: "#Breakingthe2", href: "/breakingthe2", current: false },
   { name: "About", href: "/about", current: false },
   { name: "Take Action", href: "/take-action", current: false },
   { name: "Events/Roadmap", href: "/events", current: false },
@@ -34,7 +36,7 @@ export default function AltNavbar({ useRed }) {
     <Disclosure as="nav" className={`bg-transparent nav-bg ${useRed ? 'red-nav-bg' : 'no-red-nav-bg'}`}>
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-4 lg:h-24 md:h-24">
+          <div className="mx-auto px-2 sm:px-6 lg:px-8 h-4 lg:h-24 md:h-24">
             <div className="relative grid grid-cols-4 items-center justify-between h-16">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -81,7 +83,6 @@ export default function AltNavbar({ useRed }) {
                   </a>
                 </div>
               </div>
-              
             </div>
           </div>
 
