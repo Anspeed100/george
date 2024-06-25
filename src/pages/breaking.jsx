@@ -21,6 +21,7 @@ export default function AboutPage(){
   const [isLoading, setIsLoading] = useState(false)
   const [isManifestoLoading, setIsManifestoLoading] = useState(false)
   const [page, setPage] = useState(1)
+  const [manifestoPage, setManifestoPage] = useState(1)
   const [pageContent, setPageContent] = useState(null)
   const [pageManifestoContent, setManifestoPageContent] = useState(null)
 
@@ -36,11 +37,12 @@ export default function AboutPage(){
   const nextManifestoPage = (pageNumber) => {
     setIsManifestoLoading(true)
     let fileName;
-    if (pageNumber <= 0){
-      fileName = `1.json`
+    if (pageNumber > 4){
+      fileName = `4.json`
+      setManifestoPage(4)
     }else{
       fileName = `${pageNumber}.json`
-      setPage(pageNumber)
+      setManifestoPage(pageNumber)
     }
     
     try {
@@ -60,7 +62,7 @@ export default function AboutPage(){
       fileName = `1.json`
     }else{
       fileName = `${pageNumber}.json`
-      setPage(pageNumber)
+      setManifestoPage(pageNumber)
     }
     
     try {
@@ -170,10 +172,7 @@ export default function AboutPage(){
       </div>
       <div>
         <h1 className="support-text flex flex-col gap-8 justify-center items-center m-auto p-8 w-3/5">
-          If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't 
-          quite enough, the next logical step is to find a random paragraph. We created the Random Paragraph Generator with you in mind.
-          <br></br><br></br>The process is quite simple. Choose the number of random paragraphs you'd like to see and click the button. 
-          Your chosen number of paragraphs will instantly appear.
+          I am George Twum-Barimah-Adu, and I want, with your support and vote, to be your President – to serve you as Head of State, Head of Government and Commander-In-Chief of the Armed Forces of Ghana!<br></br><br></br>God bless Ghana, our Motherland, and make Her Great and Strong!<br></br>Thank you!
         </h1>
       </div>
       <div className="manifesto-bg flex justify-center items-center m-auto p-8">
@@ -246,11 +245,11 @@ export default function AboutPage(){
             </h1>
           }
           <div className="flex flex-row justify-between gap-32 items-center">
-            <button onClick={() => previousManifestoPage(page - 1)} spy={true} smooth={true} className={"button-primary-alt button-primary"}>
+            <button onClick={() => previousManifestoPage(manifestoPage - 1)} spy={true} smooth={true} className={"button-primary-alt button-primary"}>
               <span className='button-text'>Back</span>
             </button>
-            <h1 className="page-text page-text-alt">{page}/23</h1>
-            <button onClick={() => nextManifestoPage(page + 1)} spy={true} smooth={true} className={"button-primary-alt button-primary"}>
+            <h1 className="page-text page-text-alt">{manifestoPage}/4</h1>
+            <button onClick={() => nextManifestoPage(manifestoPage + 1)} spy={true} smooth={true} className={"button-primary-alt button-primary"}>
               <span className='button-text'>Next</span>
             </button>
           </div>

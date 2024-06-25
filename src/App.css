@@ -82,8 +82,8 @@ body {
 }
 
 .manifesto-p {
-  font-weight: 100;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 24px;
   color: #fff;
 }
 
@@ -686,4 +686,17 @@ body {
 
 .scrollable-div::-webkit-scrollbar:vertical {
   display: block;
+}
+
+.accordion-border {
+  border: solid 2px gray;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.accordion-body-bg{
+  background: #ececec;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 10px;
 }
