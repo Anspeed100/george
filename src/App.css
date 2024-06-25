@@ -390,8 +390,8 @@ body {
 
 .home-banner-alt {
   position: absolute;
-  top: 170px;
-  left: 30px;
+  top: 17%;
+  left: 8%;
 }
 
 .take-action-page-padding-alt{
@@ -404,8 +404,8 @@ body {
 
 .vote-for-ug{
   position: absolute;
-  bottom: 2rem;
-  right: 20rem;
+  bottom: 2%;
+  right: 20%;
   width: 50%;
   z-index: 99;
 }
@@ -434,11 +434,11 @@ body {
 .home-banner-user {
   position: absolute;
   bottom: 0;
-  left: 35rem;
+  right: 0;
 }
 
 .custom-user-height{
-  height: 60rem;
+  height: 110vh;
 }
 
 .about-body-bg{
@@ -507,9 +507,84 @@ body {
   width:100%; height:600px; border:0;
 }
 
+.bio-img-1{
+  width: 84%;
+  height: 100%;
+}
+
+.manifesto-header{
+  font-weight: 900;
+  font-size: 45px;
+  margin-top: 2rem;
+  color: #b71d24;
+  margin-bottom: 2rem;
+  line-height: 46px;
+  text-wrap: wrap
+}
+
 /* Extra Small devices (phones, 0px and up) */
 @media (max-width: 768px) {
   /* Your styles for extra small devices */
+  .breaking-position{
+    right: 0;
+  }
+  .manifesto-p {
+    font-weight: 100;
+    font-size: 14px;
+    color: #fff;
+  }
+  .manifesto-p-alt{
+    color: #000;
+  }
+
+  .policy-header {
+    font-size: 2.3rem;
+    color: #fff;
+    position: absolute;
+    font-weight: 600;
+    bottom: 3rem;
+    left: 2rem;
+  }
+
+  .support-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-wrap: wrap;
+  }
+
+  .header-text-sub-alt-size {
+    font-size: 1.6rem !important;
+  }
+
+  .hero-width {
+    width: 63%;
+  }
+
+  .manifesto-header {
+    font-weight: 900;
+    font-size: 39px;
+    margin-top: 2rem;
+    color: #b71d24;
+    margin-bottom: 2rem;
+    line-height: 46px;
+    text-wrap: wrap;
+  }
+
+  .policy-header-sub {
+    font-size: 1.4rem;
+    color: #fff;
+    position: absolute;
+    font-weight: 600;
+    bottom: 1rem;
+    left: 5rem;
+  }
+  .support-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-wrap: wrap;
+  }
   .text-position {
     position: absolute;
     top: 15rem;
@@ -561,6 +636,12 @@ body {
     left: 2rem;
     z-index: 9;
   }
+
+  .home-banner-user {
+    position: absolute;
+    bottom: 0;
+    left: 15rem;
+  }
 }
 
 /* Medium devices (desktops, 768px and up) */
@@ -573,18 +654,107 @@ body {
     left: 2rem;
     z-index: 9;
   }
+
+  .manifesto-header {
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 2rem;
+    color: #b71d24;
+    margin-bottom: 2rem;
+    line-height: 46px;
+    text-wrap: wrap;
+  }
+
+  .header-text-sub-alt-size {
+    font-size: 1.8rem !important;
+  }
+
+  .take-action-p {
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: 35px;
+    color: #b91f26;
+  }
+
+  .take-banner-alt {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+  }
+
+  .hero-width{
+    width: 41%;
+  }
+  .text-position {
+    position: absolute;
+    top: 10rem;
+    width: 40%;
+    left: 2rem;
+    z-index: 9; 
+  }
+
+  .home-banner-user {
+    position: absolute;
+    bottom: 0;
+    left: 15rem;
+  }
+
+  .custom-user-height {
+    height: 95vh;
+  }
+
+  .socials-position {
+    position: absolute;
+    left: 3rem;
+    bottom: 2rem;
+  }
+
+  .bio-img-1{
+    width: 100%;
+    height: 85%
+  }
 }
 
 /* Large devices (large desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
   /* Your styles for large devices */
-
 }
 
 /* Extra large devices (extra large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1570px) {
   /* Your styles for extra large devices */
-
+  .header-text {
+    font-size: 5.5rem;
+    font-weight: 600;
+  }
+  .header-text-sub {
+    color: #b91f26;
+    font-size: 45px;
+    font-weight: 600;
+    width: 100%;
+    text-align: justify;
+    line-height: 45px;
+  }
+  .home-p {
+    margin-top: 2rem;
+    font-weight: 100;
+    font-size: 30px;
+  }
+  .text-position {
+    position: absolute;
+    top: 9rem;
+    width: 40%;
+    left: 10rem;
+    z-index: 9;
+  }
+  .lg\:pl-24 {
+    padding-left: 25rem;
+  }
+  .take-banner-alt {
+    position: absolute;
+    top: 8%;
+    left: 35%;
+  }
 }
 
 .portrait-warning{
@@ -659,16 +829,6 @@ body {
 
 .manifesto-header-sub {
   color: #fff !important;
-}
-
-.manifesto-header{
-  font-weight: 900;
-  font-size: 45px;
-  margin-top: 2rem;
-  color: #b71d24;
-  margin-bottom: 2rem;
-  line-height: 46px;
-  text-wrap: wrap
 }
 
 .support-text-alt{

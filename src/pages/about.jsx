@@ -14,7 +14,7 @@ export default function AboutPage(){
     <div className="">
       <AltNavbar useRed={true}/>
       <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
-        <img src={Bio1Img} alt="" className="ml-12 w-10/12 h-full"/>
+        <img src={Bio1Img} alt="" className="ml-12 bio-img-1"/>
         <div className="flex flex-col gap-2">
           <h1 className="bio-header">Biography</h1>
           <h1 className="bio-header-sub">EARLY LIFE AND EDUCATION</h1>
@@ -43,7 +43,7 @@ export default function AboutPage(){
           </div>
           
         </div>
-        <img src={Bio2Img} alt="" />
+        <img src={Bio2Img} alt="" className="h-full"/>
       </div>
       <RedFooter/>
     </div>

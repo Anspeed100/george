@@ -25,7 +25,7 @@ export default function TakeActionPage(){
               <h1 className="flex justify-end mb-4 header-text-sub-alt-size header-text-sub header-text-sub-green">#CommonProsperity4all</h1>
             </div>
             
-            <div className="flex flex-col gap-2 justify-center z-10">
+            <div className="flex flex-col gap-2 justify-center items-end z-10">
               <h1 className="header-text-sub header-text-sub-green header-text-sub-alt z-10">Become A Volunteer</h1>
               <p className="take-p take-p-color z-10">Be a part of the Team George Volunteers who believe in #Breakingthe2 to create an Inclusive and a future ready people to build a stronger Ghana.</p>
               <div className="flex justify-end">

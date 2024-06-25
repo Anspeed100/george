@@ -56,7 +56,7 @@ export default function Navbar({ useRed }) {
                   <Link to={'/'}>
                     { useRed ? <img alt="" className="w-60 p-4 hidden lg:block md:block" src={LogoAlt} /> : <img alt="" className="w-60 p-4 hidden lg:block md:block" src={Logo} />}
                     
-                    <img alt="" className="w-60 p-4 block lg:hidden md:hidden" src={LogoAlt}/>
+                    <img alt="" className="w-60 block lg:hidden md:hidden" src={LogoAlt}/>
                   </Link>
                 </h6>
               </div>

@@ -32,7 +32,7 @@ export default function LandingPage(){
             <span className='button-text'>Take Action</span>
           </a>
         </div>
-        <h1 className="home-p">George Twum-Barimah-Adu (Uncle George) was born on 18 August 1963, the third child of the late Frank Brako Adu Snr, (Teacher Adu), a public servant and the late Beatrice Mariam Ama Acheampong, a government school teacher at Old Tafo.(former MP of Abuakwa North Constituency)</h1>
+        <h1 className="home-p">George Twum-Barimah-Adu (Uncle George) was born on 18 August 1963, the third child of the late Frank Brako Adu Snr, (Teacher Adu), a public servant and the late Beatrice Mariam Ama Acheampong, a government school teacher at Old Tafo.</h1>
         <h1 className="home-p-alt">- READ MORE</h1>
         
       </div>
