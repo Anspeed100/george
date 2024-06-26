@@ -277,7 +277,7 @@ export default function AboutPage(){
         <div className="flex justify-center items-center">
           <img className="policy-banner-img" src={UgManifestoBannerImg}/>
         </div>
-        <div className="p-8 lg:p-12 md:p-12 flex flex-col justify-start items-start">
+        <div className="p-2 lg:p-12 md:p-12 flex flex-col justify-start items-start">
           <div className="flex justify-center items-center">
             <h1 className="manifesto-p manifesto-p-alt w-4/5 lg:w-3/5 md:w-3/5 scrollable-div">
               <span className="manifesto-header manifesto-header-small">My Pledge</span><br></br>
@@ -302,7 +302,7 @@ export default function AboutPage(){
         </div>
       </div>
       <div className="manifesto-bg flex flex-col p-8 mt-8">
-        <div className="p-8 lg:p-12 md:p-12 flex flex-col justify-start items-start m-auto">
+        <div className="the-flag-margin flex flex-col justify-start items-start">
           <div className="flex flex-row gap-4 pl-2 lg:pl-64 md:pl-24 mb-4 lg:mb-12 md:mb-12">
             <img src={TheFlagSq} className="w-12 h-12 lg:w-full md:w-full lg:h-full md:h-full" alt="Flag" />
             <div className="flex flex-col">
@@ -310,8 +310,8 @@ export default function AboutPage(){
               <span className="the-idea-text">THE IDEA</span>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center m-auto">
-            <h1 className="manifesto-p w-4/5 lg:w-3/5 md:w-3/5">
+          <div className="flex flex-col justify-start items-start m-auto">
+            <h1 className="manifesto-p ">
               The flag of my candidacy has a number of colours: 
               <br></br><br></br>
               <span className="blood-red">1. Blood Red:</span>

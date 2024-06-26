@@ -54,9 +54,9 @@ export default function Navbar({ useRed }) {
               <div className="justify-center flex-shrink-0 flex sm:justify-start">
                 <h6 className="uppercase font-semibold text-black flex items-center justify-center md:justify-start">
                   <Link to={'/'}>
-                    { useRed ? <img alt="" className="w-60 p-4 hidden lg:block md:block" src={LogoAlt} /> : <img alt="" className="w-60 p-4 hidden lg:block md:block" src={Logo} />}
+                    { useRed ? <img alt="" className="w-96 p-4 hidden lg:block md:block" src={LogoAlt} /> : <img alt="" className="w-96 p-4 hidden lg:block md:block" src={Logo} />}
                     
-                    <img alt="" className="w-60 block lg:hidden md:hidden" src={LogoAlt}/>
+                    <img alt="" className="w-96 block lg:hidden md:hidden" src={LogoAlt}/>
                   </Link>
                 </h6>
               </div>

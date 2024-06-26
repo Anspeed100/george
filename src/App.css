@@ -556,6 +556,20 @@ body {
   width: 35rem;
 }
 
+.support-text{
+  font-weight: 400;
+  font-size: 24px;
+  /* margin-top: 1rem; */
+  /* margin-bottom: 2rem; */
+  line-height: 30px;
+  text-wrap: wrap
+}
+
+.the-flag-margin{
+  margin: 5% 20%;
+}
+
+
 /* Extra Small devices (phones, 0px and up) */
 @media (max-width: 768px) {
   /* Your styles for extra small devices */
@@ -563,6 +577,12 @@ body {
     color: #fff;
     font-weight: 900;
     font-size: 14px;
+  }
+  .the-flag-margin {
+    margin: 5% 12%;
+  }
+  .breaking-img-width {
+    width: 13rem;
   }
   .breaking-position{
     right: 0;
@@ -602,18 +622,18 @@ body {
 
   .manifesto-header {
     font-weight: 900;
-    font-size: 39px;
+    font-size: 23px;
     margin-top: 2rem;
     color: #b71d24;
-    margin-bottom: 2rem;
-    line-height: 46px;
+    margin-bottom: 0rem;
+    line-height: 28px;
     text-wrap: wrap;
   }
 
   .manifesto-header-sub{
     width: 12rem;
     font-size: 25px;
-    margin-top: 1rem;
+    margin-top: 10px;
     line-height: 18px
   }
 
@@ -672,8 +692,8 @@ body {
   }
 
   .breaking-img-width-alt {
-    top: 55%;
-    width: 18rem;
+    top: 50%;
+    width: 10rem;
   }
 }
 
@@ -774,9 +794,71 @@ body {
 /* Extra large devices (extra large desktops, 1200px and up) */
 @media (min-width: 1570px) {
   /* Your styles for extra large devices */
+  
   .header-text {
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-weight: 600;
+  }
+  .page-text {
+    font-size: 55px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .button-green-primary {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 25px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #009844;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: #fff;
+    font-size: 35px;
+    line-height: 17.41px;
+    font-weight: 900;
+    text-transform: none;
+    z-index: 9;
+  }
+  .manifesto-p {
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .bio-p {
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 40px;
+    text-align: justify;
+    width: 90%;
+    font-weight: 100;
+  }
+  
+  .manifesto-header-small {
+    font-size: 40px !important;
+  }
+  .button-primary {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 25px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #b91f26;
+    color: #fff;
+    font-size: 35px;
+    line-height: 17.41px;
+    font-weight: 900;
+    text-transform: none;
+    z-index: 9;
+  }
+  .support-text {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    text-wrap: wrap;
   }
   .header-text-sub {
     color: #b91f26;
@@ -926,15 +1008,6 @@ body {
 
 .support-text-alt{
   color: #fff !important;
-}
-
-.support-text{
-  font-weight: 400;
-  font-size: 24px;
-  /* margin-top: 1rem; */
-  /* margin-bottom: 2rem; */
-  line-height: 30px;
-  text-wrap: wrap
 }
 
 .scrollable-div::-webkit-scrollbar:vertical {
