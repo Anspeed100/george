@@ -1,18 +1,20 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/navbar";
-import FlagImg from "../assets/flag.png"
+import FlagImg from "../assets/flag_alt.png"
 import BlackFlagImg from "../assets/black_flag.png"
 import BreakingTheImg from "../assets/assets7.png"
 import RevealImg from "../assets/reveal.png"
-import BreakingUser from "../assets/breaking_user.png"
+import BreakingUser from "../assets/breaking_user_alt.png"
+import UGSpeech from "../assets/ug_speech.png"
 import UgManifestoBannerImg from "../assets/ug_manifesto_banner.png"
-import PolicyBgImg from "../assets/policy_bg.png"
+import PolicyBgImg from "../assets/policy_bg_alt.png"
 import Assets12Img from "../assets/assets_12.png"
 import Assets13Img from "../assets/assets_13.png"
 import Assets14Img from "../assets/assets_14.png"
 import Assets15Img from "../assets/assets_15.png"
 import Assets16Img from "../assets/assets_16.png"
 import Assets17Img from "../assets/assets_17.png"
+import TheFlagSq from "../assets/the_flag_sq.png"
 import RedFooter from "../components/red_footer";
 import { useState } from "react";
 import Loader from "../components/loader";
@@ -144,9 +146,10 @@ export default function AboutPage(){
       <div className="absolute top-0 z-10">
         <img src={FlagImg} alt="flag"/>
       </div>
-      <div className="flex relative">
+      <div className="flex flex-col relative">
         <img src={BreakingTheImg} className="absolute breaking-position breaking-img-width" alt="" />
         <img src={BreakingUser} className="breaking-width" alt="breaking the 2"/>
+        <img src={UGSpeech} className="absolute breaking-position breaking-img-width-alt" alt="breaking the 2"/>
       </div>
       <div className="manifesto-bg">
         <div className="flex flex-col gap-8 justify-center items-center m-auto p-8">
@@ -155,7 +158,7 @@ export default function AboutPage(){
             isLoading ?
             <Loader/>
             :
-            <h1 className="manifesto-p w-3/5 scrollable-div">
+            <h1 className="manifesto-p w-4/5 lg:w-3/5 md:w-3/5 scrollable-div">
               {pageContent}
             </h1>
           }
@@ -170,7 +173,7 @@ export default function AboutPage(){
           </div>
         </div>
       </div>
-      <div>
+      <div className="mt-12 mb-12">
         <h1 className="support-text flex flex-col gap-8 justify-center items-center m-auto p-2 lg:p-8 md:p-8 w-4/5 ld:w-3/5 md:w-3/5">
           I am George Twum-Barimah-Adu, and I want, with your support and vote, to be your President – to serve you as Head of State, Head of Government and Commander-In-Chief of the Armed Forces of Ghana!<br></br><br></br>God bless Ghana, our Motherland, and make Her Great and Strong!<br></br>Thank you!
         </h1>
@@ -225,7 +228,7 @@ export default function AboutPage(){
 
             Through these measures, we shall help plug the loopholes of criminal enrichment and corruption and stem the tide of wastage in government! 
           </p>
-          <div className="flex flex-col gap-4 justify-center items-center">
+          <div className="flex flex-col gap-4 justify-center items-center mb-8">
             <img src={BlackFlagImg}/>
             <a href="#" spy={true} smooth={true} className="button-green-primary mt-4">
               <span className='button-text'>Take Action</span>
@@ -275,9 +278,9 @@ export default function AboutPage(){
           <img className="policy-banner-img" src={UgManifestoBannerImg}/>
         </div>
         <div className="p-8 lg:p-12 md:p-12 flex flex-col justify-start items-start">
-          <h1 className="manifesto-header pl-2 lg:pl-24 md:pl-24">My Pledge</h1>
           <div className="flex justify-center items-center">
             <h1 className="manifesto-p manifesto-p-alt w-4/5 lg:w-3/5 md:w-3/5 scrollable-div">
+              <span className="manifesto-header manifesto-header-small">My Pledge</span><br></br>
               If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't 
               quite enough, the next logical step is to find a random paragraph. We created the Random Paragraph Generator with you in mind.
               <br></br><br></br>The process is quite simple. Choose the number of random paragraphs you'd like to see and click the button. 
@@ -300,26 +303,31 @@ export default function AboutPage(){
       </div>
       <div className="manifesto-bg flex flex-col p-8 mt-8">
         <div className="p-8 lg:p-12 md:p-12 flex flex-col justify-start items-start m-auto">
-          <h1 className="manifesto-header manifesto-header-sub pl-2 lg:pl-24 md:pl-24">The Flag</h1>
+          <div className="flex flex-row gap-4 pl-2 lg:pl-64 md:pl-24 mb-4 lg:mb-12 md:mb-12">
+            <img src={TheFlagSq} className="w-12 h-12 lg:w-full md:w-full lg:h-full md:h-full" alt="Flag" />
+            <div className="flex flex-col">
+              <h1 className="manifesto-header manifesto-header-alt manifesto-header-sub">The Flag</h1>
+              <span className="the-idea-text">THE IDEA</span>
+            </div>
+          </div>
           <div className="flex flex-col justify-center items-center m-auto">
             <h1 className="manifesto-p w-4/5 lg:w-3/5 md:w-3/5">
-              <span className="the-idea-text">THE IDEA</span><br></br><br></br>
               The flag of my candidacy has a number of colours: 
               <br></br><br></br>
-              1. Blood Red: 
+              <span className="blood-red">1. Blood Red:</span>
               <br></br>The larger mass of red (blood red) represents the Blood spilled by our forebears, over time, in the supreme interest of Ghana and Ghanaians.
               <br></br><br></br>
-              2. Green: 
+              <span className="green-color">2. Green: </span>
               <br></br>This colour is representative of the Vegetation and Plant resources of Ghana.<br></br><br></br> 
-              3. White: <br></br>
+              3. White:<br></br>
               This colour stands for the Purity of the people - a purity that we shall strive to make commonplace among Ghana’s people, in whatever we undertake.
               <br></br><br></br>
-              4. Red: <br></br>
+              <span className="red-color">4. Red:</span><br></br>
               This lighter shade of red stands for the Sacrifices expected of us all – not the shedding of our blood but the willingness to yield everything possible, in order that Ghana can become what we all desire our Motherland to be.
               <br></br><br></br>
-              5. Gold: <br></br>
+              <span className="gold-color">5. Gold:</span> <br></br>
               This colour represents the Wealth of the nation - to be put to use for the benefit of all the people.<br></br><br></br>
-              6. Black: <br></br>
+              <span className="black-color">6. Black: </span><br></br>
               This colour represents our Race – a humble, gentle Black People.
 
               With all the colours making-up the pattern in the green circle symbolizing “Togetherness” – different people with different cultures, yet a common goal of progress. 

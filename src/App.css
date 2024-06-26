@@ -117,9 +117,30 @@ body {
 }
 
 .the-idea-text{
-  color: #009844;
+  color: #fff;
   font-weight: 900;
   font-size: 24px;
+}
+
+.blood-red{
+  color: #B92026;
+}
+
+.green-color{
+  color: #009844;
+}
+
+.red-color{
+  color: #EC1C24;
+}
+
+.black-color{
+  color: black;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.gold-color{
+  color: #B5A232;
 }
 
 .policy-banner-img{
@@ -522,9 +543,27 @@ body {
   text-wrap: wrap
 }
 
+.manifesto-header-small{
+  font-size: 30px !important;
+}
+
+.manifesto-header-alt {
+  margin-bottom: 0 !important;
+}
+
+.breaking-img-width-alt{
+  top: 45%;
+  width: 35rem;
+}
+
 /* Extra Small devices (phones, 0px and up) */
 @media (max-width: 768px) {
   /* Your styles for extra small devices */
+  .the-idea-text{
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+  }
   .breaking-position{
     right: 0;
   }
@@ -569,6 +608,13 @@ body {
     margin-bottom: 2rem;
     line-height: 46px;
     text-wrap: wrap;
+  }
+
+  .manifesto-header-sub{
+    width: 12rem;
+    font-size: 25px;
+    margin-top: 1rem;
+    line-height: 18px
   }
 
   .policy-header-sub {
@@ -623,6 +669,11 @@ body {
     color: #009844;
     font-weight: 600;
     line-height: 28px;
+  }
+
+  .breaking-img-width-alt {
+    top: 55%;
+    width: 18rem;
   }
 }
 
@@ -755,6 +806,47 @@ body {
     top: 8%;
     left: 35%;
   }
+  .custom-user-height {
+    height: 125vh;
+  }
+  .home-banner {
+    height: 700px;
+  }
+  .breaking-width{
+    height: 110vh;
+    width: 100%;
+  }
+ 
+  .breaking-position {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+  }
+  .breaking-img-width-alt{
+    position: absolute;
+    top: 70%;
+    width: 45rem;
+    left: 60%;
+  }
+  .breaking-img-width {
+    width: 60rem;
+  }
+  .policy-header {
+    font-size: 15rem;
+    color: #fff;
+    position: absolute;
+    font-weight: 600;
+    bottom: 5rem;
+    left: 5rem;
+  }
+  .policy-header-sub {
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    font-weight: 600;
+    bottom: 2rem;
+    left: 16rem;
+  }
 }
 
 .portrait-warning{
@@ -829,6 +921,7 @@ body {
 
 .manifesto-header-sub {
   color: #fff !important;
+  width: 12rem !important;
 }
 
 .support-text-alt{
