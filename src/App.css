@@ -569,6 +569,10 @@ body {
   margin: 5% 20%;
 }
 
+.bio-2-height{
+  height: auto;
+}
+
 
 /* Extra Small devices (phones, 0px and up) */
 @media (max-width: 768px) {

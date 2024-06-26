@@ -43,7 +43,7 @@ export default function AboutPage(){
           </div>
           
         </div>
-        <img src={Bio2Img} alt="" className="h-full"/>
+        <img src={Bio2Img} alt="" className="bio-2-height"/>
       </div>
       <RedFooter/>
     </div>
