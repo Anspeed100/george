@@ -27,7 +27,7 @@ export default function RedFooter(){
           </svg>
         </div>
         <div className="grid justify-items-end items-center">
-          <img src={FooterImg} alt="" className="w-1/5 h-18"/>
+          <img src={FooterImg} alt="Footer Image" className="w-1/5 h-18"/>
           <p className="text-white">Copyright © 2024 All rights reserved.</p>
         </div>
       </div>
