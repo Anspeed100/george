@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import AltNavbar from "../components/alt_navbar";
+import Navbar from "../components/navbar";
 import Bio1Img from "../assets/assets_9.png"
 import Bio2Img from "../assets/assets_8.png"
 import Bio3Img from "../assets/assets_5.png"
@@ -12,8 +13,13 @@ export default function AboutPage(){
 
   return (
     <div className="">
-      <AltNavbar useRed={true}/>
-      <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
+      <div className="hidden lg:flex md:flex">
+        <AltNavbar useRed={true}/>
+      </div>
+      <div className="flex lg:hidden md:hidden">
+        <Navbar/>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 mt-24 lg:mt-0 md:mt-0">
         <img src={Bio1Img} alt="" className="ml-12 bio-img-1"/>
         <div className="flex flex-col gap-2">
           <h1 className="bio-header">Biography</h1>

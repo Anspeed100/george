@@ -44,7 +44,9 @@ body {
 }
 
 .mobile-image-inherit{
-  height: inherit;
+  height: 85%;
+  position: absolute;
+  bottom: 0;
 }
 
 .red-nav-bg{
@@ -290,17 +292,18 @@ body {
 }
 
 .header-text-sub-mobile {
-  color: #b91f26;
-  font-size: 18px;
-  font-weight: 600;
-  width: 64%;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
   text-align: justify;
-  line-height: 22px;
+  line-height: 24px;
+  margin-bottom: 1rem;
 }
 
 .header-text-mobile{
-  font-size: 21.5px;
+  font-size: 25px;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .socials-position{
@@ -368,7 +371,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: #b91f26;
   color: #fff;
   font-size: 16px;
@@ -381,7 +384,7 @@ body {
 .button-green-primary {
   margin-right: 0px;
   margin-left: 0px;
-  padding: 15px 25px;
+  padding: 15px 15px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -390,7 +393,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: #009844;
   width: fit-content;
   color: #fff;
@@ -470,24 +473,57 @@ body {
   background: #fff;
 }
 
+.vote-bg-mobile{
+  top: -50px;
+  z-index: 99;
+}
+
 .mobile-card-bg{
   background: #b71d24;
-  padding: 1rem;
+  padding: 2rem 2rem;
   color: #fff;
   font-size: 14px;
   font-weight: 400;
+  height: 100%;
+}
+
+.mobile-nav-text-normal{
+  position: relative;
+  color: #000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mobile-nav-text{
+  position: relative;
+  color: #000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mobile-nav-text::after {
+  content: '';
+  position: absolute;
   border-radius: 15px;
+  width: 15%;
+  height: 3px;
+  bottom: 5px;
+  left: 40%;
+  background-color: #b91f26;
+  transform-origin: center;
 }
 
 .mobile-nav-bg {
-  background: #000000e6;
-  height: 650px;
-  border-radius: 0px 0px 20px 20px;
-  top: 0;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 15px 15px 15px 15px;
+  top: 5rem;
+  right: 0.5rem;
   position: absolute;
-  width: -webkit-fill-available;
+  width: 60%;
   color: white;
-  z-index: 9
+  z-index: 9;
+  box-shadow: 0px 13px 20px 0px rgb(15 15 15 / 78%);
 }
 
 .modal {
@@ -544,7 +580,7 @@ body {
 }
 
 .manifesto-header-small{
-  font-size: 30px !important;
+  font-size: 25px !important;
 }
 
 .manifesto-header-alt {
@@ -565,6 +601,10 @@ body {
   text-wrap: wrap
 }
 
+.z-action-10{
+  z-index: 100;
+}
+
 .the-flag-margin{
   margin: 5% 20%;
 }
@@ -573,14 +613,56 @@ body {
   height: auto;
 }
 
+.take-action-pos{
+  margin: 10rem 0rem;
+}
 
+.button-primary-mobile-d{
+  padding: 5px 25px !important;
+  box-shadow: 0px 13px 20px 0px rgb(15 15 15 / 78%);
+}
 /* Extra Small devices (phones, 0px and up) */
 @media (max-width: 768px) {
+  .take-banner-alt {
+    position: absolute;
+    top: 30%;
+    left: 12%;
+  }
+  .nav-bg{
+    position: fixed;
+    background-color: #fff;
+  }
+  .header-text-sub {
+    color: #b91f26;
+    font-size: 22px;
+    width: 10rem;
+    font-weight: 600;
+    /* width: 100%; */
+    text-align: justify;
+    line-height: 20px;
+  }
   /* Your styles for extra small devices */
   .the-idea-text{
     color: #fff;
     font-weight: 900;
     font-size: 14px;
+  }
+  .button-green-primary {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 15px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #009844;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: #fff;
+    font-size: 18px;
+    line-height: 17.41px;
+    font-weight: 900;
+    text-transform: none;
+    z-index: 9;
   }
   .the-flag-margin {
     margin: 5% 12%;
@@ -592,7 +674,7 @@ body {
     right: 0;
   }
   .manifesto-p {
-    font-weight: 100;
+    font-weight: 400;
     font-size: 14px;
     color: #fff;
   }
@@ -605,7 +687,7 @@ body {
     color: #fff;
     position: absolute;
     font-weight: 600;
-    bottom: 3rem;
+    bottom: 2rem;
     left: 2rem;
   }
 
@@ -622,6 +704,7 @@ body {
 
   .hero-width {
     width: 63%;
+    z-index: 99;
   }
 
   .manifesto-header {
@@ -646,7 +729,7 @@ body {
     color: #fff;
     position: absolute;
     font-weight: 600;
-    bottom: 1rem;
+    bottom: 0.5rem;
     left: 5rem;
   }
   .support-text {
@@ -665,8 +748,8 @@ body {
 
   .socials-position{
     position: absolute;
-    left: 1rem;
-    bottom: 2rem;
+    left: 2rem;
+    bottom: 1rem;
   }
 
   .red-nav-bg {
@@ -680,7 +763,9 @@ body {
   }
 
   .take-action-p{
-    font-size: 40px;
+    font-size: 25px;
+    line-height: 20px;
+    margin-left: 0.5rem;
   }
 
   .bio-header{
@@ -694,7 +779,12 @@ body {
     font-weight: 600;
     line-height: 28px;
   }
-
+  .take-p {
+    font-weight: 100;
+    font-size: 16px;
+    text-align: end;
+    width: 11rem;
+  }
   .breaking-img-width-alt {
     top: 50%;
     width: 10rem;
