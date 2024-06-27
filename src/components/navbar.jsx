@@ -41,7 +41,7 @@ export default function Navbar({ useRed }) {
             <div className="relative grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 items-center justify-between h-16">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="z-30 w-12 inline-flex items-center justify-center rounded-md text-red-700 focus:outline-none ring-2 ring-0 ring-black">
+                <Disclosure.Button className="z-30 w-12 inline-flex items-center justify-center rounded-md text-red-700 focus:outline-none ring-0">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-9 w-9 text-black" aria-hidden="true" />
