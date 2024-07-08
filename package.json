@@ -5,15 +5,17 @@
   "dependencies": {
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^1.0.6",
+    "@material-tailwind/react": "^1.2.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@material-tailwind/react": "^1.2.5",
     "axios": "^1.7.2",
+    "jquery": "^3.7.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
+    "sass": "^1.77.6",
     "scrollreveal": "^4.0.9",
     "web-vitals": "^2.1.4"
   },

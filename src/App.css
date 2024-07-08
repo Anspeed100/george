@@ -26,8 +26,10 @@
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
-  font-family: 'Canaro', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -112,9 +114,10 @@ body {
 }
 
 .nav-bg{
-  position: relative;
+  position: fixed;
+  background-color: #fff;
   top: 0;
-  z-index: 11;
+  z-index: 13;
   width: 100%;
 }
 
@@ -125,11 +128,16 @@ body {
 }
 
 .blood-red{
-  color: #B92026;
+  background-color: #B92026 !important;
 }
 
 .green-color{
-  color: #009844;
+  background-color: #009844 !important;
+}
+
+.white-color{
+  background-color: #fff !important;
+  color: #000 !important;
 }
 
 .red-color{
@@ -142,7 +150,7 @@ body {
 }
 
 .gold-color{
-  color: #B5A232;
+  background-color: #B5A232 !important;
 }
 
 .policy-banner-img{
@@ -233,9 +241,8 @@ body {
 }
 
 .home-p{
-  margin-top: 2rem;
-  font-weight: 100;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .take-p-footer{
@@ -288,7 +295,7 @@ body {
 
 .header-text{
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .header-text-sub-mobile {
@@ -397,15 +404,15 @@ body {
   background-color: #009844;
   width: fit-content;
   color: #fff;
-  font-size: 24px;
-  line-height: 17.41px;
-  font-weight: 900;
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: 600;
   text-transform: none;
   z-index: 9;
 }
 
 .home-h{
-  height: 100vh;
+  height: 100%;
 }
 
 .no-scroll{
@@ -416,6 +423,7 @@ body {
   position: absolute;
   top: 17%;
   left: 8%;
+  z-index: 1;
 }
 
 .take-action-page-padding-alt{
@@ -431,7 +439,7 @@ body {
   bottom: 2%;
   right: 20%;
   width: 50%;
-  z-index: 99;
+  z-index: 12;
 }
 
 .take-banner-alt {
@@ -444,9 +452,134 @@ body {
   width: 30%;
 }
 
+.quote-bg{
+  width: 100%;
+  height: 30rem;
+  background-color: #B92026;
+}
+
+.promise-bg{
+  width: 100%;
+  height: 100%;
+  background-color: #B92026;
+}
+
+.pledge-bg{
+  padding: 5rem;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/G1.png');
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vision-bg{
+  padding: 5rem;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/G2.png');
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.my-promise-header{
+  margin: 5rem 5rem;
+  font-size: 45px;
+  color: white;
+  font-weight: 900;
+  line-height: 10px;
+}
+
+.my-pledge-header{
+  margin: 3rem 5rem;
+  font-size: 45px;
+  color: white;
+  font-weight: 900;
+  line-height: 10px;
+}
+
+.my-quote-header-name{
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 1rem;
+}
+
+.my-quote-header-sub{
+  margin: 0rem 5rem;
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+
+
+.transition-container {
+  position: relative;
+}
+
+.section {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.section.active {
+  display: flex;
+  opacity: 1;
+}
+
+.my-promise-header-sub{
+  margin: 0rem 5rem;
+  font-size: 22px;
+  color: white;
+  font-weight: 400;
+  line-height: 45px;
+  width: 70%;
+}
+
+.my-pledge-header-sub{
+  margin: 5rem 5rem;
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+  line-height: 45px;
+  width: 70%;
+  height: fit-content;
+}
+
+.overlay-alt-sub{
+  background: transparent !important;
+}
+
+.overlay-alt {
+  border-radius: 15px;
+  padding: 0rem;
+  height: 100%;
+  z-index: 1;
+  width: 50%;
+  background: #ffffff42;
+  overflow-y: auto;
+}
+
+.home-banner-alt-n{
+  height: 400px !important;
+  width: -moz-available !important;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available !important;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available !important;
+  background-position: center bottom !important;
+}
+
 .home-banner {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
   height: 500px;
   background-image: url('./assets/backgroud.png');
@@ -462,7 +595,20 @@ body {
 }
 
 .custom-user-height{
-  height: 110vh;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 12;
+}
+
+.hideme{
+  opacity:0;
+}
+
+.hideme div {
+  margin:50px; 
+  padding:50px; 
+  background-color:lightgreen; 
 }
 
 .about-body-bg{
@@ -569,12 +715,22 @@ body {
   height: 100%;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffe8; /* Adjust the color and opacity as needed */
+  z-index: 1;
+}
+
 .manifesto-header{
-  font-weight: 900;
-  font-size: 45px;
-  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 35px;
+  margin-top: 1rem;
   color: #b71d24;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   line-height: 46px;
   text-wrap: wrap
 }
@@ -621,6 +777,71 @@ body {
   padding: 5px 25px !important;
   box-shadow: 0px 13px 20px 0px rgb(15 15 15 / 78%);
 }
+
+.black-box{
+  background-color: #000;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+.green-box{
+  background-color: #009844;
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  bottom: 15%;
+  left: 8%;
+}
+
+.red-box{
+  background-color: #EC1C24;
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: 20%;
+  right: 8%;
+}
+
+.gold-box{
+  background-color: #B5A232;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  bottom: 15%;
+  right: 2%;
+}
+
+.products {
+  padding: 3rem 0rem;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/G4.png');
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.product {
+  background-color:#111111;
+  padding:20px;
+  color:#fff;
+  margin-bottom:20px;
+  width: 40%;
+  /* height:400px; */
+}
+.fadein {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translate(0, 100px);
+}
+
+.fadein.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 /* Extra Small devices (phones, 0px and up) */
 @media (max-width: 768px) {
   .take-banner-alt {
@@ -658,9 +879,9 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     color: #fff;
-    font-size: 18px;
-    line-height: 17.41px;
-    font-weight: 900;
+    font-size: 22px;
+    line-height: 10px;
+    font-weight: 600;
     text-transform: none;
     z-index: 9;
   }
@@ -703,7 +924,7 @@ body {
   }
 
   .hero-width {
-    width: 63%;
+    width: 85%;
     z-index: 99;
   }
 
@@ -910,8 +1131,8 @@ body {
     width: fit-content;
     color: #fff;
     font-size: 35px;
-    line-height: 17.41px;
-    font-weight: 900;
+    line-height: 10px;
+    font-weight: 600;
     text-transform: none;
     z-index: 9;
   }

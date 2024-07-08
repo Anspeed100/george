@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import RedFooter from "../components/red_footer";
 import AssetImg from "../assets/assets_5.png"
 import Asset6Img from "../assets/assets_10.png"
+import TakingActionImg from "../assets/taking_action_asset.png"
 import FooterImg from "../assets/assets7.png"
 
 export default function TakeActionPage(){
@@ -18,7 +19,7 @@ export default function TakeActionPage(){
         <div className="take-banner-alt z-10">
           <img src={BackgroundAlt} alt="Candidate" className="w-4/5	h-full img-opacity"/>
         </div>
-        <img src={Asset6Img} className="z-0 absolute bottom-0 right-12 hero-width"/>
+        <img src={TakingActionImg} className="z-0 absolute bottom-0 right-12 hero-width"/>
         <div className="container take-action-page take-action-page-red z-0 flex flex-col gap-1 items-end relative">
           <div className="flex flex-col gap-2 justify-center items-end z-10 take-action-pos">
             <h1 className="header-text-sub header-text-sub-green header-text-sub-alt z-10">Become A Volunteer</h1>
