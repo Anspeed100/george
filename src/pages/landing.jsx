@@ -10,6 +10,7 @@ import QuoteEnd from "../assets/quote_end.png"
 import LogoB from "../assets/logo_b.png"
 import Shadow from "../assets/shadow.png"
 import G5Img from "../assets/G5.png"
+import RedFooter from "../components/red_footer";
 
 import { useEffect } from "react";
 import "../scroll.scss"
@@ -225,8 +226,8 @@ export default function LandingPage(){
                   </div>
                 </div>
               </div>
-              
             </div>
+            <RedFooter/>
           </div>
         </div>
       </div>

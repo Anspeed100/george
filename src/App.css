@@ -347,8 +347,24 @@ body {
   font-weight: 600;
 }
 
+.contact-p-sub{
+  color: #fff;
+}
+
+.contact-header{
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .red-footer-bg{
   background: #b71d24;
+}
+
+.red-footer-bg-alt{
+  height: 2rem;
+  background-color: #710b10;
 }
 
 .bio-p{
