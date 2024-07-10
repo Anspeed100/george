@@ -40,7 +40,7 @@ export default function AboutPage(){
   useEffect(() => {
     setIsLoading(true)
     const fetchData = async () => {
-      const sheetId = '1N6E4SXmY38agoGfr23YDg98wZlB2U_Z4d8xDevQlPM8';
+      const sheetId = 'id';
       const apiKey = process.env.REACT_APP_MASTER_KEY;
       const range = 'Sheet3';
       
