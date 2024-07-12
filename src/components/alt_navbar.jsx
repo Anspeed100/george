@@ -1,8 +1,8 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../assets/assets_4.png"
-import LogoAlt from "../assets/logo.png"
+import Logo from "../assets/assets_4.png";
+import LogoAlt from "../assets/logo.png";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
@@ -34,7 +34,12 @@ export default function AltNavbar({ useRed }) {
   }));
 
   return (
-    <Disclosure as="nav" className={`bg-transparent nav-bg ${useRed ? 'red-nav-bg' : 'no-red-nav-bg'}`}>
+    <Disclosure
+      as="nav"
+      className={`bg-transparent nav-bg ${
+        useRed ? "red-nav-bg" : "no-red-nav-bg"
+      }`}
+    >
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8 h-4 lg:h-24 md:h-24">
@@ -53,23 +58,34 @@ export default function AltNavbar({ useRed }) {
 
               <div className="justify-start flex-shrink-0 flex sm:justify-start">
                 <h6 className="uppercase font-semibold text-black flex items-center justify-center md:justify-start">
-                  <Link to={'/'}>
-                    <img alt="" className="w-96 p-auto lg:p-4 md:p-4 hidden lg:block md:block" src={Logo} />
-                    <img alt="" className="w-44 block lg:hidden md:hidden" src={Logo}/>
+                  <Link to={"/"}>
+                    <img
+                      alt=""
+                      className="w-96 p-auto lg:p-4 md:p-4 hidden lg:block md:block"
+                      src={Logo}
+                    />
+                    <img
+                      alt=""
+                      className="w-44 block lg:hidden md:hidden"
+                      src={Logo}
+                    />
                   </Link>
                 </h6>
               </div>
-              <div className="col-span-3 flex-1 flex items-center justify-end sm:items-stretch z-1 nav-items-margin">
-                <div className="hidden sm:block">
+              <div className="col-span-3 flex-1 flex items-center justify-end sm:items-stretch z-1 nav-items-margin ">
+                <div className="hidden sm:block ">
                   <div className="flex space-x-2">
                     {updatedNavigation.map((item) => (
-                      <a href={item.href}
+                      <a
+                        href={item.href}
                         key={item.name}
                         className={classNames(
                           item.current
-                            ? `${ useRed ? 'alt-nav-text' : 'nav-text' }`
+                            ? `${useRed ? "alt-nav-text" : "nav-text"}`
                             : "cursor-pointer",
-                          `px-3 py-2 rounded-md text-lg font-normal ${useRed ? 'text-white' : 'text-black'}`
+                          `px-3 py-2 rounded-md text-lg font-normal ${
+                            useRed ? "text-white" : "text-black"
+                          }`
                         )}
                       >
                         {item.name}
@@ -78,10 +94,13 @@ export default function AltNavbar({ useRed }) {
                   </div>
                 </div>
                 <div className="hidden lg:flex lg:justify-end pl-4 lg:items-center lg:gap-4 lg:w-auto">
-                  <a href="#" spy={true} smooth={true}
+                  <a
+                    href="#"
+                    spy={true}
+                    smooth={true}
                     className={"button-primary-alt button-primary"}
                   >
-                    <span className='button-text'>Donation</span>
+                    <span className="button-text">Donation</span>
                   </a>
                 </div>
               </div>
@@ -96,21 +115,22 @@ export default function AltNavbar({ useRed }) {
                   as="a"
                   href={item.href}
                   className={classNames(
-                          item.current
-                            ? "mobile-nav-text"
-                            : "mobile-nav-text-normal",
-                            `px-3 py-2 block`
-                        )}
+                    item.current ? "mobile-nav-text" : "mobile-nav-text-normal",
+                    `px-3 py-2 block`
+                  )}
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
               ))}
               <div className="flex justify-center items-center">
-                <a href="#" spy={true} smooth={true}
+                <a
+                  href="#"
+                  spy={true}
+                  smooth={true}
                   className={"button-primary"}
                 >
-                  <span className='button-text'>Donation</span>
+                  <span className="button-text">Donation</span>
                 </a>
               </div>
             </div>
