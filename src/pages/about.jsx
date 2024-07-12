@@ -14,10 +14,10 @@ export default function AboutPage() {
   return (
     <div className="">
       <div className="hidden lg:flex md:flex">
-        <AltNavbar useRed={false} />
+
       </div>
       <div className="flex lg:hidden md:hidden">
-        <Navbar />
+
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 mt-24 lg:mt-0 md:mt-0">
         <img src={Bio1Img} alt="" className="ml-12 bio-img-1" />

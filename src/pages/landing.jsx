@@ -83,7 +83,6 @@ export default function LandingPage() {
         </div>
         <div class="">
           <div className="relative mb-">
-            <Navbar />
             <div className="lg:flex md:flex flex-col relative mt-8">
               <div className="flex flex-col md:flex-row mt-10">
                 <div className="object-fill flex flex-1">
@@ -97,7 +96,7 @@ export default function LandingPage() {
                   <h1 className="text-3xl md:text-5xl font-bold">
                     Welcome dear Friend,
                   </h1>
-                  <h1 className="text-2xl md:text-3xl mt-4 font-semibold">
+                  <h1 className="text-2xl md:text-3xl mt-4 font-medium">
                     I am George Twum-Barimah-Adu, and I want, with your support
                     and vote, to be your President – to serve you as Head of
                     State, Head of Government and Commander-In-Chief of the
@@ -146,7 +145,7 @@ export default function LandingPage() {
                     </p>
                   </div>
                   <div className="flex justify-end">
-                    <p className="text-2xl text-white mt-8 font-semibold mr-10 ">
+                    <p className="text-2xl text-white mt-8 font-medium mr-10 ">
                       - George Twum-Barimah-Adu
                     </p>
                   </div>
@@ -250,7 +249,7 @@ export default function LandingPage() {
                 <h2 className="mb-12 font-extrabold text-2xl md:text-5xl">
                   My Vision
                 </h2>
-                <div className="flex flex-col gap-4 text-xl md:text-2xl">
+                <div className="flex flex-col gap-4 text-xl md:text-2xl font-medium">
                   <p>This is my GENUINE PLEDGE to all Ghanaians:</p>
                   <p>
                     I George Twum-Barimah-Adu, will serve you in honesty and
@@ -267,7 +266,7 @@ export default function LandingPage() {
                 <h2 className="mb-12 font-extrabold text-2xl md:text-5xl">
                   My Pledge
                 </h2>
-                <div className="flex flex-col gap-4 text-xl md:text-2xl">
+                <div className="flex flex-col gap-4 text-xl md:text-2xl font-medium">
                   <p>This is my GENUINE PLEDGE to all Ghanaians:</p>
                   <p>
                     I George Twum-Barimah-Adu, will serve you in honesty and
@@ -285,22 +284,20 @@ export default function LandingPage() {
                 <h2 className="mb-12 font-extrabold text-2xl md:text-5xl">
                   My Promise
                 </h2>
-                <div className="flex flex-col gap-4 text-xl md:text-2xl">
+                <div className="flex flex-col gap-4 text-xl md:text-2xl font-medium">
                   <p>To the Glory of God, I Promise To Offer Ghanaians:</p>
-                  <div className="flex flex-col gap-3">
-                    <p>a. Servant-leadership.</p>
-                    <p>b. Efficient and effective leadership.</p>
-                    <p>c. Honest and incorruptible leadership.</p>
-                    <p>d. Leadership of respect.</p>
-                    <p>
-                      e. Leadership for the benefit of all, and not a small
-                      group of family, friends and cronies.
-                    </p>
-                    <p>
-                      f. Leadership that plans for the future without destroying
-                      the present.
-                    </p>
-                    <p>g. Leadership of ideas</p>
+                  <div className="flex flex-col gap-4 font-medium">
+                  <ul>
+                    <li>a. Servant-leadership.</li>
+                    <li>b. Efficient and effective leadership.</li>
+                    <li>c. Honest and incorruptible leadership.</li>
+                    <li>d. Leadership of respect.</li>
+                    <li> e. Leadership for the benefit of all, and not a small
+                    group of family, friends and cronies.</li>
+                    <li>f. Leadership that plans for the future without destroying
+                    the present.</li>
+                    <li>g. Leadership of ideas</li>
+                  </ul>
                   </div>
                   <span className="mt-5 leading-7">
                     Leadership that is all-embracing. To this end, I am calling
@@ -312,18 +309,18 @@ export default function LandingPage() {
             </div>
 
             <div className="flex flex-col  md:flex-row md:h-[35rem]">
-              <div className="flex flex-1">
+              <div className="flex">
                 <img
                   src={G3Img}
                   alt="Candidate"
                   className="w-[100%] h-[100%]"
                 />
               </div>
-              <div className="flex flex-1 flex-col gap-2 justify-center items-center ">
-                <h1 className="text-xl pt-3 md:text-3xl font-bold   text-center">
+              <div className="flex flex-1 flex-col gap-3 justify-center items-center">
+                <h1 className="text-xl pt-3 md:text-3xl font-bold text-center">
                   Meet George Twum-Barimah-Adu
                 </h1>
-                <h1 className="text-start p-4 font-semibold md:text-2xl ">
+                <h1 className="text-start p-4 font-medium md:text-2xl text-center">
                   George Twum-Barimah-Adu (Uncle George) was born on 18 August
                   1963, the third child of the late Frank Brako Adu Snr,
                   (Teacher Adu), a public servant and the late Beatrice Mariam

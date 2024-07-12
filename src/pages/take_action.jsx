@@ -14,7 +14,6 @@ export default function TakeActionPage(){
 
   return (
     <div>
-      <AltNavbar useRed={false}/>
       <div className="grid grid-cols-2 gap-4 relative lg:hidden md:hidden">
         <div className="take-banner-alt z-10">
           <img src={BackgroundAlt} alt="Candidate" className="w-4/5	h-full img-opacity"/>

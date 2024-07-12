@@ -71,7 +71,6 @@ export default function AboutPage(){
   
   return (
     <>
-    <Navbar useRed={true}/>
     {
       isLoading ? <Loader/>:
       <div class="timeline mt-24">

@@ -142,7 +142,6 @@ export default function AboutPage(){
 
   return (
     <div className="relative mt-8 lg:mt-0 md:mt-0">
-      <Navbar useRed={true}/>
       {/* <div className="absolute top-0 z-10">
         <img src={FlagImg} alt="flag"/>
       </div> */}
