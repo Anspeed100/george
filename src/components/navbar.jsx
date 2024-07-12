@@ -1,8 +1,8 @@
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../assets/logo.png"
-import LogoAlt from "../assets/assets_4.png"
+import Logo from "../assets/logo.png";
+import LogoAlt from "../assets/assets_4.png";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
@@ -34,7 +34,10 @@ export default function Navbar({ useRed }) {
   }));
 
   return (
-    <Disclosure as="nav" className={`bg-transparent nav-bg ${useRed ? '' : 'trans-nav-bg-fixed'}`}>
+    <Disclosure
+      as="nav"
+      className={`bg-transparent nav-bg ${useRed ? "" : "trans-nav-bg-fixed"}`}
+    >
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8 h-24">
@@ -42,9 +45,12 @@ export default function Navbar({ useRed }) {
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="z-30 w-12 inline-flex items-center justify-center rounded-md text-red-700 focus:outline-none ring-0">
-                  <span className="sr-only">Open main menu</span>
+                  <span className="sr-only ">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-9 w-9 text-black" aria-hidden="true" />
+                    <XIcon
+                      className="block h-9 w-9 text-black"
+                      aria-hidden="true"
+                    />
                   ) : (
                     <MenuIcon className="block h-12 w-12" aria-hidden="true" />
                   )}
@@ -53,24 +59,41 @@ export default function Navbar({ useRed }) {
 
               <div className="justify-start flex-shrink-0 flex sm:justify-start">
                 <h6 className="uppercase font-semibold text-black flex items-center justify-center md:justify-start">
-                  <Link to={'/'}>
-                    { useRed ? <img alt="" className="w-96 p-4 hidden lg:block md:block" src={LogoAlt} /> : <img alt="" className="w-96 p-4 hidden lg:block md:block" src={Logo} />}
-                    
-                    <img alt="" className="w-52 block lg:hidden md:hidden" src={Logo}/>
+                  <Link to={"/"}>
+                    {useRed ? (
+                      <img
+                        alt=""
+                        className="w-96 p-4 hidden lg:block md:block"
+                        src={LogoAlt}
+                      />
+                    ) : (
+                      <img
+                        alt=""
+                        className="w-96 p-4 hidden lg:block md:block"
+                        src={Logo}
+                      />
+                    )}
+
+                    <img
+                      alt=""
+                      className="w-52 block lg:hidden md:hidden"
+                      src={Logo}
+                    />
                   </Link>
                 </h6>
               </div>
-              <div className="col-span-3 flex-1 flex items-center justify-end sm:items-stretch z-1 nav-items-margin">
+              <div className="col-span-3 flex-1 flex items-center justify-end sm:items-stretch z-1 nav-items-margin ">
                 <div className="hidden sm:block">
                   <div className="flex space-x-2">
                     {updatedNavigation.map((item) => (
-                      <a href={item.href}
+                      <a
+                        href={item.href}
                         key={item.name}
                         className={classNames(
-                          item.current
-                            ? "nav-text"
-                            : "cursor-pointer",
-                            `px-3 py-2 rounded-md text-lg font-normal ${useRed ? 'text-white' : 'text-black'}`
+                          item.current ? "nav-text" : "cursor-pointer",
+                          `px-3 py-2 rounded-md text-lg font-normal ${
+                            useRed ? "text-white" : "text-black"
+                          }`
                         )}
                       >
                         {item.name}
@@ -79,14 +102,16 @@ export default function Navbar({ useRed }) {
                   </div>
                 </div>
                 <div className="hidden lg:flex lg:justify-end pl-4 lg:items-center lg:gap-4 lg:w-auto">
-                  <a href="#" spy={true} smooth={true}
+                  <a
+                    href="#"
+                    spy={true}
+                    smooth={true}
                     className={"button-primary"}
                   >
-                    <span className='button-text'>Donation</span>
+                    <span className="button-text">Donation</span>
                   </a>
                 </div>
               </div>
-              
             </div>
           </div>
 
@@ -98,21 +123,22 @@ export default function Navbar({ useRed }) {
                   as="a"
                   href={item.href}
                   className={classNames(
-                          item.current
-                            ? "mobile-nav-text"
-                            : "mobile-nav-text-normal",
-                            `px-3 py-2 block`
-                        )}
+                    item.current ? "mobile-nav-text" : "mobile-nav-text-normal",
+                    `px-3 py-2 block`
+                  )}
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
               ))}
               <div className="flex justify-center items-center">
-                <a href="#" spy={true} smooth={true}
+                <a
+                  href="#"
+                  spy={true}
+                  smooth={true}
                   className={"button-primary"}
                 >
-                  <span className='button-text'>Donation</span>
+                  <span className="button-text">Donation</span>
                 </a>
               </div>
             </div>

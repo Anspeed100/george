@@ -19,10 +19,10 @@ body {
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
-  background: #006E51;
+  background: #006e51;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -45,14 +45,14 @@ body {
 }
 
 .event-container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #006E51;
+  border: 2px solid #006e51;
   border-radius: 16px;
   z-index: 1;
 }
@@ -62,13 +62,13 @@ body {
 }
 
 .event-container::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #006E51;
+  background: #006e51;
   z-index: 1;
 }
 
@@ -83,7 +83,7 @@ body {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: #006E51;
+  color: #006e51;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -123,7 +123,7 @@ body {
 
 .event-container .content {
   padding: 30px 90px 30px 30px;
-  background: #006E51;
+  background: #006e51;
   position: relative;
   border-radius: 15px;
 }
@@ -186,7 +186,7 @@ body {
     left: 0%;
   }
 
-  .event-container.left::after, 
+  .event-container.left::after,
   .event-container.right::after {
     left: 82px;
   }
@@ -194,7 +194,7 @@ body {
   .event-container.left::before,
   .event-container.right::before {
     left: 100px;
-    border-color: transparent #006E51 transparent transparent;
+    border-color: transparent #006e51 transparent transparent;
   }
 
   .event-container.left .date,
