@@ -13,13 +13,9 @@ export default function AboutPage() {
 
   return (
     <div className="">
-      <div className="hidden lg:flex md:flex">
-
-      </div>
-      <div className="flex lg:hidden md:hidden">
-
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 mt-24 lg:mt-0 md:mt-0">
+      <div className="hidden lg:flex md:flex"></div>
+      <div className="flex lg:hidden md:hidden"></div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 mt-24 lg:mt-0 md:mt-0 pt-24">
         <img src={Bio1Img} alt="" className="ml-12 bio-img-1" />
         <div className="flex flex-col gap-2">
           <h1 className="bio-header">Biography</h1>
@@ -29,7 +25,7 @@ export default function AboutPage() {
             the third child of the late Frank Brako Adu Snr, (Teacher Adu), a
             public servant and the late Beatrice Mariam Ama Acheampong, a
             government school teacher at Old Tafo. Uncle George is the nephew of
-            the late Kwaku Boateng Esq, a former government Min- ister in the
+            the late Kwaku Boateng Esq, a former government Min-ister in the
             government of Osagyefo Dr. Kwame Nkrumah. A broth- er to Magaret
             Mary Adu (MD Aomega Lodges), Frank Brako Adu Jnr. (former MD of CAL
             Bank PLC); and the late Joseph Boakye-Danquah-Adu, (former MP of

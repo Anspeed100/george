@@ -12,13 +12,13 @@ const navigation = [
   { name: "Events/Roadmap", href: "/events", current: false },
 ];
 
-const mobile_navigation = [
-  { name: "Home", href: "/", current: false },
-  { name: "#Breakingthe2", href: "/breakingthe2", current: false },
-  { name: "About", href: "/about", current: false },
-  { name: "Take Action", href: "/take-action", current: false },
-  { name: "Events/Roadmap", href: "/events", current: false },
-];
+// const mobile_navigation = [
+//   { name: "Home", href: "/", current: false },
+//   { name: "#Breakingthe2", href: "/breakingthe2", current: false },
+//   { name: "About", href: "/about", current: false },
+//   { name: "Take Action", href: "/take-action", current: false },
+//   { name: "Events/Roadmap", href: "/events", current: false },
+// ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -40,8 +40,8 @@ export default function Navbar({ useRed }) {
     >
       {({ open }) => (
         <>
-          <div className="mx-auto px-2 sm:px-6 lg:px-8 h-24">
-            <div className="relative grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 items-center justify-between h-16">
+          <div className="mx-auto px-2 sm:px-6 lg:px-8 h-24  ">
+            <div className="relative grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 items-center justify-between h-24">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="z-30 w-12 inline-flex items-center justify-center rounded-md text-red-700 focus:outline-none ring-0">
@@ -57,7 +57,7 @@ export default function Navbar({ useRed }) {
                 </Disclosure.Button>
               </div>
 
-              <div className="justify-start flex-shrink-0 flex sm:justify-start">
+              <div className="justify-start flex-shrink-0 flex sm:justify-start ">
                 <h6 className="uppercase font-semibold text-black flex items-center justify-center md:justify-start">
                   <Link to={"/"}>
                     {useRed ? (
@@ -82,8 +82,8 @@ export default function Navbar({ useRed }) {
                   </Link>
                 </h6>
               </div>
-              <div className="col-span-3 flex-1 flex items-center justify-end sm:items-stretch z-1 nav-items-margin ">
-                <div className="hidden sm:block">
+              <div className="col-span-3 flex-1 flex items-center justify-end sm:items-stretch z-1 nav-items-margin">
+                <div className="hidden sm:block md:flex items-center">
                   <div className="flex space-x-2">
                     {updatedNavigation.map((item) => (
                       <a
