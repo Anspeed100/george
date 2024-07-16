@@ -1,7 +1,7 @@
-import AltNavbar from "../components/alt_navbar";
+// import AltNavbar from "../components/alt_navbar";
 import BackgroundAlt from "../assets/background_2.png";
 import { useEffect } from "react";
-import RedFooter from "../components/red_footer";
+// import RedFooter from "../components/red_footer";
 import AssetImg from "../assets/assets_5.png";
 import Asset6Img from "../assets/assets_10.png";
 import TakingActionImg from "../assets/taking_action_asset.png";
@@ -13,7 +13,7 @@ export default function TakeActionPage() {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <div className="grid grid-cols-2 gap-4 relative lg:hidden md:hidden">
         <div className="take-banner-alt z-10">
           <img

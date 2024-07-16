@@ -56,7 +56,7 @@ export default function AltNavbar({ useRed }) {
                 </Disclosure.Button>
               </div>
 
-              <div className="justify-start flex-shrink-0 flex sm:justify-start">
+              {/* <div className="justify-start flex-shrink-0 flex sm:justify-start">
                 <h6 className="uppercase font-semibold text-black flex items-center justify-center md:justify-start">
                   <Link to={"/"}>
                     <img
@@ -71,8 +71,8 @@ export default function AltNavbar({ useRed }) {
                     />
                   </Link>
                 </h6>
-              </div>
-              <div className="col-span-3 flex-1 flex items-center justify-end sm:items-stretch z-1 nav-items-margin ">
+              </div> */}
+              {/* <div className="col-span-3 flex-1 flex items-center justify-end sm:items-stretch z-1 nav-items-margin ">
                 <div className="hidden sm:block ">
                   <div className="flex space-x-2">
                     {updatedNavigation.map((item) => (
@@ -103,7 +103,7 @@ export default function AltNavbar({ useRed }) {
                     <span className="button-text">Donation</span>
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
