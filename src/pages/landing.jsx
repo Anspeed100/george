@@ -16,6 +16,8 @@ import RedFooter from "../components/red_footer";
 import { useEffect } from "react";
 import "../scroll.scss";
 import $ from "jquery";
+import HeroCarousel from "../components/HeroCarousel";
+
 export default function LandingPage() {
   // useEffect(() => {
   //   document.body.classList.add("alt-body-bg");
@@ -73,14 +75,16 @@ export default function LandingPage() {
 
   return (
     <>
+    <div>
+      <HeroCarousel/>
       <div class="transition-container">
         {/* <div class="  m-auto flex flex-col justify-center items-center home-h">
           <img src={Flag} className="" alt="" />
         </div> */}
-        <div class=" mt-24 p-5 md:mt-52 flex flex-col justify-center items-center home-h">
+        {/* <div class=" mt-24 p-5 md:mt-52 flex flex-col justify-center items-center home-h">
           <img src={voteGeorge} alt="" className="" />
           <img src={Shadow} alt="shadow" />
-        </div>
+        </div> */}
         <div class="">
           <div className="relative mb-">
             <div className="lg:flex md:flex flex-col relative mt-8">
@@ -96,7 +100,7 @@ export default function LandingPage() {
                   <h1 className="text-3xl md:text-5xl font-bold">
                     Welcome dear Friend,
                   </h1>
-                  <h1 className="text-2xl md:text-3xl mt-4 font-medium">
+                  <h1 className="text-2xl md:text-3xl mt-4 font-canarobook">
                     I am George Twum-Barimah-Adu, and I want, with your support
                     and vote, to be your President – to serve you as Head of
                     State, Head of Government and Commander-In-Chief of the
@@ -345,6 +349,7 @@ export default function LandingPage() {
             <RedFooter />
           </div>
         </div>
+      </div>
       </div>
       {/* MOBILE SCREEN */}
       {/* <div className="relative grid grid-rows-3 lg:hidden md:hidden no-scroll z-0">
