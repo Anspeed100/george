@@ -16,7 +16,7 @@ const HeroCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    arrows: true,
+    arrows: false,
     adaptiveHeight: true,
   };
 
@@ -24,21 +24,21 @@ const HeroCarousel = () => {
     {
       id: 1,
       image: SlideImage_1,
-      showButton: true,
+      showButton: false,
       buttonText: 'Learn More',
       buttonLink: '/learn-more',
     },
     {
       id: 2,
       image: SlideImage_2,
-      showButton: false,
-      buttonText: 'Learn More',
+      showButton: true,
+      buttonText: 'Read More',
       buttonLink: '/learn-more',
     },
   ];
 
   return (
-    <div className="relative w-full mt-24">
+    <div className="relative w-full mt-28">
       <Slider {...settings}>
         {slides.map((slide) => (
           <div key={slide.id} className="relative w-full flex items-center justify-center">
@@ -47,14 +47,16 @@ const HeroCarousel = () => {
               alt={`Slide ${slide.id}`}
               className="w-full h-auto object-contain"
             />
-            {slide.showButton && (
-              <div className="absolute bottom-0 mb-10 bg-black bg-opacity-50 p-5 rounded-md text-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
-                <a
-                  href={slide.buttonLink}
-                  className="inline-block px-6 py-3 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-700 transition"
-                >
-                  {slide.buttonText}
-                </a>
+             {slide.showButton && (
+              <div className="absolute bottom-0 w-full flex justify-center mb-20">
+                <div className="p-5 text-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                  <a
+                    href={slide.buttonLink}
+                    className="inline-block px-10 py-6 bg-green-500 text-white text-xl font-bold rounded-lg hover:bg-green-700 transition"
+                  >
+                    {slide.buttonText}
+                  </a>
+                </div>
               </div>
             )}
           </div>
