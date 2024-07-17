@@ -65,7 +65,7 @@ export default function LandingPage() {
                 <h1 className="text-3xl md:text-5xl font-bold">
                   Welcome dear Friend,
                 </h1>
-                <h1 className="text-2xl md:text-3xl mt-4 font-canarobook">
+                <h1 className="text-start font-canarobook md:text-2xl text-center">
                   I am George Twum-Barimah-Adu, and I want, with your support
                   and vote, to be your President – to serve you as Head of
                   State, Head of Government and Commander-In-Chief of the
