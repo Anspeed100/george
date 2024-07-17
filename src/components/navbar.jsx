@@ -59,7 +59,7 @@ export default function Navbar({ useRed }) {
           </div>
 
           {/* MOBILE NAV */}
-          <Disclosure.Panel className="bg-[#fff] border w-[100%] md:w-[30%] h-[30%] fixed md:right-1 top-24 md:top-32 shadow-xl rounded-md flex flex-col items-center justify-center gap-1 md:gap-3">
+          <Disclosure.Panel className="bg-[#fff] border w-[100%] md:w-[30%] h-[50%] fixed md:right-1 top-24 md:top-32 shadow-xl rounded-md flex flex-col items-center justify-center gap-1 md:gap-3">
             {updatedNavigation.map((item) => (
               <Disclosure.Button
                 key={item.name}

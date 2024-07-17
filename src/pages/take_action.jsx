@@ -15,7 +15,7 @@ export default function TakeActionPage() {
   return (
     <div className="">
       <div className="grid grid-cols-2 gap-4 relative lg:hidden md:hidden">
-        <div className="take-banner-alt z-10">
+        <div className="take-banner-alt">
           <img
             src={BackgroundAlt}
             alt="Candidate"
@@ -25,14 +25,14 @@ export default function TakeActionPage() {
         <img
           src={TakingActionImg}
           alt="takeAction"
-          className="z-0 absolute bottom-0 right-12 hero-width"
+          className="absolute bottom-0 right-12 hero-width"
         />
-        <div className="container take-action-page take-action-page-red z-0 flex flex-col gap-1 items-end relative">
-          <div className="flex flex-col gap-2 justify-center items-end z-10 take-action-pos">
+        <div className="container take-action-page take-action-page-red flex flex-col gap-1 items-end relative">
+          <div className="flex flex-col gap-2 justify-center items-end take-action-pos">
             <h1 className="header-text-sub header-text-sub-green header-text-sub-alt z-10">
               Become A Volunteer
             </h1>
-            <p className="take-p take-p-color z-10">
+            <p className="take-p take-p-color">
               Be a part of the Team George Volunteers who believe in
               #Breakingthe2 to create Common Prosperity and alland make Ghana
               great.
@@ -231,7 +231,7 @@ export default function TakeActionPage() {
       </div>
       <div className="hidden lg:grid md:grid lg:grid-cols-2 md:grid-cols-2 home-h">
         <div className="">
-          <div className="take-banner-alt z-10">
+          <div className="take-banner-alt ">
             <img
               src={BackgroundAlt}
               alt="Candidate"
