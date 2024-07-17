@@ -32,7 +32,7 @@ export default function Navbar({ useRed }) {
     >
       {({ open }) => (
         <>
-          <div className="mx-auto px-2 sm:px-6 lg:px-8 flex items-center shadow-lg h-32">
+          <div className="mx-auto px-2 sm:px-6 lg:px-8 flex items-center  h-32">
             <div className="relative flex items-center justify-between w-full">
               <Link to="/" className="w-52 md:w-auto">
                 <img alt="Logo" className="w-full h-auto" src={Logo} />
@@ -49,7 +49,10 @@ export default function Navbar({ useRed }) {
                 {/* BURGER BUTTON */}
                 <Disclosure.Button className="z-30 w-12 inline-flex items-center justify-center text-red-700 p-2">
                   {open ? (
-                    <XIcon className="block h-9 w-9 text-black" aria-hidden="true" />
+                    <XIcon
+                      className="block h-9 w-9 text-black"
+                      aria-hidden="true"
+                    />
                   ) : (
                     <MenuIcon className="block h-12 w-12" aria-hidden="true" />
                   )}
