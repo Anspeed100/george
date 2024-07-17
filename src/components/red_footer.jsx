@@ -96,14 +96,15 @@ export default function RedFooter() {
       </div>
       <div className="bg-[#710b10] h-4 md:h-8"></div>
       <div className="red-footer-bg flex flex-col md:flex-row justify-center items-center md:h-12 text-white text-center p-2 md:p-0">
-        <div className="flex items-center space-x-2">
-          <span className="text-sm md:text-base lg:text-lg font-canarobook">&copy; 2024 #Breakingthe2</span>
-          <span className="text-sm md:text-base lg:text-lg font-canarobook">| All rights reserved. |</span>
-          <span className="text-sm md:text-base lg:text-lg font-canarobook">
-          Contributions or gifts to Campaign Name are not tax deductible.
-        </span>
+        <div className="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-2">
+          <span className="text-sm md:text-base lg:text-lg font-canarobook block md:inline">&copy; 2024 #Breakingthe2</span>
+          <span className="text-sm md:text-base lg:text-lg font-canarobook block md:inline">| All rights reserved. |</span>
+          <span className="text-sm md:text-base lg:text-lg font-canarobook block md:inline">
+            Contributions or gifts to Campaign Name are not tax deductible.
+          </span>
         </div>
       </div>
+
     </>
   );
 }
