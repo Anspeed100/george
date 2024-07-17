@@ -3,8 +3,15 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Canaro';
+    font-family: 'Canaro Book';
     src: url('../public/fonts/Canaro_Book.ttf');
     font-weight: normal;
     font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Canaro Bold';
+    src: url('../public/fonts/Canaro_Bold.ttf');
+    font-weight:bold;
+    font-style:normal;
   }

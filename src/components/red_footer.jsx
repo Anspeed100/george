@@ -99,9 +99,6 @@ export default function RedFooter() {
         <div className="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-2">
           <span className="text-sm md:text-base lg:text-lg font-canarobook block md:inline">&copy; 2024 #Breakingthe2</span>
           <span className="text-sm md:text-base lg:text-lg font-canarobook block md:inline">| All rights reserved. |</span>
-          <span className="text-sm md:text-base lg:text-lg font-canarobook block md:inline">
-            Contributions or gifts to Campaign Name are not tax deductible.
-          </span>
         </div>
       </div>
 

@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        canarobook: ['Canaro','sans-serif']
+        canarobook: ['Canaro Book','sans-serif'],
+        canarobold: ['Canaro Bold','sans-serif']
       }
     },
   },
