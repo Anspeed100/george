@@ -47,12 +47,12 @@ const HeroCarousel = () => {
               alt={`Slide ${slide.id}`}
               className="w-full h-auto object-contain"
             />
-             {slide.showButton && (
-              <div className="absolute bottom-0 w-full flex justify-center mb-20">
-                <div className="p-5 text-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+            {slide.showButton && (
+              <div className="absolute bottom-0 w-full flex justify-center mb-4">
+                <div className="p-2 sm:p-3 rounded-md text-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
                   <a
                     href={slide.buttonLink}
-                    className="inline-block px-10 py-6 bg-green-500 text-white text-xl font-bold rounded-lg hover:bg-green-700 transition"
+                    className="inline-block px-4 py-2 text-xs sm:px-6 sm:py-3 sm:text-sm md:px-8 md:py-4 md:text-base lg:px-10 lg:py-5 lg:text-lg bg-green-500 text-white font-bold rounded-md hover:bg-green-700 transition"
                   >
                     {slide.buttonText}
                   </a>
