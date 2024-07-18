@@ -10,6 +10,7 @@ import HeroCarousel from "../components/HeroCarousel";
 
 import { useEffect } from "react";
 import "../scroll.scss";
+import { Link } from "react-router-dom";
 
 const parallaxEffect = () => {
   const parallaxElements = document.querySelectorAll("[data-parallax]");
@@ -75,12 +76,11 @@ export default function LandingPage() {
                   and Strong!<br />Thank you!
                 </h1>
                 <div className="flex justify-end">
-                  <a
-                    href="asda"
+                  <Link to="/register"
                     className="button-green-primary mt-2 mb-10"
                   >
                     <span className="button-text font-bold">Take Action</span>
-                  </a>
+                  </Link>
                   <div className="absolute bottom-0 z-20">
                     <img src={Vote4UGImg} alt="vote for UG" className="w-full max-w-xs md:max-w-md lg:max-w-lg" />
                   </div>
