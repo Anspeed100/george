@@ -2,7 +2,6 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/logo.png";
-import LogoAlt from "../assets/assets_4.png";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
@@ -39,12 +38,11 @@ export default function Navbar({ useRed }) {
               </Link>
               <div className="flex items-center gap-8">
                 <div className="hidden md:flex items-center">
-                  <a
-                    href="asd"
+                  <Link to="/donate" 
                     className="bg-[#b91f26] text-white text-2xl rounded-md px-4 py-2 font-bold"
                   >
                     <span className="button-text">Donate</span>
-                  </a>
+                  </Link>
                 </div>
                 {/* BURGER BUTTON */}
                 <Disclosure.Button className="z-30 w-12 inline-flex items-center justify-center text-red-700 p-2">
@@ -80,12 +78,11 @@ export default function Navbar({ useRed }) {
               </Disclosure.Button>
             ))}
             <div className="md:hidden block mt-6">
-              <a
-                href="asd"
+            <Link to="/donate" 
                 className="bg-[#b91f26] text-white text-xl rounded-md px-3 py-2 font-semibold"
               >
                 Donate
-              </a>
+              </Link>
             </div>
           </Disclosure.Panel>
         </>

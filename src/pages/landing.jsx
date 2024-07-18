@@ -7,6 +7,7 @@ import G3Img from "../assets/G3.png";
 import G5Img from "../assets/G5.png";
 import RedFooter from "../components/red_footer";
 import HeroCarousel from "../components/HeroCarousel";
+
 import { useEffect } from "react";
 import "../scroll.scss";
 
@@ -93,24 +94,23 @@ export default function LandingPage() {
               <img src={BackgroundAlt} alt="Background" className="w-3/4 h-3/4" />
             </div>
           </div>
-          <div className="w-full h-[450px] bg-[#b92026] flex justify-center items-center">
-            <div className="flex flex-col gap-4 p-10 xl:p-60">
-              <img src={QuoteStart} alt="quote" className="w-12 h-12" />
+          <div className="w-full h-auto bg-[#b92026] flex justify-center items-center p-4 md:p-10 xl:p-20">
+            <div className="flex flex-col gap-4 max-w-4xl">
+              <img src={QuoteStart} alt="quote" className="w-8 h-8 md:w-12 md:h-12 self-start" />
               <div className="flex flex-col">
-                <div className="flex content-center w-full items-center ">
-                  <p className="text-2xl md:text-5xl font-bold text-white md:mx-12">
-                    I'm committed to protecting the constitution, to ensure
-                    that everyone has equal justice before the law
+                <div className="flex w-full items-center">
+                  <p className="text-xl md:text-3xl lg:text-5xl font-bold text-white text-justify">
+                    Countrymen, the task ahead is great indeed, and heavy is the responsibility; and yet it is a noble and glorious challenge - a challenge which calls for the courage to dream, the courage to believe, the courage to dare, the courage to do, the courage to envision, the courage to fight, the courage to work, the courage to achieve - to achieve the highest excellencies and the fullest greatness of man. Dare we ask for more in life?
                   </p>
                 </div>
-                <div className="flex justify-end">
-                  <p className="text-2xl text-white mt-8 font-canarobook mr-10 ">
-                    - George Twum-Barimah-Adu
+                <div className="flex justify-end mt-4">
+                  <p className="text-lg md:text-2xl text-white font-canarobook">
+                    - Osagyefo Dr Kwame Nkrumah
                   </p>
                 </div>
               </div>
               <div className="flex justify-end">
-                <img src={QuoteEnd} alt="quote" className="w-12 h-12" />
+                <img src={QuoteEnd} alt="quote" className="w-8 h-8 md:w-12 md:h-12 self-end" />
               </div>
             </div>
           </div>
@@ -148,15 +148,20 @@ export default function LandingPage() {
               <div className="flex flex-col justify-center items-center">
                 <h2 className="text-3xl font-bold mb-5 font-canarobook text-black">My Flag</h2>
 
-                <div className="wrap bg-black text-white p-2 w-[90%] md:w-[80%] lg:w-[40%] z-10">
-                  <img src={G5Img} alt="g5" className="mb-1 w-full" />
-                  <div className="bg-black text-white font-canarobook p-5 ">
-                    <h4>
-                      As you can see projected here, the flag of my candidacy
-                      has a number of colours
-                    </h4>
+                <div className="wrap bg-white text-white p-2 w-[90%] md:w-[80%] lg:w-[40%] z-10">
+                  <img src={G5Img} alt="g5" className="mb-6 mt-6 w-full" />
+                  <div className="w-full flex justify-center py-8">
+                    <div className="w-full sm:w-3/4 lg:w-full relative" style={{ paddingBottom: "56.25%", height: "0" }}>
+                      <iframe
+                        className="absolute top-0 left-0 w-full"
+                        style={{ height: "calc(100% + 2px)" }}
+                        src="https://www.youtube.com/embed/J7UrrpUklLw"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
                   </div>
-
                   <div className="fadein bg-[#b92026] font-canarobook text-white p-5">
                     <h4 className="font-bold">1. Blood Red</h4>
                     <p>
@@ -215,8 +220,8 @@ export default function LandingPage() {
                 </div>
               </div>
             </section>
-
           </div>
+
 
           <div className="vision-bg flex justify-center items-center p-3">
             <div className="w-[90%] md:w-[70%] lg:w-[50%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white font-bold">
@@ -289,6 +294,50 @@ export default function LandingPage() {
                 </span>
               </div>
 
+            </div>
+          </div>
+
+          <section className="flex flex-col items-center gap-5 md:gap-10 p-5 md:px-10 bg-[url('/src/assets/FadeBGFix.png')] bg-cover bg-center w-full">
+  <div className="flex flex-col font-canarobook justify-center items-start w-full sm:w-[90%] md:w-[70%] lg:w-[50%] gap-3 p-5 bg-none relative md:self-end">
+    <p>MY SLOGAN: My campaign slogan is <span className="text-red-500 font-canarobold">BREAKINGTHE</span><span className="text-green-500 font-canarobold"> 2</span></p>
+    <div className="w-full flex justify-end mt-5 md:mt-0">
+      <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
+        Read More
+      </button>
+    </div>
+  </div>
+  <div className="flex flex-col font-canarobook justify-center items-start w-full sm:w-[90%] md:w-[70%] lg:w-[50%] gap-3 p-5 bg-none relative md:self-end">
+    <p>MY MOTTO: The Motto of my campaign is <span className="text-red-500 font-canarobold">COMMON</span> <span className="text-green-500 font-canarobold">PROSPERITY</span></p>
+    <div className="w-full flex justify-end mt-5 md:mt-0">
+      <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
+        Read More
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+          <div className="w-full h-auto bg-[#500909] flex justify-center items-center p-4 md:p-10 xl:p-20">
+            <div className="flex flex-col gap-4 max-w-4xl">
+              <img src={QuoteStart} alt="quote" className="w-8 h-8 md:w-12 md:h-12 self-start" />
+              <div className="flex flex-col">
+                <div className="flex w-full items-center">
+                  <p className="text-xl md:text-3xl lg:text-5xl font-bold text-white text-justify">
+                    “Dear friends, together, let us unite, Break the 2 and build a dignified, strong and prosperous nation that is self-reliant and free from foreign aid.”
+                  </p>
+                </div>
+                <div className="flex justify-end mt-4">
+                  <p className="text-lg md:text-2xl text-white font-canarobook">
+                    - George Twum-Barimah-Adu
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-end">
+                <img src={QuoteEnd} alt="quote" className="w-8 h-8 md:w-12 md:h-12 self-end" />
+              </div>
             </div>
           </div>
           <RedFooter />

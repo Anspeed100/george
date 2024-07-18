@@ -21,11 +21,12 @@ export default function AboutPage() {
             alt="candidate"
             className=" h-[300px] md:h-[500px]"
           />
-          <div className=" flex flex-col justify-center items-center md:items-start md:w-[50%] gap-3 px-3 ">
-            <h2 className="font-bold text-3xl text-[#b91f26] pb-5">
+          <div className=" flex flex-col justify-center text-justify items-center md:items-start md:w-[50%] gap-3 px-3 ">
+            <h2 className="font-bold text-3xl font-canarobold text-[#b91f26] pb-5">
               Committed to Ghana
             </h2>
-            <h4 className="font-semibold text-2xl">Early Life and education</h4>
+            <h4 className="font-semibold font-canarobold text-2xl">Early Life and education</h4>
+            <div className="font-canarobook">
             <p>
               George Twum-Barimah-Adu (Uncle George) was born on 18 August 1963,
               the third child of the late Frank Brako Adu Snr, (Teacher Adu), a
@@ -50,16 +51,18 @@ export default function AboutPage() {
               Member Faculty Scholars Executive Board and Chairman of the
               Faculty Scholars Committee on{" "}
             </p>
+            </div>
           </div>
         </section>
 
         {/* DIVIDER */}
-        <div className="h-[1px] bg-[#b91f26] w-[80%] md:w-[70%]  mx-auto my-14"></div>
+        <div className="h-[3px] bg-[#b91f26] w-[80%] md:w-[70%]  mx-auto my-14"></div>
 
         {/* Work and Business */}
         <section className="flex flex-col-reverse items-center md:flex-row md:justify-center gap-5 md:gap-10 md:px-5 pb-3 ">
-          <div className=" flex flex-col justify-center items-center md:items-start md:w-[50%] gap-3 px-3 ">
-            <h4 className="font-semibold text-2xl">Work and Business</h4>
+          <div className=" flex flex-col justify-center text-justify items-center md:items-start md:w-[50%] gap-3 px-3 ">
+            <h4 className="font-semibold font-canarobold text-2xl">Work and Business</h4>
+            <div className="font-canarobook">
             <p>
               Uncle George returned to Ghana in 1993 and started worked with
               National Insurance Commission in October of the same year. He left
@@ -74,6 +77,7 @@ export default function AboutPage() {
               developers of WordMeetsTee mobile Word game and other digital
               products.
             </p>
+            </div>
           </div>
           <img
             src={Bio2Img}
@@ -83,7 +87,7 @@ export default function AboutPage() {
         </section>
 
         {/* DIVIDER */}
-        <div className="h-[1px] bg-[#b91f26] w-[70%]  mx-auto my-8 md:my-14"></div>
+        <div className="h-[3px] bg-[#b91f26] w-[70%]  mx-auto my-8 md:my-14"></div>
 
         {/* Personal Life */}
         <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 md:px-5 pb-3   ">
@@ -93,12 +97,14 @@ export default function AboutPage() {
             className=" h-[300px] md:h-[500px] border "
           />
           <div className=" flex flex-col justify-center items-center md:items-start md:w-[50%] gap-3 px-3  ">
-            <h4 className="font-semibold text-2xl ">Personal Life</h4>
+            <h4 className="font-semibold font-canarobold text-2xl ">Personal Life</h4>
+            <div className="font-canarobook">
             <p>
               Uncle George is a practicing Christian, married to Winifred
               Twum-Barimah-Adu and they are blessed with three children: Nana
               Afia, Kweku Nhyira and Kwadwo Odoi.
             </p>
+            </div>
           </div>
         </section>
       </div>

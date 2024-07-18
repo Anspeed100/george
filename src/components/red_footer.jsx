@@ -6,22 +6,22 @@ export default function RedFooter() {
     <>
       <div className="flex flex-col md:flex-row justify-center md:justify-between m-auto p-8 md:p-14 lg:p-20 red-footer-bg gap-8">
         <div className="flex flex-col gap-4 p-4">
-          <h1 className="text-lg md:text-2xl lg:text-3xl font-semibold text-white uppercase font-canarobook">
+          <h1 className="text-lg md:text-2xl lg:text-3xl text-white uppercase font-canarobold">
             Contact Our Campaign
           </h1>
-          <p className="text-base md:text-xl lg:text-2xl text-white font-canarobook">
-            P.O. Box 123456
+          <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white font-canarobook">
+          35 Kaanyemi Crescent, 
             <br />
-            Street name, Accra
+          Asylum Down, Accra
           </p>
-          <p className="text-base md:text-xl lg:text-2xl font-canarobook text-white">
-            (+233) 244 509 113
+          <p className="text-lg text-base md:text-xl lg:text-2xl font-semibold font-canarobook text-white">
+          +233 (050) 900-1207
           </p>
           <a
             href="mailto:email@gmail.com"
-            className="text-base md:text-xl lg:text-2xl font-canarobook text-white"
+            className="text-lg text-base md:text-xl lg:text-2xl font-semibold font-canarobook text-white"
           >
-            email@gmail.com
+            info@georgetwumbarimah.com
           </a>
         </div>
         <div className="flex flex-col justify-center items-center">
@@ -88,7 +88,7 @@ export default function RedFooter() {
         <div className="flex flex-col gap-4 p-4">
           {["Home", "Breakingthe2", "About", "Take Action", "Roadmap"].map((item) => (
             <div key={item}>
-              <p className="text-base md:text-xl lg:text-2xl text-white font-canarobook">{item}</p>
+              <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white font-canarobook">{item}</p>
               <hr className="border-t border-white" />
             </div>
           ))}
