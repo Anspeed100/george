@@ -926,7 +926,7 @@ body {
 
   .hero-width {
     width: 85%;
-    z-index: 99;
+    z-index: 1;
   }
 
   .manifesto-header {

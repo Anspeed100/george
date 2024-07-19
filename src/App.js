@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import Navbar from './components/navbar';
+import RedFooter from './components/red_footer';
 
 
 const LandingPage = React.lazy(() => import('./pages/landing'))
@@ -10,6 +11,8 @@ const EventsPage = React.lazy(() => import('./pages/events'))
 const BreakingPage = React.lazy(() => import('./pages/breaking'))
 const DonatePage = React.lazy(() => import('./pages/donatePage'))
 const TakeActionRegisterForm = React.lazy(() => import('./pages/takeactionRegisterForm'))
+const MyManifestoPage = React.lazy(() => import('./pages/myManifestoPage'))
+const MySpeechPage = React.lazy(() => import('./pages/mySpeechPage'))
 
 const App = () => {
   return (
@@ -23,7 +26,10 @@ const App = () => {
         <Route exact path='/breakingthe2' element={<BreakingPage/>}></Route>
         <Route exact path='/donate' element={<DonatePage/>}></Route>
         <Route exact path='/register' element={<TakeActionRegisterForm/>}></Route>
+        <Route exact path='/mymanifesto' element={<MyManifestoPage/>}></Route>
+        <Route exact path='/myspeech' element={<MySpeechPage/>}></Route>
       </Routes>
+      <RedFooter />
     </React.Suspense>
   );
 }

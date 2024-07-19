@@ -1,5 +1,4 @@
 import React from 'react'
-import RedFooter from '../components/red_footer';
 
 const donatePage = () => {
   return (
@@ -79,7 +78,6 @@ const donatePage = () => {
           </ul>
         </div>
       </div>
-      <RedFooter/>
     </div>
 
   );

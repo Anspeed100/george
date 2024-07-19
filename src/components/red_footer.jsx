@@ -1,5 +1,14 @@
 import FooterImg from "../assets/assets_5.png";
 import Logo from "../assets/footer.png";
+import { Link } from 'react-router-dom';
+
+const menuItems = [
+  { name: "Home", link: "/" },
+  { name: "Breakingthe2", link: "/breakingthe2" },
+  { name: "About", link: "/about" },
+  { name: "Take Action", link: "/take-action" },
+  // { name: "Roadmap", link: "/roadmap" },
+];
 
 export default function RedFooter() {
   return (
@@ -86,13 +95,15 @@ export default function RedFooter() {
           </div>
         </div>
         <div className="flex flex-col gap-4 p-4">
-          {["Home", "Breakingthe2", "About", "Take Action", "Roadmap"].map((item) => (
-            <div key={item}>
-              <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white font-canarobook">{item}</p>
-              <hr className="border-t border-white" />
-            </div>
-          ))}
+      {menuItems.map((item) => (
+        <div key={item.name}>
+          <Link to={item.link}>
+            <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white font-canarobook">{item.name}</p>
+          </Link>
+          <hr className="border-t border-white" />
         </div>
+      ))}
+    </div>
       </div>
       <div className="bg-[#710b10] h-4 md:h-8"></div>
       <div className="red-footer-bg flex flex-col md:flex-row justify-center items-center md:h-12 text-white text-center p-2 md:p-0">

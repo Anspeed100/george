@@ -1,12 +1,11 @@
 import ClientImg from "../assets/asset_1.png";
 import BackgroundAlt from "../assets/background_2.png";
-import Vote4UGImg from "../assets/assets_11.png";
-import QuoteStart from "../assets/quote_start.png";
-import QuoteEnd from "../assets/quote_end.png";
+
 import G3Img from "../assets/G3.png";
 import G5Img from "../assets/G5.png";
-import RedFooter from "../components/red_footer";
+
 import HeroCarousel from "../components/HeroCarousel";
+import QuoteComponent from "../components/QuoteComponent";
 
 import { useEffect } from "react";
 import "../scroll.scss";
@@ -81,9 +80,9 @@ export default function LandingPage() {
                   >
                     <span className="button-text font-bold">Take Action</span>
                   </Link>
-                  <div className="absolute bottom-0 z-20">
+                  {/* <div className="absolute bottom-0 z-20">
                     <img src={Vote4UGImg} alt="vote for UG" className="w-full max-w-xs md:max-w-md lg:max-w-lg" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -94,33 +93,16 @@ export default function LandingPage() {
               <img src={BackgroundAlt} alt="Background" className="w-3/4 h-3/4" />
             </div>
           </div>
-          <div className="w-full h-auto bg-[#b92026] flex justify-center items-center p-4 md:p-10 xl:p-20">
-            <div className="flex flex-col gap-4 max-w-4xl">
-              <img src={QuoteStart} alt="quote" className="w-8 h-8 md:w-12 md:h-12 self-start" />
-              <div className="flex flex-col">
-                <div className="flex w-full items-center">
-                  <p className="text-xl md:text-3xl lg:text-5xl font-bold text-white text-justify">
-                    Countrymen, the task ahead is great indeed, and heavy is the responsibility; and yet it is a noble and glorious challenge - a challenge which calls for the courage to dream, the courage to believe, the courage to dare, the courage to do, the courage to envision, the courage to fight, the courage to work, the courage to achieve - to achieve the highest excellencies and the fullest greatness of man. Dare we ask for more in life?
-                  </p>
-                </div>
-                <div className="flex justify-end mt-4">
-                  <p className="text-lg md:text-2xl text-white font-canarobook">
-                    - Osagyefo Dr Kwame Nkrumah
-                  </p>
-                </div>
-              </div>
-              <div className="flex justify-end">
-                <img src={QuoteEnd} alt="quote" className="w-8 h-8 md:w-12 md:h-12 self-end" />
-              </div>
-            </div>
-          </div>
+          <QuoteComponent backgroundColor={'#b92026'}
+            quoteText="Countrymen, the task ahead is great indeed, and heavy is the responsibility; and yet it is a noble and glorious challenge - a challenge which calls for the courage to dream, the courage to believe, the courage to dare, the courage to do, the courage to envision, the courage to fight, the courage to work, the courage to achieve - to achieve the highest excellencies and the fullest greatness of man. Dare we ask for more in life?"
+            authorText="- Osagyefo Dr Kwame Nkrumah" />
 
 
-          <div className="flex flex-col md:flex-row md:h-[35rem] mt-10">
-            <div className="flex justify-center md:justify-start items-center w-full md:w-1/2 p-4">
+          <div className="flex flex-col md:flex-row md:h-[35rem]">
+            <div className="md:justify-start items-center w-full md:w-1/2">
               <img src={G3Img} alt="Candidate" className="w-full h-auto max-w-md" />
             </div>
-            <div className="flex flex-1 flex-col justify-center items-center p-4">
+            <div className="flex flex-1 flex-col justify-center items-center">
               <h1 className="text-xl pt-3 md:text-3xl font-bold text-center">
                 Meet George Twum-Barimah-Adu
               </h1>
@@ -130,12 +112,11 @@ export default function LandingPage() {
                 (Teacher Adu), a public servant and the late Beatrice Mariam
                 Ama Acheampong, a government school teacher at Old Tafo.
               </h1>
-              <a
-                href="asda"
+              <Link to='/about'  
                 className="button-green-primary mt-2 mb-2"
               >
                 <span className="button-text font-bold">Learn More</span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -148,14 +129,14 @@ export default function LandingPage() {
               <div className="flex flex-col justify-center items-center">
                 <h2 className="text-3xl font-bold mb-5 font-canarobook text-black">My Flag</h2>
 
-                <div className="wrap bg-white text-white p-2 w-[90%] md:w-[80%] lg:w-[40%] z-10">
+                <div className="wrap bg-black mb-10 text-white p-2 w-[90%] md:w-[80%] lg:w-[40%] z-10">
                   <img src={G5Img} alt="g5" className="mb-6 mt-6 w-full" />
                   <div className="w-full flex justify-center py-8">
                     <div className="w-full sm:w-3/4 lg:w-full relative" style={{ paddingBottom: "56.25%", height: "0" }}>
                       <iframe
                         className="absolute top-0 left-0 w-full"
                         style={{ height: "calc(100% + 2px)" }}
-                        src="https://www.youtube.com/embed/J7UrrpUklLw"
+                        src="https://www.youtube.com/embed/vdNckoh51I0"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
@@ -212,49 +193,32 @@ export default function LandingPage() {
                       People.
                     </p>
                   </div>
-                  <div className="fadein bg-[#590808] text-white font-canarobook p-5">
-                    <p>
-                      With all the colours making-up the pattern in the green circle symbolizing “togetherness” – different people with different cultures, yet a common Goal of progress.
-                    </p>
-                  </div>
+
+                </div>
+
+                <div className="fadein bg-[#1D6F00] text-white flex flex-col justify-center items-center text-center font-canarobook p-5 m-10">
+                  <p>
+                    With all the colours making-up the pattern in the green circle symbolizing “togetherness” – different people with different cultures, yet a common Goal of progress.
+                  </p>
                 </div>
               </div>
             </section>
           </div>
 
 
-          <div className="vision-bg flex justify-center items-center p-3">
-            <div className="w-[90%] md:w-[70%] lg:w-[50%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white font-bold">
-              <div className="flex flex-col items-center md:items-start mx-auto md:mx-0">
-                <h2 className="mb-6 sm:mb-8 md:mb-12 font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
-                  My Vision
-                </h2>
-                <div className="flex flex-col gap-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-center md:text-left">
-                  <p>This is my GENUINE PLEDGE to all Ghanaians:</p>
-                  <div className="font-canarobook">
-                    <p>
-                      I, George Twum-Barimah-Adu, will serve you in honesty and
-                      dignity, that God may be glorified, and that Ghana and
-                      Ghanaians shall be truly free and enjoy the boons God has so
-                      generously bestowed upon us.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
 
 
 
 
 
           <div className="pledge-bg flex justify-center items-center p-3">
-            <div className="w-[90%] md:w-[70%] lg:w-[50%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white font-bold">
+            <div className="w-[90%] md:w-[70%] lg:w-[50%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white">
               <div className="flex flex-col items-center md:items-start mx-auto md:mx-0">
-                <h2 className="mb-6 sm:mb-8 md:mb-12 font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
+                <h2 className="mb-6 sm:mb-8 md:mb-12 font-extrabold  text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
                   My Pledge
                 </h2>
-                <div className="flex flex-col gap-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-center md:text-left">
+                <div className="flex flex-col gap-4 text-base sm:text-lg md:text-xl lg:text-2xl font-canarobook text-center md:text-left">
                   <p>This is my GENUINE PLEDGE to all Ghanaians:</p>
                   <div className="font-canarobook">
                     <p>
@@ -270,11 +234,11 @@ export default function LandingPage() {
           </div>
 
           <div className="promise-bg flex justify-center items-center p-3">
-            <div className="w-[90%] md:w-[70%] lg:w-[50%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white font-bold">
+            <div className="w-[90%] md:w-[70%] lg:w-[50%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white">
               <h2 className="mb-6 sm:mb-8 md:mb-12 font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
                 My Promise
               </h2>
-              <div className="flex flex-col gap-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-center md:text-left">
+              <div className="flex flex-col gap-4 text-base sm:text-lg md:text-xl lg:text-2xl font-canarobook text-center md:text-left">
                 <p>To the Glory of God, I Promise To Offer Ghanaians:</p>
                 <div className="flex flex-col gap-4 font-canarobook text-left">
                   <ul className="list-disc list-inside">
@@ -297,18 +261,43 @@ export default function LandingPage() {
             </div>
           </div>
 
+          <div className="vision-bg flex justify-center items-center p-3">
+            <div className="w-[90%] md:w-[70%] lg:w-[50%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white ">
+              <div className="flex flex-col items-center md:items-start mx-auto md:mx-0">
+                <h2 className="mb-6 sm:mb-8 md:mb-12 font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
+                  My Vision
+                </h2>
+
+                <div className="flex flex-col gap-4 sm:text-lg md:text-xl lg:text-2xl font-canarobook text-center md:text-left">
+  <p>Someone said, “it is not who we are but what we want to become.”</p>
+  <p>My vision, therefore, is for Ghana to become a country where:</p>
+  <ul className="list-disc pl-6">
+    <li>Our leaders are selfless and serve the interest of the country and her citizens.</li>
+  </ul>
+</div>
+
+                  <div className="w-full flex justify-end mt-5 md:mt-0">
+                    <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
+                      Read More
+                    </button>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+
           <section className="flex flex-col items-center gap-5 md:gap-10 p-5 md:px-10 bg-[url('/src/assets/FadeBGFix.png')] bg-cover bg-center w-full">
-  <div className="flex flex-col font-canarobook justify-center items-start w-full sm:w-[90%] md:w-[70%] lg:w-[50%] gap-3 p-5 bg-none relative md:self-end">
-    <p>MY SLOGAN: My campaign slogan is <span className="text-red-500 font-canarobold">BREAKINGTHE</span><span className="text-green-500 font-canarobold"> 2</span></p>
-    <div className="w-full flex justify-end mt-5 md:mt-0">
+  <div className="flex flex-col font-canarobold justify-start items-start w-full sm:w-[90%] md:w-[70%] lg:w-[50%] gap-3 p-5 bg-none relative md:self-end">
+    <p>MY SLOGAN: is <span className="text-red-500 font-canarobold">BREAKINGTHE</span><span className="text-green-500 font-canarobold"> 2</span></p>
+    <div className="w-full flex justify-start mt-5 md:mt-0">
       <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
         Read More
       </button>
     </div>
   </div>
-  <div className="flex flex-col font-canarobook justify-center items-start w-full sm:w-[90%] md:w-[70%] lg:w-[50%] gap-3 p-5 bg-none relative md:self-end">
-    <p>MY MOTTO: The Motto of my campaign is <span className="text-red-500 font-canarobold">COMMON</span> <span className="text-green-500 font-canarobold">PROSPERITY</span></p>
-    <div className="w-full flex justify-end mt-5 md:mt-0">
+  <div className="flex flex-col font-canarobold justify-start items-start w-full sm:w-[90%] md:w-[70%] lg:w-[50%] gap-3 p-5 bg-none relative md:self-end">
+    <p>MY MOTTO:<span className="text-red-500 font-canarobold">COMMON</span> <span className="text-green-500 font-canarobold">PROSPERITY</span></p>
+    <div className="w-full flex justify-start mt-5 md:mt-0">
       <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
         Read More
       </button>
@@ -319,28 +308,9 @@ export default function LandingPage() {
 
 
 
+          <QuoteComponent backgroundColor={'#500909'} quoteText="Dear friends, together, let us unite, Break the 2 and build a dignified, strong and prosperous nation that is self-reliant and free from foreign aid." authorText="- George Twum-Barimah-Adu" />
 
-          <div className="w-full h-auto bg-[#500909] flex justify-center items-center p-4 md:p-10 xl:p-20">
-            <div className="flex flex-col gap-4 max-w-4xl">
-              <img src={QuoteStart} alt="quote" className="w-8 h-8 md:w-12 md:h-12 self-start" />
-              <div className="flex flex-col">
-                <div className="flex w-full items-center">
-                  <p className="text-xl md:text-3xl lg:text-5xl font-bold text-white text-justify">
-                    “Dear friends, together, let us unite, Break the 2 and build a dignified, strong and prosperous nation that is self-reliant and free from foreign aid.”
-                  </p>
-                </div>
-                <div className="flex justify-end mt-4">
-                  <p className="text-lg md:text-2xl text-white font-canarobook">
-                    - George Twum-Barimah-Adu
-                  </p>
-                </div>
-              </div>
-              <div className="flex justify-end">
-                <img src={QuoteEnd} alt="quote" className="w-8 h-8 md:w-12 md:h-12 self-end" />
-              </div>
-            </div>
-          </div>
-          <RedFooter />
+
         </div>
       </div>
     </>

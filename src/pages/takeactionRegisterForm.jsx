@@ -1,5 +1,4 @@
 import React from 'react'
-import RedFooter from '../components/red_footer';
 
 const takeActionRegisterForm = () => {
   return (
@@ -40,13 +39,12 @@ const takeActionRegisterForm = () => {
             </div>
             <div className="flex justify-center">
               <button type="submit" className="bg-[#009845] text-white font-canarobold rounded p-2 w-1/4">
-                Volunteer
+                Sign Up
               </button>
             </div>
           </form>
         </div>
       </div>
-      <RedFooter/>
     </div>
 
   );

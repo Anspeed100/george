@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import BreakingUser from "../assets/breaking_user_alt.png";
 import PolicyBgImg from "../assets/policy_bg_alt.png";
 import Assets12Img from "../assets/assets_12.png";
@@ -7,32 +7,19 @@ import Assets14Img from "../assets/assets_14.png";
 import Assets15Img from "../assets/GhanaIcon.png";
 import Assets16Img from "../assets/assets_16.png";
 import Assets17Img from "../assets/assets_17.png";
-
+import manifestoImage from '../assets/breaking_user_square.png';
 import agricforWealthPic from '../assets/agric for wealth.jpg'
 import ddi from '../assets/ddi copy.jpg'
 import esika from '../assets/elevy_.jpg'
 import ghanafirst from '../assets/ghana first.jpg'
 import youth from '../assets/youth.jpg'
 import Bio1Img from "../assets/bt2Image.png";
-import RedFooter from "../components/red_footer";
+import Divider from "../components/Divider";
+import GeorgeSignImage  from '../assets/black_flag.png'
+import { Link } from "react-router-dom";
+import QuoteComponent from "../components/QuoteComponent";
 
 export default function Breakingthe2Page() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [isManifestoLoading, setIsManifestoLoading] = useState(false);
-  const [page, setPage] = useState(1);
-  const [manifestoPage, setManifestoPage] = useState(1);
-  const [pageContent, setPageContent] = useState(null);
-  const [pageManifestoContent, setManifestoPageContent] = useState(null);
-
-  const formatText = (text) => {
-    return text.split("\n").map((item, index) => (
-      <React.Fragment key={index}>
-        {item}
-        <br />
-      </React.Fragment>
-    ));
-  };
-
   const sections = [
     {
       id: 1,
@@ -79,91 +66,38 @@ export default function Breakingthe2Page() {
   ];
 
   const imgRefs = useRef([]);
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         const imgIndex = entry.target.dataset.index;
-  //         if (entry.isIntersecting) {
-  //           imgRefs.current[imgIndex].classList.add("highlight");
-  //         } else {
-  //           imgRefs.current[imgIndex].classList.remove("highlight");
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.5,
-  //     }
-  //   );
-
-  //   const sectionElements = document.querySelectorAll(".section");
-  //   sectionElements.forEach((section, index) => {
-  //     section.dataset.index = index;
-  //     observer.observe(section);
-  //   });
-
-  //   return () => {
-  //     sectionElements.forEach((section) => observer.unobserve(section));
-  //   };
-  // }, []);
-
-  const loadPageContent = (pageNumber, type) => {
-    const isManifesto = type === "manifesto";
-    const setLoading = isManifesto ? setIsManifestoLoading : setIsLoading;
-    const setContent = isManifesto
-      ? setManifestoPageContent
-      : setPageContent;
-    const setPageState = isManifesto ? setManifestoPage : setPage;
-
-    setLoading(true);
-    let fileName;
-    const maxPage = isManifesto ? 4 : 12;
-    if (pageNumber > maxPage) {
-      fileName = `${maxPage}.json`;
-      setPageState(maxPage);
-    } else if (pageNumber <= 0) {
-      fileName = `1.json`;
-      setPageState(1);
-    } else {
-      fileName = `${pageNumber}.json`;
-      setPageState(pageNumber);
-    }
-
-    try {
-      const data = require(`../components/${isManifesto ? "manifesto" : "reveal"}/${fileName}`);
-      setContent(formatText(data.text));
-      setLoading(false);
-    } catch (err) {
-      setLoading(false);
-      console.error(`Error loading the JSON file: ${err.message}`);
-    }
-  };
-
-  const nextPage = () => loadPageContent(page + 1, "reveal");
-  const previousPage = () => loadPageContent(page - 1, "reveal");
-  const nextManifestoPage = () => loadPageContent(manifestoPage + 1, "manifesto");
-  const previousManifestoPage = () => loadPageContent(manifestoPage - 1, "manifesto");
+  const quoteRef = useRef(null);
+  const [isSticky, setIsSticky] = useState(true);
 
   useEffect(() => {
-    document.body.classList.add("alt-body-bg");
-    loadPageContent(1, "reveal");
-    loadPageContent(1, "manifesto");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.target === quoteRef.current) {
+            setIsSticky(!entry.isIntersecting);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (quoteRef.current) {
+      observer.observe(quoteRef.current);
+    }
+
+    return () => {
+      if (quoteRef.current) {
+        observer.unobserve(quoteRef.current);
+      }
+    };
   }, []);
 
   return (
     <div className="relative bg-[#F2F2F2] pt-10 lg:mt-0 md:mt-0">
       <div className="relative mt-8 lg:mt-0 md:mt-0 flex flex-col items-center">
         <img src={BreakingUser} className="w-full lg:w-auto" alt="Breaking User" />
-        <div className="absolute right-4 lg:right-8 top-1/2 transform -translate-y-1/2 text-left p-4 w-full sm:w-3/4 md:w-1/2 lg:w-1/3">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-canarobold text-right whitespace-nowrap overflow-hidden w-full">
-            <span className="text-red-500">#Breakingthe</span>
-            <span className="text-green-500">2</span>
-          </h1>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-red-500 font-canarobold text-right whitespace-nowrap overflow-hidden w-full">
-            #UGspeech
-          </h1>
-        </div>
       </div>
       <div className="w-full flex justify-center py-8">
         <div className="w-full sm:w-3/4 lg:w-1/2">
@@ -178,8 +112,9 @@ export default function Breakingthe2Page() {
           </div>
         </div>
       </div>
-      {/* DIVIDER */}
-      <div className="h-[3px] bg-[#b91f26] w-[80%] md:w-[70%] mx-auto my-14"></div>
+
+      <Divider/>
+
       <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 md:px-5 pb-3 w-full">
         <img
           src={Bio1Img}
@@ -196,19 +131,21 @@ export default function Breakingthe2Page() {
             I greet you!
           </p>
           <div className="w-full flex justify-end mt-5 md:mt-0">
+            <Link to= '/myspeech'>
             <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
               Read More
             </button>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* DIVIDER */}
-      <div className="h-[3px] bg-[#b91f26] w-[80%] md:w-[70%] mx-auto my-14"></div>
+
+      <Divider/>
 
       <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 md:px-5 pb-3 w-full">
         <img
-          src={Bio1Img}
+          src={manifestoImage}
           alt="candidate"
           className="h-[300px] md:h-[400px]"
         />
@@ -220,9 +157,11 @@ export default function Breakingthe2Page() {
             As Head of State, Head of Government and Commander-In-Chief of the Armed Forces of Ghana” Chapter 6 of the 1992 Constitution– The Directive Principles of State Policy – shall be the basis for my Manifesto.
           </p>
           <div className="w-full flex justify-end mt-5 md:mt-0">
+            <Link to='/mymanifesto'>
             <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
               Read More
             </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -231,7 +170,7 @@ export default function Breakingthe2Page() {
         <img src={PolicyBgImg} alt="Policy Background" className="opacity-[40%]" />
       </div>
 
-      <div className="manifesto-bg flex flex-col items-center pt-10 pb-6 sticky top-24 z-10">
+      <div className={`manifesto-bg flex flex-col items-center pt-10 pb-6 ${isSticky ? 'sticky top-24 z-10' : ''}`}>
         <div className="flex flex-row gap-4 lg:gap-8 md:gap-8 justify-between items-center">
           {sections.map((section, index) => (
             <img
@@ -244,15 +183,7 @@ export default function Breakingthe2Page() {
           ))}
         </div>
       </div>
-      {/* {sections.map((section, index) => (
-        <div key={section.id} className="section flex flex-col md:flex-row items-center md:items-start gap-3 px-10 py-10 bg-red-500">
-          <img src={section.imgSrc} className="w-full md:w-1/2 h-auto" alt={`Section ${section.id} Image`} />
-          <div className="flex flex-col font-canarobook justify-center items-center md:items-start md:w-1/2 bg-white p-5">
-            <h2 className="font-bold text-3xl text-[#b91f26] pb-5">{section.title}</h2>
-            <p>{section.text}</p>
-          </div>
-        </div>
-      ))} */}
+      
       <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
         <img
           src={ghanafirst}
@@ -434,13 +365,86 @@ export default function Breakingthe2Page() {
           
         </div>
       </section>
-
-
-
-
       <div className="hidden lg:block md:block">
-        <RedFooter />
       </div>
+      <QuoteComponent 
+      ref={quoteRef}
+      quoteText="Dear friends, it is time for you and me to make true the statement by our first President, Osagyefo Dr. Kwame Nkrumah that “The Black Man Is Capable Of Managing His Own Affairs."
+      authorText="- George Twum-Barimah-Adu"
+      backgroundColor={'#b92026'} />
+      <div className="flex flex-col justify-center items-center bg-[#1A1A1A] px-4">
+  <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
+    <h1 className="mb-6 mt-6 text-center text-4xl text-red-500 font-canarobold">
+      CUTTING DOWN ON GOVERNMENT WASTAGE AND EXPENDITURE
+    </h1>
+    <p className="mb-6 text-left text-white font-canarobook">
+      <strong>1. Sell all non-profitable state enterprises.</strong>
+      <br /><br />
+      <strong>2. Scrutinize public procurement to ensure that it strictly follows the Procurement Act and delivers value for money.</strong>
+      <br /><br />
+      <strong>3. Strictly review all government contracts to guarantee value for money.</strong>
+      <br /><br />
+      <strong>4. Downsize government by operating within the constitutionally approved number of 19 Cabinet Ministers, with a total Ministerial count not exceeding sixty-three (63).</strong>
+      <br /><br />
+      <strong>5. Ensure that no government entity (including SOEs) signs any contract or memorandum with any party without government review, input, and approval.</strong>
+      <br /><br />
+      <strong>6. Institute a cap on the value of state vehicles used by all government officials including SOEs.</strong>
+      <br /><br />
+      <strong>7. Suspend all government and SOE travels pending a review, unless essential travels carefully vetted to deliver value for money.</strong>
+      <br /><br />
+      <strong>8. Properly resource the Auditor-General for it to be able to deliver on its constitutional mandate.</strong>
+      <br /><br />
+      <strong>9. Abolish payment of ex-gratia to Article 71 office holders at the end of each tenure in office.</strong>
+      <br /><br />
+      All these measures put together, and many more, will save the nation millions if not billions of cedis annually, surely, putting our beloved country, Ghana, on a far better economic pedestal than we are at now!
+      <br /><br />
+      Through these measures, we shall help plug the loopholes of criminal enrichment and corruption and stem the tide of wastage in government!
+    </p>
+    <img 
+      src={GeorgeSignImage} 
+      alt="George Sign Image" 
+      className="w-full h-auto mb-2"
+    />
+  </div>
+</div>
+<div className="flex flex-col items-center bg-[#009845] px-4">
+  <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
+    <h1 className="mb-6 mt-6 text-center text-4xl text-white font-canarobold">
+    THE FRUITS BORNE TO US 
+    BY THE NDC AND NPP.
+    </h1>
+    <p className="mb-6 text-left text-white font-canarobook">
+      The fruits borne to us by the NDC and NPP in the last 32 years are clear and they include:
+    </p>
+    <ul className="list-decimal pl-6 text-left text-white font-canarobook">
+      <li>An economy that is in the mud.</li>
+      <li>A high inflationary rate.</li>
+      <li>An inhibitive exchange regime that has left our national currency, the Ghana Cedi, floundering and difficult to plan with.</li>
+      <li>An excruciating bank-lending regime with interest rates as high as 40 per cent.</li>
+      <li>A plethora of nuisance taxes, fees and levies.</li>
+      <li>A deadly cocktail of debt and frequent visits to the IMF.</li>
+      <li>Poor roads, schools, hospitals.</li>
+      <li>High youth unemployment.</li>
+      <li>Run-away corruption.</li>
+      <li>Uncontrolled galamsey and polluted water bodies.</li>
+      <li>An unbearable national debt.</li>
+      <li>Import-led economy.</li>
+      <li>An agricultural sector that has left our farmers and fisherfolks poorer, unable to feed the population, and has resulted in high agricultural product prices.</li>
+      <li>Dumsor.</li>
+    </ul>
+    <p className="text-left text-white font-canarobook">
+      Just to mention a few.
+    </p>
+  </div>
+</div>
+<QuoteComponent 
+      ref={quoteRef}
+      quoteText="Dear friends, “The horse is prepared for the day of battle, but the victory belongs to the LORD."
+      authorText="- Proverbs 21 v 31 NLT"
+      backgroundColor={'#b92026'} />
+
+
+
     </div>
   );
 }
