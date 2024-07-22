@@ -64,7 +64,7 @@ export default function LandingPage() {
               </div>
               <div className="flex flex-1 flex-col gap-2 justify-start m-auto p-12 z-10">
                 <h1 className="text-3xl md:text-5xl font-bold">
-                  Welcome dear Friend,
+                  Welcome Dear Friend,
                 </h1>
                 <h1 className="text-start font-canarobook md:text-2xl text-center">
                   I am George Twum-Barimah-Adu, and I want, with your support

@@ -1,10 +1,7 @@
-import { useEffect } from "react";
-import AltNavbar from "../components/alt_navbar";
-import Navbar from "../components/navbar";
+
 import Bio1Img from "../assets/Group_4115.png";
 import Bio2Img from "../assets/Group 4109.png";
 import Bio3Img from "../assets/asset_1.png";
-import RedFooter from "../components/red_footer";
 import Divider from "../components/Divider";
 import QuoteComponent from "../components/QuoteComponent";
 import Breaking2BottomBannerComp from "../components/Breaking2BottomBannerComp";
@@ -72,8 +69,7 @@ export default function AboutPage() {
                 sector. In 2001 he became an Executive Director of Cypress In-
                 vestments Limited. A position he held until 31 April 2023. In 2006
                 in authored the HIV and AIDS book titled, “Behaviour Brings
-                Success”, which is currently in its Fourth Edition. In 2009 he de-
-                veloped the Road User Playing Cards (which is the Ghana High- way
+                Success”, which is currently in its Fourth Edition. In 2009 he developed the Road User Playing Cards (which is the Ghana High- way
                 Code in a card game format), Bonanza card game, and Nudu Board
                 Game which are currently licensed to Dominion Games Limited,
                 developers of WordMeetsTee mobile Word game and other digital

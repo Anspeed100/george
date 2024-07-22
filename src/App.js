@@ -13,6 +13,7 @@ const DonatePage = React.lazy(() => import('./pages/donatePage'))
 const TakeActionRegisterForm = React.lazy(() => import('./pages/takeactionRegisterForm'))
 const MyManifestoPage = React.lazy(() => import('./pages/myManifestoPage'))
 const MySpeechPage = React.lazy(() => import('./pages/mySpeechPage'))
+const FaqPage = React.lazy(() => import('./pages/faqPage'))
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route exact path='/register' element={<TakeActionRegisterForm/>}></Route>
         <Route exact path='/mymanifesto' element={<MyManifestoPage/>}></Route>
         <Route exact path='/myspeech' element={<MySpeechPage/>}></Route>
+        <Route exact path='/faq' element={<FaqPage/>}></Route>
       </Routes>
       <RedFooter />
     </React.Suspense>

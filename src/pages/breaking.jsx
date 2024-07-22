@@ -15,7 +15,7 @@ import ghanafirst from '../assets/ghana first.jpg'
 import youth from '../assets/youth.jpg'
 import Bio1Img from "../assets/bt2Image.png";
 import Divider from "../components/Divider";
-import GeorgeSignImage  from '../assets/black_flag.png'
+import GeorgeSignImage from '../assets/black_flag.png'
 import { Link } from "react-router-dom";
 import QuoteComponent from "../components/QuoteComponent";
 
@@ -80,6 +80,7 @@ export default function Breakingthe2Page() {
       },
       {
         threshold: 0.1,
+        rootMargin: '0px 0px -90% 0px',
       }
     );
 
@@ -113,7 +114,7 @@ export default function Breakingthe2Page() {
         </div>
       </div>
 
-      <Divider/>
+      <Divider />
 
       <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 md:px-5 pb-3 w-full">
         <img
@@ -131,17 +132,16 @@ export default function Breakingthe2Page() {
             I greet you!
           </p>
           <div className="w-full flex justify-end mt-5 md:mt-0">
-            <Link to= '/myspeech'>
-            <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
-              Read More
-            </button>
+            <Link to='/myspeech'>
+              <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
+                Read More
+              </button>
             </Link>
           </div>
         </div>
       </section>
 
-
-      <Divider/>
+      <Divider />
 
       <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 md:px-5 pb-3 w-full">
         <img
@@ -158,9 +158,9 @@ export default function Breakingthe2Page() {
           </p>
           <div className="w-full flex justify-end mt-5 md:mt-0">
             <Link to='/mymanifesto'>
-            <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
-              Read More
-            </button>
+              <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
+                Read More
+              </button>
             </Link>
           </div>
         </div>
@@ -171,6 +171,7 @@ export default function Breakingthe2Page() {
       </div>
 
       <div className={`manifesto-bg flex flex-col items-center pt-10 pb-6 ${isSticky ? 'sticky top-24 z-10' : ''}`}>
+        <h1 className="text-4xl font-bold text-white mb-4">My Policies</h1>
         <div className="flex flex-row gap-4 lg:gap-8 md:gap-8 justify-between items-center">
           {sections.map((section, index) => (
             <img
@@ -183,7 +184,7 @@ export default function Breakingthe2Page() {
           ))}
         </div>
       </div>
-      
+
       <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
         <img
           src={ghanafirst}
@@ -195,29 +196,22 @@ export default function Breakingthe2Page() {
             1. GHANA FIRST WITHIN COST
           </h2>
           <p>
-
-            Ghana First within Cost is one of presidential candidate George Twum-Barimah-Adu's policies.</p>
-      
-
-            <p>Under the auspices of the NDPC the policy will entail the:</p>
-
-            <p>Re-imagining;<br />
+            Ghana First within Cost is one of presidential candidate George Twum-Barimah-Adu's policies.
+          </p>
+          <p>Under the auspices of the NDPC the policy will entail the:</p>
+          <p>Re-imagining;<br />
             Re-defining; and<br />
             Re-purposing<br />
             of every sector of the economy to ensure that:<br />
             It is in the interest of Ghana and benefits Ghana<br />
             It is in the interest of the Ghanaian and benefits the Ghanaian; and<br />
-            It is within cost</p>
-
-
-            <p>With Ghana Fisrt Within Cost, all decisions made, contracts signed, loans, grants and aids secured, and procurements made by my government will be in the interest and benefit of Ghana, improve the livelihood of the Ghanaian and be within cost.</p>
-           
-
-            <p>Fellow Ghanaians, Ghana First Within Cost is coming!
-
+            It is within cost
           </p>
+          <p>With Ghana Fisrt Within Cost, all decisions made, contracts signed, loans, grants and aids secured, and procurements made by my government will be in the interest and benefit of Ghana, improve the livelihood of the Ghanaian and be within cost.</p>
+          <p>Fellow Ghanaians, Ghana First Within Cost is coming!</p>
         </div>
       </section>
+
       <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
         <img
           src={agricforWealthPic}
@@ -229,15 +223,10 @@ export default function Breakingthe2Page() {
             2. AGRIC FOR WEALTH
           </h2>
           <p>
-            Agric for Wealth  is one of presidential candidate George Twum-Barimah-Adu’s policies.</p>
-          
-          <p>In consultation with the ‘relevant bodies’ in the ‘agriculture space’, the Policy’s aim, is to ensure that Agriculture (in all its forms) is transformative.</p>
-
-        
-
+            Agric for Wealth is one of presidential candidate George Twum-Barimah-Adu’s policies.
+          </p>
+          <p>In consultation with the ‘relevant bodies’ in the ‘agriculture space’, the Policy’s aim is to ensure that Agriculture (in all its forms) is transformative.</p>
           <p>My government will prioritize agriculture to ensure that it is enriching to those who partake in it and agricultural outputs cheaper for those who purchase them.</p>
-          
-
           <p>To this end Agric For Wealth will cover (but not limited to) the following areas:</p>
           <ul className="list-disc list-inside">
             <li>Cost of Finance</li>
@@ -258,11 +247,10 @@ export default function Breakingthe2Page() {
             <li>School Feeding</li>
             <li>Wholesale Commercial Markets</li>
             <li>Retail Commercial Markets</li>
-
-
           </ul>
         </div>
       </section>
+
       <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
         <img
           src={ddi}
@@ -271,24 +259,15 @@ export default function Breakingthe2Page() {
         />
         <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
           <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-          3. DOMESTIC DIRECT INVESTMENT (DDI)
+            3. DOMESTIC DIRECT INVESTMENT (DDI)
           </h2>
           <p>
-
-          Every Ghanaian deserves the right to a decent job that for starters pays a ‘living wage’. To this end, it is important that local small, medium and large scale business and industries are supported. It is also important that local labour is re-trained to provide them with mordern skills for jobs that are currently in demand. That is why I am introducing an investment policy called Domestic Direct Invesymants (DDI).
+            Every Ghanaian deserves the right to a decent job that for starters pays a ‘living wage’. To this end, it is important that local small, medium and large scale business and industries are supported. It is also important that local labour is re-trained to provide them with modern skills for jobs that are currently in demand. That is why I am introducing an investment policy called Domestic Direct Investments (DDI).
           </p>
-      
-
-            <p>Whilst Foreign Direct Investments (FDI) is fashioned to attract and promote foreign investments in the country, Domestic Direct Investment (DDI) does the opposite.
-            </p>
-
-            <p>This policy ensures that any Company set up in Ghana that sources (at least 70 per cent of) its raw materials in the production of its end product locally enjoys the same benefits as an FDI company, including lower taxes and other government incentives.</p>
-
-            <p>By putting this policy in action, my government will build our local economy, reduce the weakness on the Ghana Cedi, create good paying jobs, be self-reliant and help free Ghana from foreign aid.
-            </p>
-
-            <p>Fellow Ghanaians Domestic Direct Investment (DDI) is coming!</p>
-          
+          <p>Whilst Foreign Direct Investments (FDI) is fashioned to attract and promote foreign investments in the country, Domestic Direct Investment (DDI) does the opposite.</p>
+          <p>This policy ensures that any Company set up in Ghana that sources (at least 70 per cent of) its raw materials in the production of its end product locally enjoys the same benefits as an FDI company, including lower taxes and other government incentives.</p>
+          <p>By putting this policy in action, my government will build our local economy, reduce the weakness on the Ghana Cedi, create good paying jobs, be self-reliant and help free Ghana from foreign aid.</p>
+          <p>Fellow Ghanaians Domestic Direct Investment (DDI) is coming!</p>
         </div>
       </section>
 
@@ -300,33 +279,24 @@ export default function Breakingthe2Page() {
         />
         <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
           <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-          4. E-SIKA
+            4. E-SIKA
           </h2>
           <p>
-          E-Sika replaces E-Levy and is one of presidential candidate George Twum-Barimah-Adu’s policies.</p>
-          
+            E-Sika replaces E-Levy and is one of presidential candidate George Twum-Barimah-Adu’s policies.
+          </p>
           <p>E-Sika is a savings scheme where anyone who pays for anything electronically (including MoMo) is deducted and the money deducted goes into the E-Sika Savings Account of the payer tied to his/her Ghana Card.</p>
-
-        
-
-        
-
           <p>E-Sika Savings Account will be divided in three parts:</p>
           <ul className="list-disc list-inside">
             <li>PENSION- To be paid as a lump sum to the individual upon attaining the age of 60yrs with all interest included. This pension will not be managed by SSNIT.</li>
             <li>HOUSING- To be used by the individual towards mortgage for his/her home.</li>
             <li>WELFARE- To be paid out to the individual every 12 months for the individual to use as he/she pleases.</li>
-
-
           </ul>
-          <p>This policy is to ensure that all Ghanaians have pension, own a house and have money for their welfare. 
+          <p>This policy is to ensure that all Ghanaians have pension, own a house and have money for their welfare.
             <br />
-            With E-Sika, you spend,  you save.
+            With E-Sika, you spend, you save.
             <br />
             Fellow Ghanaians E-Sika is coming!
-
           </p>
-          
         </div>
       </section>
 
@@ -338,113 +308,105 @@ export default function Breakingthe2Page() {
         />
         <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
           <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-          5. DISTRICT CONTRACTS FOR THE YOUTH.
+            5. DISTRICT CONTRACTS FOR THE YOUTH.
           </h2>
           <p>
-          District Contracts for the Youth (DCY) is one of presidential candidate George Twum-Barimah-Adu’s policies. </p>
-          
-          <p>This policy ensures that contracts that are to be executed by the Government through the District </p>
-
-          <p>Assemblies are awarded to qualified youths who live in the District.</p>
-
-        
-
+            District Contracts for the Youth (DCY) is one of presidential candidate George Twum-Barimah-Adu’s policies.
+          </p>
+          <p>This policy ensures that contracts that are to be executed by the Government through the District Assemblies are awarded to qualified youths who live in the District.</p>
           <p>This policy will;</p>
           <ul className="list-disc list-inside">
             <li>Grow the local economy,</li>
-            <li>Retain wealth in the district,
-            </li>
-            <li>Create wealth amongst the youth in every district in Ghana ; and</li>
-            <li>Prevent the youth from migrating from poorer districts to richer districts. </li>
-
-
+            <li>Retain wealth in the district,</li>
+            <li>Create wealth amongst the youth in every district in Ghana; and</li>
+            <li>Prevent the youth from migrating from poorer districts to richer districts.</li>
           </ul>
-          <p>Fellow Ghanaians District Contracts for the Youth, is coming. 
-
-          </p>
-          
+          <p>Fellow Ghanaians District Contracts for the Youth, is coming.</p>
         </div>
       </section>
-      <div className="hidden lg:block md:block">
-      </div>
-      <QuoteComponent 
-      ref={quoteRef}
-      quoteText="Dear friends, it is time for you and me to make true the statement by our first President, Osagyefo Dr. Kwame Nkrumah that “The Black Man Is Capable Of Managing His Own Affairs."
-      authorText="- George Twum-Barimah-Adu"
-      backgroundColor={'#b92026'} />
+
+      <div className="hidden lg:block md:block"></div>
+
+      <QuoteComponent
+        ref={quoteRef}
+        quoteText="Dear friends, it is time for you and me to make true the statement by our first President, Osagyefo Dr. Kwame Nkrumah that “The Black Man Is Capable Of Managing His Own Affairs.” "
+        authorText="- George Twum-Barimah-Adu"
+        backgroundColor={'#b92026'}
+      />
+
       <div className="flex flex-col justify-center items-center bg-[#1A1A1A] px-4">
-  <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
-    <h1 className="mb-6 mt-6 text-center text-4xl text-red-500 font-canarobold">
-      CUTTING DOWN ON GOVERNMENT WASTAGE AND EXPENDITURE
-    </h1>
-    <p className="mb-6 text-left text-white font-canarobook">
-      <strong>1. Sell all non-profitable state enterprises.</strong>
-      <br /><br />
-      <strong>2. Scrutinize public procurement to ensure that it strictly follows the Procurement Act and delivers value for money.</strong>
-      <br /><br />
-      <strong>3. Strictly review all government contracts to guarantee value for money.</strong>
-      <br /><br />
-      <strong>4. Downsize government by operating within the constitutionally approved number of 19 Cabinet Ministers, with a total Ministerial count not exceeding sixty-three (63).</strong>
-      <br /><br />
-      <strong>5. Ensure that no government entity (including SOEs) signs any contract or memorandum with any party without government review, input, and approval.</strong>
-      <br /><br />
-      <strong>6. Institute a cap on the value of state vehicles used by all government officials including SOEs.</strong>
-      <br /><br />
-      <strong>7. Suspend all government and SOE travels pending a review, unless essential travels carefully vetted to deliver value for money.</strong>
-      <br /><br />
-      <strong>8. Properly resource the Auditor-General for it to be able to deliver on its constitutional mandate.</strong>
-      <br /><br />
-      <strong>9. Abolish payment of ex-gratia to Article 71 office holders at the end of each tenure in office.</strong>
-      <br /><br />
-      All these measures put together, and many more, will save the nation millions if not billions of cedis annually, surely, putting our beloved country, Ghana, on a far better economic pedestal than we are at now!
-      <br /><br />
-      Through these measures, we shall help plug the loopholes of criminal enrichment and corruption and stem the tide of wastage in government!
-    </p>
-    <img 
-      src={GeorgeSignImage} 
-      alt="George Sign Image" 
-      className="w-full h-auto mb-2"
-    />
-  </div>
-</div>
-<div className="flex flex-col items-center bg-[#009845] px-4">
-  <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
-    <h1 className="mb-6 mt-6 text-center text-4xl text-white font-canarobold">
-    THE FRUITS BORNE TO US 
-    BY THE NDC AND NPP.
-    </h1>
-    <p className="mb-6 text-left text-white font-canarobook">
-      The fruits borne to us by the NDC and NPP in the last 32 years are clear and they include:
-    </p>
-    <ul className="list-decimal pl-6 text-left text-white font-canarobook">
-      <li>An economy that is in the mud.</li>
-      <li>A high inflationary rate.</li>
-      <li>An inhibitive exchange regime that has left our national currency, the Ghana Cedi, floundering and difficult to plan with.</li>
-      <li>An excruciating bank-lending regime with interest rates as high as 40 per cent.</li>
-      <li>A plethora of nuisance taxes, fees and levies.</li>
-      <li>A deadly cocktail of debt and frequent visits to the IMF.</li>
-      <li>Poor roads, schools, hospitals.</li>
-      <li>High youth unemployment.</li>
-      <li>Run-away corruption.</li>
-      <li>Uncontrolled galamsey and polluted water bodies.</li>
-      <li>An unbearable national debt.</li>
-      <li>Import-led economy.</li>
-      <li>An agricultural sector that has left our farmers and fisherfolks poorer, unable to feed the population, and has resulted in high agricultural product prices.</li>
-      <li>Dumsor.</li>
-    </ul>
-    <p className="text-left text-white font-canarobook">
-      Just to mention a few.
-    </p>
-  </div>
-</div>
-<QuoteComponent 
-      ref={quoteRef}
-      quoteText="Dear friends, “The horse is prepared for the day of battle, but the victory belongs to the LORD."
-      authorText="- Proverbs 21 v 31 NLT"
-      backgroundColor={'#b92026'} />
+        <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
+          <h1 className="mb-6 mt-6 text-center text-4xl text-red-500 font-canarobold">
+            CUTTING DOWN ON GOVERNMENT WASTAGE AND EXPENDITURE
+          </h1>
+          <p className="mb-6 text-left text-white font-canarobook">
+            <strong>1. Sell all non-profitable state enterprises.</strong>
+            <br /><br />
+            <strong>2. Scrutinize public procurement to ensure that it strictly follows the Procurement Act and delivers value for money.</strong>
+            <br /><br />
+            <strong>3. Strictly review all government contracts to guarantee value for money.</strong>
+            <br /><br />
+            <strong>4. Downsize government by operating within the constitutionally approved number of 19 Cabinet Ministers, with a total Ministerial count not exceeding sixty-three (63).</strong>
+            <br /><br />
+            <strong>5. Ensure that no government entity (including SOEs) signs any contract or memorandum with any party without government review, input, and approval.</strong>
+            <br /><br />
+            <strong>6. Institute a cap on the value of state vehicles used by all government officials including SOEs.</strong>
+            <br /><br />
+            <strong>7. Suspend all government and SOE travels pending a review, unless essential travels carefully vetted to deliver value for money.</strong>
+            <br /><br />
+            <strong>8. Properly resource the Auditor-General for it to be able to deliver on its constitutional mandate.</strong>
+            <br /><br />
+            <strong>9. Abolish payment of ex-gratia to Article 71 office holders at the end of each tenure in office.</strong>
+            <br /><br />
+            All these measures put together, and many more, will save the nation millions if not billions of cedis annually, surely, putting our beloved country, Ghana, on a far better economic pedestal than we are at now!
+            <br /><br />
+            Through these measures, we shall help plug the loopholes of criminal enrichment and corruption and stem the tide of wastage in government!
+          </p>
+          <img
+            src={GeorgeSignImage}
+            alt=""
+            className="w-full h-auto mb-2"
+          />
+        </div>
+      </div>
 
+      <div className="flex flex-col items-center bg-[#009845] px-4">
+        <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
+          <h1 className="mb-6 mt-6 text-center text-4xl text-white font-canarobold">
+            THE FRUITS BORNE TO US
+            BY THE NDC AND NPP.
+          </h1>
+          <p className="mb-6 text-left text-white font-canarobook">
+            The fruits borne to us by the NDC and NPP in the last 32 years are clear and they include:
+          </p>
+          <ul className="list-decimal pl-6 text-left text-white font-canarobook">
+            <li>An economy that is in the mud.</li>
+            <li>A high inflationary rate.</li>
+            <li>An inhibitive exchange regime that has left our national currency, the Ghana Cedi, floundering and difficult to plan with.</li>
+            <li>An excruciating bank-lending regime with interest rates as high as 40 per cent.</li>
+            <li>A plethora of nuisance taxes, fees and levies.</li>
+            <li>A deadly cocktail of debt and frequent visits to the IMF.</li>
+            <li>Poor roads, schools, hospitals.</li>
+            <li>High youth unemployment.</li>
+            <li>Run-away corruption.</li>
+            <li>Uncontrolled galamsey and polluted water bodies.</li>
+            <li>An unbearable national debt.</li>
+            <li>Import-led economy.</li>
+            <li>An agricultural sector that has left our farmers and fisherfolks poorer, unable to feed the population, and has resulted in high agricultural product prices.</li>
+            <li>Dumsor.</li>
+          </ul>
+          <p className="text-left text-white font-canarobook">
+            Just to mention a few.
+          </p>
+        </div>
+      </div>
 
-
+      <QuoteComponent
+        ref={quoteRef}
+        quoteText="Dear friends, The horse is prepared for the day of battle, but the victory belongs to the LORD."
+        authorText="- Proverbs 21 v 31 NLT"
+        backgroundColor={'#b92026'}
+      />
     </div>
   );
 }
