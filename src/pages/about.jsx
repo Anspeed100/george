@@ -2,6 +2,7 @@
 import Bio1Img from "../assets/Group_4115.png";
 import Bio2Img from "../assets/Group 4109.png";
 import Bio3Img from "../assets/asset_1.png";
+import Bio4Img from '../assets/ugpic.png';
 import Divider from "../components/Divider";
 import QuoteComponent from "../components/QuoteComponent";
 import Breaking2BottomBannerComp from "../components/Breaking2BottomBannerComp";
@@ -49,7 +50,7 @@ export default function AboutPage() {
                 representing the College of Arts and Sciences, Chairman of the
                 Board of Governors for the North Miami Campus, a Faculty Scholar,
                 Member Faculty Scholars Executive Board and Chairman of the
-                Faculty Scholars Committee on{" "}
+                Faculty Scholars Committee on housing
               </p>
             </div>
           </div>
@@ -66,8 +67,7 @@ export default function AboutPage() {
                 Uncle George returned to Ghana in 1993 and started worked with
                 National Insurance Commission in October of the same year. He left
                 the Commission in April 2000 to prepare to enter the private
-                sector. In 2001 he became an Executive Director of Cypress In-
-                vestments Limited. A position he held until 31 April 2023. In 2006
+                sector. In 2001 he became an Executive Director of Cypress Investments Limited. A position he held until 31 April 2023. In 2006
                 in authored the HIV and AIDS book titled, “Behaviour Brings
                 Success”, which is currently in its Fourth Edition. In 2009 he developed the Road User Playing Cards (which is the Ghana High- way
                 Code in a card game format), Bonanza card game, and Nudu Board
@@ -89,7 +89,7 @@ export default function AboutPage() {
         {/* Personal Life */}
         <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 md:px-5 pb-3">
           <img
-            src={Bio3Img}
+            src={Bio4Img}
             alt="candidate"
             className="h-[300px] md:h-[500px] border"
           />
