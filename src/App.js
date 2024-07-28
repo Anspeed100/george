@@ -7,7 +7,7 @@ import RedFooter from './components/red_footer';
 const LandingPage = React.lazy(() => import('./pages/landing'))
 const AboutPage = React.lazy(() => import('./pages/about'))
 const TakeActionPage = React.lazy(() => import('./pages/take_action'))
-const EventsPage = React.lazy(() => import('./pages/events'))
+const EventsPage = React.lazy(() => import('./pages/EventPage'))
 const BreakingPage = React.lazy(() => import('./pages/breaking'))
 const DonatePage = React.lazy(() => import('./pages/donatePage'))
 const TakeActionRegisterForm = React.lazy(() => import('./pages/takeactionRegisterForm'))

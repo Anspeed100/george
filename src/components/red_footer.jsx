@@ -6,7 +6,9 @@ const menuItems = [
   { name: "Breakingthe2", link: "/breakingthe2" },
   { name: "About", link: "/about" },
   { name: "Take Action", link: "/take-action" },
-   { name: "FAQ", link: "/faq" },
+  { name:"Events/Roadmap", href: '/events', current: false},
+  { name: "FAQ", link: "/faq" },
+   
 ];
 
 export default function RedFooter() {
