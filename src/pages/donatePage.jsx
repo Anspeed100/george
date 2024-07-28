@@ -15,7 +15,7 @@ const donatePage = () => {
           <form className="space-y-4 w-full pb-12">
             <div className="flex flex-col md:flex-row md:space-x-4">
               <div className="w-full mb-4 md:mb-0">
-                <label className="block text-red-500 font-bold mb-2" htmlFor="name">
+                <label className="block text-[#BA2026] font-bold mb-2" htmlFor="name">
                   Name
                 </label>
                 <input
@@ -26,7 +26,7 @@ const donatePage = () => {
                 />
               </div>
               <div className="w-full">
-                <label className="block text-red-500 font-bold mb-2" htmlFor="email">
+                <label className="block text-[#BA2026] font-bold mb-2" htmlFor="email">
                   Email
                 </label>
                 <input
@@ -39,7 +39,7 @@ const donatePage = () => {
             </div>
             <div className="flex flex-col space-y-4">
               <div className="w-full">
-                <label className="block text-red-500 font-bold mb-2" htmlFor="occupation">
+                <label className="block text-[#BA2026] font-bold mb-2" htmlFor="occupation">
                   Occupation
                 </label>
                 <input
@@ -50,7 +50,7 @@ const donatePage = () => {
                 />
               </div>
               <div className="w-full">
-                <label className="block text-red-500 font-bold mb-2" htmlFor="amount">
+                <label className="block text-[#BA2026] font-bold mb-2" htmlFor="amount">
                   Amount
                 </label>
                 <input

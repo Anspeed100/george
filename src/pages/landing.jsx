@@ -288,9 +288,9 @@ export default function LandingPage() {
 
           <section className="flex flex-col items-center gap-5 md:gap-10 p-5 md:px-10 bg-[url('/src/assets/FadeBGFix.png')] bg-cover bg-center w-full">
   <div className="flex flex-col font-canarobold justify-start items-start w-full sm:w-[90%] md:w-[70%] lg:w-[50%] gap-3 p-5 bg-none relative md:self-end">
-    <p>MY SLOGAN:<span className="text-red-500 font-canarobold">BREAKINGTHE</span><span className="text-green-500 font-canarobold"> 2</span></p>
+    <p>MY SLOGAN: <span className="text-[#BA2026] font-canarobold">BREAKINGTHE</span><span className="text-[#009845] font-canarobold"> 2</span></p>
     <div className="w-full flex justify-start mt-5 md:mt-0">
-      <Link to='/faq'>
+      <Link to='/faq?faq=6'>
       <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
         Read More
       </button>
@@ -298,9 +298,9 @@ export default function LandingPage() {
     </div>
   </div>
   <div className="flex flex-col font-canarobold justify-start items-start w-full sm:w-[90%] md:w-[70%] lg:w-[50%] gap-3 p-5 bg-none relative md:self-end">
-    <p>MY MOTTO:<span className="text-red-500 font-canarobold">COMMON</span> <span className="text-green-500 font-canarobold">PROSPERITY</span></p>
+    <p>MY MOTTO: <span className="text-[#BA2026] font-canarobold">COMMON</span> <span className="text-[#009845] font-canarobold">PROSPERITY</span></p>
     <div className="w-full flex justify-start mt-5 md:mt-0">
-      <Link to='/faq'>
+      <Link to='/faq?faq=2'>
       
       <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
         Read More

@@ -24,12 +24,12 @@ export default function TakeActionPage() {
               <h1 className="font-bold text-4xl text-[#BA2026]">.</h1>
             </div>
           </div>
-          <img src={Asset6Img} alt='' className="absolute bottom-0 left-0 object-contain w-full max-w-xs md:max-w-sm" />
+          <img src={Asset6Img} alt=''  className="absolute bottom-0 left-0 object-contain w-full max-w-md md:max-w-lg"  />
         </div>
   
         <div className="flex-1 bg-white p-4 flex flex-col justify-center items-center relative">
           <div className="flex flex-col gap-2 justify-center items-start text-left w-full pl-2 pr-32">
-            <h1 className="font-canarobold text-4xl text-red-500 pb-6">
+            <h1 className="font-canarobold text-4xl text-[#BA2026] pb-6">
               Adopt An Electoral Area
             </h1>
             <p className="font-canarobook max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">

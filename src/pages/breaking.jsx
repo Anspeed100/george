@@ -12,7 +12,8 @@ import agricforWealthPic from '../assets/agric for wealth.jpg'
 import ddi from '../assets/ddi copy.jpg'
 import esika from '../assets/elevy_.jpg'
 import ghanafirst from '../assets/ghana first.jpg'
-import youth from '../assets/youth.jpg'
+import youth from '../assets/youth.jpg';
+import fourDayPolicies from '../assets/4 day work week.jpg'
 import Bio1Img from "../assets/bt2Image.png";
 import Divider from "../components/Divider";
 import GeorgeSignImage from '../assets/black_flag.png'
@@ -300,7 +301,7 @@ export default function Breakingthe2Page() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
+      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
         <img
           src={youth}
           alt="candidate"
@@ -325,6 +326,27 @@ export default function Breakingthe2Page() {
         </div>
       </section>
 
+      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
+        <img
+          src={fourDayPolicies}
+          alt="candidate"
+          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
+        />
+        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
+          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
+            6. 4-DAY WORK WEEK
+          </h2>
+          <p>
+            A 4-day work week (termed: Work and Happiness) is one of Presidential Candidates George Twum-Barimah-Adu’s policies.
+          </p>
+          <p>In consultation with the ‘relevant bodies’ in the ‘employment and labour space’, the Policy’s aim, is to introduce a 4-day work week - from Monday to Thursday.  Monday to Thursday is for the employer and Friday to Sunday is for the employee.</p>
+
+          <p>This policy is not only meant to boost productivity but also give the average worker a longer weekend for personal work, rest and family time.</p>
+          <br />
+          <p>Fellow Ghanaians, Work and Happiness is coming!</p>
+        </div>
+      </section>
+
       <div className="hidden lg:block md:block"></div>
 
       <QuoteComponent
@@ -336,7 +358,7 @@ export default function Breakingthe2Page() {
 
       <div className="flex flex-col justify-center items-center bg-[#1A1A1A] px-4">
         <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
-          <h1 className="mb-6 mt-6 text-center text-4xl text-red-500 font-canarobold">
+          <h1 className="mb-6 mt-6 text-center text-4xl text-[#BA2026] font-canarobold">
             CUTTING DOWN ON GOVERNMENT WASTAGE AND EXPENDITURE
           </h1>
           <p className="mb-6 text-left text-white font-canarobook">
