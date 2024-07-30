@@ -45,14 +45,14 @@ export default function EventsPage(){
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
             >
-            
+              {/* Red line and node */}
               <div className="relative flex flex-col items-center">
-                <div className="h-32 w-1 bg-red-500"></div> 
-                <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-red-500 rounded-full"></div>
+                <div className="h-32 w-1 bg-red-500"></div>
+                <div className={`absolute -left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 ${item.backgroundColor} rounded-full`}></div>
               </div>
-            
-              <div className="w-8 h-1 bg-red-500"></div>
-           
+              {/* Connector Line */}
+              <div className={`w-8 h-1 ${item.backgroundColor}`}></div>
+              {/* Card */}
               <div className={`flex flex-col md:flex-row items-center shadow-md rounded-lg p-6 w-full ${item.backgroundColor}`}>
                 <img src={item.imgSrc} alt={item.title} className="w-32 h-32 md:w-40 md:h-40 rounded-md" />
                 <div className="flex flex-col items-center text-center md:text-left flex-grow">
