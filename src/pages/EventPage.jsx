@@ -35,7 +35,7 @@ export default function EventsPage() {
         <h1 className="text-white font-bold text-4xl">Roadmap</h1>
       </header>
       <div className="relative mt-8 sm:mt-16">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mb-5">
           {roadmapData.map((item, index) => (
             <motion.div
               key={index}
