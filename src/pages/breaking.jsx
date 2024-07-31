@@ -351,46 +351,87 @@ export default function Breakingthe2Page() {
 
       <QuoteComponent
         ref={quoteRef}
-        quoteText="Dear friends, it is time for you and me to make true the statement by our first President, Osagyefo Dr. Kwame Nkrumah that “The Black Man Is Capable Of Managing His Own Affairs.” "
-        authorText="- George Twum-Barimah-Adu"
+        quoteText="Since independence, the political norm has been that a political party going into an election must sing praises of its past achievements and make high-sounding promises for the future. At the same time, a political party must paint its opponents in the worst possible light. We have mastered this art, and in the process, we have forgotten that politics should be about the future of our children and our motherland. We have reduced election campaigns to bitter struggles between competitors seeking power for the wrong reasons.”"
+        authorText="- Kwaku Kwarteng; MP, Obuasi West"
         backgroundColor={'#b92026'}
       />
 
-      <div className="flex flex-col justify-center items-center bg-[#1A1A1A] px-4">
-        <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
-          <h1 className="mb-6 mt-6 text-center text-4xl text-[#BA2026] font-canarobold">
-            CUTTING DOWN ON GOVERNMENT WASTAGE AND EXPENDITURE
-          </h1>
-          <p className="mb-6 text-left text-white font-canarobook">
-            <strong>1. Sell all non-profitable state enterprises.</strong>
-            <br /><br />
-            <strong>2. Scrutinize public procurement to ensure that it strictly follows the Procurement Act and delivers value for money.</strong>
-            <br /><br />
-            <strong>3. Strictly review all government contracts to guarantee value for money.</strong>
-            <br /><br />
-            <strong>4. Downsize government by operating within the constitutionally approved number of 19 Cabinet Ministers, with a total Ministerial count not exceeding sixty-three (63).</strong>
-            <br /><br />
-            <strong>5. Ensure that no government entity (including SOEs) signs any contract or memorandum with any party without government review, input, and approval.</strong>
-            <br /><br />
-            <strong>6. Institute a cap on the value of state vehicles used by all government officials including SOEs.</strong>
-            <br /><br />
-            <strong>7. Suspend all government and SOE travels pending a review, unless essential travels carefully vetted to deliver value for money.</strong>
-            <br /><br />
-            <strong>8. Properly resource the Auditor-General for it to be able to deliver on its constitutional mandate.</strong>
-            <br /><br />
-            <strong>9. Abolish payment of ex-gratia to Article 71 office holders at the end of each tenure in office.</strong>
-            <br /><br />
-            All these measures put together, and many more, will save the nation millions if not billions of cedis annually, surely, putting our beloved country, Ghana, on a far better economic pedestal than we are at now!
-            <br /><br />
-            Through these measures, we shall help plug the loopholes of criminal enrichment and corruption and stem the tide of wastage in government!
-          </p>
-          <img
-            src={GeorgeSignImage}
-            alt=""
-            className="w-full h-auto mb-2"
-          />
-        </div>
-      </div>
+<div className="flex flex-col justify-center items-center bg-[#1A1A1A] px-4">
+  <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
+    <h1 className="mb-6 mt-6 text-center text-4xl text-[#BA2026] font-canarobold">
+      CUTTING DOWN ON GOVERNMENT WASTAGE AND EXPENDITURE
+    </h1>
+    <p className="mb-6 text-left text-white font-canarobook">
+      In addition to poor leadership from both the NDC and NPP these last thirty-two (32) years, government wastage and uncontrolled rampant corruption have been what both political parties have also given to us these last thirty-two (32) years.
+      <br /><br />
+      Because of poor leadership, government wastage, and corruption, we are ‘stuck’ with:
+      <br /><br />
+      a. Poor infrastructure (including roads, schools, clinics and hospitals, etc.).
+      <br /><br />
+      b. High and nuisance taxes, making it difficult for businesses to plan and expand to create more jobs.
+      <br /><br />
+      c. Poor service delivery by MDA’s of government.
+      <br /><br />
+      d. Poor and infrequent utility supply that has led to Dumsor, and erratic water supply.
+      <br /><br />
+      e. High cost of living causing many qualified professionals to flee the country for greener pastures elsewhere.
+      <br /><br />
+      f. Unwholesome meals being served to our SHS students; and
+      <br /><br />
+      g. Lack of faith in the Fourth Republic and democracy; just to mention a few.
+      <br /><br />
+      As President of the country, not only will I provide excellent, effective leadership, but wastage in government and corruption will become a thing of the past.
+      <br /><br />
+      To this end, my government will:
+      <br /><br />
+      1. Tackle corruption by strengthening government agencies such as:
+      <br />
+      a. The Auditor-General’s Department.
+      <br />
+      b. Office of the Attorney-General.
+      <br />
+      c. CHRAJ.
+      <br />
+      d. Ghana Police Service.
+      <br />
+      e. Office of the Special Prosecutor (OSP).
+      <br />
+      f. EOCO; and
+      <br />
+      g. NIB.
+      <br /><br />
+      2. Ensure that no one is above the law by doing away with the culture of impunity.
+      <br /><br />
+      3. Cut wastage in government by:
+      <br /><br />
+      a. Selling all non-profitable state enterprises.
+      <br /><br />
+      b. Overhauling the current corrupt public procurement regime that has been abused by all governments since it came into law. Also, scrutinize public procurement to ensure that it strictly follows the Procurement Act and delivers value for money.
+      <br /><br />
+      c. Strictly reviewing all government contracts to guarantee value for money.
+      <br /><br />
+      d. Downsizing government by operating within the constitutionally approved number of 19 Cabinet Ministers, with a total Ministerial count not exceeding sixty-three (63).
+      <br /><br />
+      e. Ensuring that no government entity (including SOE’s) signs any contract or memorandum with any party without government review, input, and approval.
+      <br /><br />
+      f. Instituting a cap on the value of state vehicles used by all government officials including SOE’s.
+      <br /><br />
+      g. Suspending all government and SOE travels pending a review, unless essential travels are carefully vetted to deliver value for money.
+      <br /><br />
+      h. Abolishing payment of ex-gratia to Article 71 office holders at the end of each tenure in office.
+      <br /><br />
+      All these measures put together, and many more, will save the nation millions if not billions of cedis annually, surely, putting our beloved country, Ghana, on a far better economic pedestal than we are at now!
+      <br /><br />
+      Through these measures, we shall help plug the loopholes of criminal enrichment and corruption and stem the tide of wastage in government!
+    </p>
+    <img
+      src={GeorgeSignImage}
+      alt="George's Signature"
+      className="w-full h-auto mb-2"
+    />
+  </div>
+</div>
+
 
       <div className="flex flex-col items-center bg-[#009845] px-4">
         <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">

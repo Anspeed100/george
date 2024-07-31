@@ -10,7 +10,7 @@ const QuoteComponent = ({ backgroundColor, quoteText, authorText, quoteColor, te
         <QuoteStart fillColor={quoteColor} size={40} className="w-4 h-2 md:w-6 md:h-3 self-start" />
         <div className="flex flex-col">
           <div className="flex w-full items-center">
-            <p className="text-xl md:text-3xl lg:text-5xl font-semibold text-justify" style={{ color: textColor }}>
+            <p className="text-xl md:text-3xl lg:text-3xl font-semibold text-justify" style={{ color: textColor }}>
               {quoteText}
             </p>
           </div>

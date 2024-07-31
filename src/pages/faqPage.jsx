@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import { useLocation } from 'react-router-dom';
+import QuoteComponent from '../components/QuoteComponent';
 
 const faqData = [
       {
@@ -145,6 +146,7 @@ const FAQ = () => {
           </div>
         </Modal>
       )}
+      <QuoteComponent backgroundColor={'#000'} quoteText='Dear friends, it is time for you and me to make true the statement by our first President, Osagyefo Dr. Kwame Nkrumah that “The Black Man Is Capable Of Managing His Own Affairs.”' textColor={'#fff'} quoteColor={"#fff"} authorText='- George Twum-Barimah-Adu'/>
     </div>
   );
 };
