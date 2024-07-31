@@ -466,7 +466,7 @@ export default function Breakingthe2Page() {
 
       <QuoteComponent
         ref={quoteRef}
-        quoteText="Dear friends, The horse is prepared for the day of battle, but the victory belongs to the LORD."
+        quoteText="The horse is prepared for the day of battle, but the victory belongs to the LORD."
         authorText="- Proverbs 21 v 31 NLT"
         backgroundColor={'#b92026'}
       />

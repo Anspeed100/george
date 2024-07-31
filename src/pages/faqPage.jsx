@@ -111,10 +111,11 @@ const FAQ = () => {
         {faqData.map((faq, index) => (
           <div
             key={index}
-            className={`p-6 rounded-lg shadow-md cursor-pointer ${faq.backgroundColor}`}
+            className={`p-6 rounded-lg shadow-md cursor-pointer ${faq.backgroundColor} flex items-center justify-center`}
             onClick={() => openModal(faq)}
+            style={{ height: '200px' }} // Ensures all cards are the same height
           >
-            <h2 className={`text-xl font-canarobold uppercase ${faq.textColor}`}>{faq.question}</h2>
+            <h2 className={`text-xl font-canarobold uppercase text-center ${faq.textColor}`}>{faq.question}</h2>
           </div>
         ))}
       </div>

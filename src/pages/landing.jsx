@@ -277,9 +277,11 @@ export default function LandingPage() {
 </div>
 
                   <div className="w-full flex justify-end mt-5 md:mt-0">
+                  <Link to='/faq?faq=10'>
                     <button className="bg-[#009845] font-canarobold text-white px-10 py-2 rounded">
                       Read More
                     </button>
+                    </Link>
                   </div>
                 
               </div>
