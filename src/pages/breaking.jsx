@@ -359,7 +359,7 @@ export default function Breakingthe2Page() {
 <div className="flex flex-col justify-center items-center bg-[#1A1A1A] px-4">
   <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
     <h1 className="mb-6 mt-6 text-center text-4xl text-[#BA2026] font-canarobold">
-      CUTTING DOWN ON GOVERNMENT WASTAGE AND EXPENDITURE
+      FIGHTING CORRUPTION AND CUTTING DOWN ON GOVERNMENT WASTAGE AND EXPENDITURE
     </h1>
     <p className="mb-6 text-left text-white font-canarobook">
       In addition to poor leadership from both the NDC and NPP these last thirty-two (32) years, government wastage and uncontrolled rampant corruption have been what both political parties have also given to us these last thirty-two (32) years.

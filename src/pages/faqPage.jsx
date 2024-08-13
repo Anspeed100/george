@@ -130,7 +130,7 @@ const FAQ = () => {
         >
           <div className="bg-white rounded-lg p-6 w-11/12 max-w-2xl relative">
             <h2 className="text-2xl font-canarobold mb-4">{selectedFaq.question}</h2>
-            <div className="h-[400px] overflow-y-auto">
+            <div className="h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-red-600 scrollbar-track-red-500">
               <div
                 className="text-gray-600 font-canarobook"
                 dangerouslySetInnerHTML={{ __html: selectedFaq.answer }}
@@ -151,5 +151,6 @@ const FAQ = () => {
     </div>
   );
 };
+
 
 export default FAQ;

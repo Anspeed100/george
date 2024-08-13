@@ -10,7 +10,7 @@ const TakeActionRegisterForm = () => {
 
       <div className="flex flex-col items-center justify-center min-h-screen bg-[#000] bg-cover bg-center px-4">
         <div className="p-8 rounded-lg w-full max-w-4xl mx-auto relative z-10">
-          <p className="mb-6 text-left text-black font-canarobook">
+          <p className="mb-6 text-left text-white font-canarobook">
             Be a part of the Team George Volunteers who believe in #Breakingthe2 to create Common Prosperity for all and make Ghana Great.
           </p>
           <form className="space-y-4 w-full pb-12">

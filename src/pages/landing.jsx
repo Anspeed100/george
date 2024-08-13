@@ -197,9 +197,9 @@ export default function LandingPage() {
                 </div>
 
                 <div className="fadein bg-[#1D6F00] text-white flex flex-col justify-center items-center text-center font-canarobook p-5 m-10">
-                  <p>
-                    With all the colours making-up the pattern in the green circle symbolizing “togetherness” – different people with different cultures, yet a common Goal of progress.
-                  </p>
+                  <span>
+                    With all the colours making-up the pattern in the green circle symbolizing <strong className="uppercase">“togetherness”</strong> – different people with different cultures, yet a common Goal of progress.
+                  </span>
                 </div>
               </div>
             </section>
@@ -213,7 +213,7 @@ export default function LandingPage() {
 
 
           <div className="pledge-bg flex justify-center items-center p-3">
-            <div className="w-[90%] md:w-[70%] lg:w-[50%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white">
+            <div className="w-[90%] md:w-[80%] lg:w-[70%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white">
               <div className="flex flex-col items-center md:items-start mx-auto md:mx-0">
                 <h2 className="mb-6 sm:mb-8 md:mb-12 font-extrabold  text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
                   My Pledge
@@ -234,7 +234,7 @@ export default function LandingPage() {
           </div>
 
           <div className="promise-bg flex justify-center items-center p-3">
-            <div className="w-[90%] md:w-[70%] lg:w-[50%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white">
+            <div className="w-[90%] md:w-[80%] lg:w-[70%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-8 flex flex-col justify-center rounded-2xl text-white">
               <h2 className="mb-6 sm:mb-8 md:mb-12 font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
                 My Promise
               </h2>
@@ -249,10 +249,11 @@ export default function LandingPage() {
                     <li>Leadership for the benefit of all, and not a small group of family, friends and cronies.</li>
                     <li>Leadership that plans for the future without destroying the present.</li>
                     <li>Leadership of ideas</li>
+                    <li>Leadership that is all-embracing.</li>
                   </ul>
                 </div>
                 <span className="mt-5 leading-7">
-                  Leadership that is all-embracing. To this end, I am calling
+                  To this end, I am calling
                   on all Ghanaians to join forces with me so we can make
                   Ghana, (our own Ghana), the land of our dreams!
                 </span>
@@ -262,7 +263,7 @@ export default function LandingPage() {
           </div>
 
           <div className="vision-bg flex justify-center items-center p-3">
-            <div className="w-[90%] md:w-[70%] lg:w-[50%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white ">
+            <div className="w-[90%] md:w-[80%] lg:w-[70%] h-fit my-10 bg-[#ffffff42] py-8 px-5 sm:px-10 md:py-16 md:px-16 flex flex-col justify-center rounded-2xl text-white ">
               <div className="flex flex-col items-center md:items-start mx-auto md:mx-0">
                 <h2 className="mb-6 sm:mb-8 md:mb-12 font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
                   My Vision
