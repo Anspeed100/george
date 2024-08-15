@@ -1,11 +1,11 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // Image Imports for Carousel
-import SlideImage_1 from '../assets/LandingPageCarouselImage_1.png';
-import SlideImage_2 from '../assets/LandingPageCarouselImage_2.png';
+import SlideImage_1 from "../assets/LandingPageCarouselImage_1.png";
+import SlideImage_2 from "../assets/LandingPageCarouselImage_2.png";
 
 const HeroCarousel = () => {
   const settings = {
@@ -25,15 +25,15 @@ const HeroCarousel = () => {
       id: 1,
       image: SlideImage_1,
       showButton: false,
-      buttonText: 'Learn More',
-      buttonLink: '/learn-more',
+      buttonText: "Learn More",
+      buttonLink: "/learn-more",
     },
     {
       id: 2,
       image: SlideImage_2,
       showButton: true,
-      buttonText: 'Read More',
-      buttonLink: '/learn-more',
+      buttonText: "Read More",
+      buttonLink: "/learn-more",
     },
   ];
 
@@ -41,7 +41,10 @@ const HeroCarousel = () => {
     <div className="relative w-full mt-28">
       <Slider {...settings}>
         {slides.map((slide) => (
-          <div key={slide.id} className="relative w-full flex items-center justify-center">
+          <div
+            key={slide.id}
+            className="relative w-full flex items-center justify-center"
+          >
             <img
               src={slide.image}
               alt={`Slide ${slide.id}`}

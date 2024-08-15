@@ -8,9 +8,8 @@ const navigation = [
   { name: "#Breakingthe2", href: "/breakingthe2", current: false },
   { name: "About", href: "/about", current: false },
   { name: "Take Action", href: "/take-action", current: false },
-  { name:"Events/Roadmap", href: '/events', current: false},
+  { name: "Events/Roadmap", href: "/events", current: false },
   { name: "FAQ", href: "/faq", current: false },
-  
 ];
 
 function classNames(...classes) {
@@ -40,7 +39,8 @@ export default function Navbar({ useRed }) {
               </Link>
               <div className="flex items-center gap-8">
                 <div className="hidden md:flex items-center">
-                  <Link to="/donate" 
+                  <Link
+                    to="/donate"
                     className="bg-[#b91f26] text-white text-2xl rounded-md px-4 py-2 font-bold"
                   >
                     <span className="button-text">Donate</span>
@@ -62,7 +62,7 @@ export default function Navbar({ useRed }) {
           </div>
 
           {/* MOBILE NAV */}
-          <Disclosure.Panel className="bg-[#fff] border w-[100%] md:w-[30%] h-[50%] fixed md:right-1 top-24 md:top-32 shadow-xl rounded-md flex flex-col items-center justify-center gap-1 md:gap-3">
+          <Disclosure.Panel className="bg-[#fff] border w-[100%] md:w-[30%] h-[50%] fixed md:right-1 top-24 md:top-32 shadow-xl rounded-md flex flex-col items-center justify-center gap-1 md:gap-3 ">
             {updatedNavigation.map((item) => (
               <Disclosure.Button
                 key={item.name}
@@ -80,7 +80,8 @@ export default function Navbar({ useRed }) {
               </Disclosure.Button>
             ))}
             <div className="md:hidden block mt-6">
-            <Link to="/donate" 
+              <Link
+                to="/donate"
                 className="bg-[#b91f26] text-white text-xl rounded-md px-3 py-2 font-semibold"
               >
                 Donate

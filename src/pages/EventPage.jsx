@@ -1,5 +1,10 @@
-import { React } from "react";
+import { React, useState } from "react";
 import { motion } from "framer-motion";
+import Modal from "react-modal";
+
+import EventsCarousel from "../components/EventsCarousel";
+
+import asset1 from "../assets/G2.png";
 
 export default function EventsPage() {
   const roadmapData = [
@@ -8,6 +13,7 @@ export default function EventsPage() {
       description: "Initial project setup and requirement gathering.",
       imgSrc: "https://via.placeholder.com/150",
       backgroundColor: "bg-red-100",
+      gallery: true,
     },
     {
       title: "Q2 2024",
@@ -27,7 +33,28 @@ export default function EventsPage() {
       imgSrc: "https://via.placeholder.com/150",
       backgroundColor: "bg-yellow-100",
     },
+    {
+      title: "Q4 2024",
+      description: "Deployment and monitoring.",
+      imgSrc: "https://via.placeholder.com/150",
+      backgroundColor: "bg-purple-100",
+    },
   ];
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+  const openModal = () => {
+    setModalIsOpen(true);
+    console.log("This modal is open");
+    console.log(roadmapData[0].gallery);
+  };
+
+  const normal = () => {
+    console.log("This is a normal div");
+  };
 
   return (
     <div className="min-h-screen bg-white pt-32">
@@ -69,7 +96,10 @@ export default function EventsPage() {
                   <p className="text-gray-600 font-canarobook">
                     {item.description}
                   </p>
-                  <button className="mt-4 bg-[#009845] text-white font-canarobold py-2 px-4 rounded hover:bg-green-600">
+                  <button
+                    className="mt-4 bg-[#009845] text-white font-canarobold py-2 px-4 rounded hover:bg-green-600"
+                    onClick={item.gallery ? openModal : normal}
+                  >
                     View Gallery
                   </button>
                 </div>
@@ -78,6 +108,28 @@ export default function EventsPage() {
           ))}
         </div>
       </div>
+      {roadmapData[0].gallery && (
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          ariaHideApp={false}
+          contentLabel="FAQ Modal"
+          className="flex items-center justify-center p-4 "
+          overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+        >
+          <div className=" rounded-lg p-6 w-11/12 max-w-2xl relative">
+            <EventsCarousel />
+            <div className="mt-6 flex  justify-center">
+              <button
+                onClick={closeModal}
+                className="px-4 py-2 bg-red-600 text-white font-canarobold rounded-lg"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </Modal>
+      )}
     </div>
   );
 }
