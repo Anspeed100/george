@@ -1,5 +1,6 @@
 import React from 'react';
 import GeorgePointingImageCut from '../assets/GeorgePointingCut.png';
+import HubspotForm from 'react-hubspot-form'
 
 const TakeActionRegisterForm = () => {
   return (
@@ -8,12 +9,19 @@ const TakeActionRegisterForm = () => {
         <h1 className="text-white font-bold text-4xl">Take Action!! </h1>
       </header>
 
-      <div className="flex flex-col items-center justify-center min-h-screen bg-[#000] bg-cover bg-center px-4">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-[#fff] bg-cover bg-center px-4">
         <div className="p-8 rounded-lg w-full max-w-4xl mx-auto relative z-10">
-          <p className="mb-6 text-left text-white font-canarobook">
+          <p className="mb-6 text-left text-black font-canarobook">
             Be a part of the Team George Volunteers who believe in #Breakingthe2 to create Common Prosperity for all and make Ghana Great.
           </p>
-          <form className="space-y-4 w-full pb-12">
+          <HubspotForm
+   portalId='145258842'
+   formId='2d8d92d7-b221-4a7f-9da7-18efbbb33095'
+   onSubmit={() => console.log('Submit')}
+   onReady={(form) => console.log('Form ready!')}
+   loading={<div>Loading...</div>}
+   />
+          {/* <form className="space-y-4 w-full pb-12">
             <div className="flex flex-col md:flex-row md:space-x-4">
               <div className="w-full mb-4 md:mb-0">
                 <label className="block text-[#BA2026] font-bold mb-2" htmlFor="name">
@@ -123,17 +131,21 @@ const TakeActionRegisterForm = () => {
                 />
               </div>
             </div>
-            <div className="w-full mb-6 text-center">
-                <p className="text-white font-canarobook">
+
+
+          </form> */}
+
+          <div className="w-full mb-6 text-center">
+                <p className="text-black font-canarobook">
                   Be a part of the Team George Volunteers who believe in #Breakingthe2 to create Common Prosperity for all and make Ghana Great.
                 </p>
               </div>
-            <div className="flex justify-center">
+{/* 
+              <div className="flex justify-center">
               <button type="submit" className="bg-[#009845] text-white font-canarobold rounded p-2 w-1/4">
                 JOIN
               </button>
-            </div>
-          </form>
+            </div> */}
 
         </div>
         <img

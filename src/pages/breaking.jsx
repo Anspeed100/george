@@ -337,7 +337,7 @@ export default function Breakingthe2Page() {
             6. 4-DAY WORK WEEK
           </h2>
           <p>
-            A 4-day work week (termed: Work and Happiness) is one of Presidential Candidates George Twum-Barimah-Adu’s policies.
+            A 4-day work week (termed: Work and Happiness) is one of Presidential Candidate George Twum-Barimah-Adu’s policies.
           </p>
           <p>In consultation with the ‘relevant bodies’ in the ‘employment and labour space’, the Policy’s aim, is to introduce a 4-day work week - from Monday to Thursday.  Monday to Thursday is for the employer and Friday to Sunday is for the employee.</p>
 
