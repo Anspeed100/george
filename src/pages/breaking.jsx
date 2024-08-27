@@ -9,6 +9,7 @@ import Assets16Img from "../assets/assets_16.png";
 import Assets17Img from "../assets/assets_17.png";
 import manifestoImage from '../assets/breaking_user_square.png';
 import agricforWealthPic from '../assets/agric for wealth.jpg'
+import educationForAll from '../assets/quality education for all.jpg'
 import ddi from '../assets/ddi copy.jpg'
 import esika from '../assets/elevy_.jpg'
 import ghanafirst from '../assets/ghana first.jpg'
@@ -309,7 +310,7 @@ export default function Breakingthe2Page() {
         />
         <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
           <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-            5. DISTRICT CONTRACTS FOR THE YOUTH.
+            5. DISTRICT CONTRACTS FOR THE YOUTH
           </h2>
           <p>
             District Contracts for the Youth (DCY) is one of presidential candidate George Twum-Barimah-Adu’s policies.
@@ -344,6 +345,57 @@ export default function Breakingthe2Page() {
           <p>This policy is not only meant to boost productivity but also give the average worker a longer weekend for personal work, rest and family time.</p>
           <br />
           <p>Fellow Ghanaians, Work and Happiness is coming!</p>
+        </div>
+      </section>
+
+      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
+        <img
+          src={educationForAll}
+          alt="candidate"
+          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
+        />
+        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-10 bg-white relative">
+          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
+          7. QUALITY EDUCATION 4 ALL
+          </h2>
+          <p>
+          Quality Education 4 All is one Presidential Candidate George Twum-Barimah-Adu’s policies. 
+          </p>
+          <p>In consultation with the ‘relevant bodies’ in the ‘educational space’, the Policy’s aim, is to ensure that all students across the country get the same first-class quality education; irrespective of the area they live, their background and/or the level of their parents’ income.</p>
+          <p>This will be achieved through:</p>
+          <ul className="list-disc">
+            <li>Digitization</li>
+            <li>Construction of smart school enclaves in communities in every district; and</li>
+            <li>Re-evaluation of the educational curriculum to ensure that students are critical thinkers, entrepreneurs and innovators.</li>
+          </ul>
+          <p>The Smart School Enclaves which will cover from Kindergarten to SHS 3, will have and entail the following:</p>
+          <ol className="list-decimal">
+            <li>Facilities that qualify a school to be classified as a “Smart School”, including fast, stable and cheap internet connectivity.</li>
+            <li>All teaching will be online. Same first-class quality teacher teaching a subject (eg Math) being piped at the same time to all students in the region through the internet.</li>
+            <li>Teachers in the classroom will assist with homework and when the student has a question on the subject being taught; etc.
+            </li>
+            <li>Learning materials and teaching materials will be online.</li>
+            <li>Schools will be on large acres of land that will have the following:
+            <ul className="list-disc list-inside">
+            <li>Fully walled compound.</li>
+            <li>Living quarters for teachers.</li>
+            <li>Dining and kitchen facilities for students.</li>
+            <li>Library</li>
+            <li>Convenient shop for teachers and students.</li>
+            <li>School farm comprising all aspects of agriculture to aid in the practical teaching of agriculture in schools.</li>
+            <li>Healthcare facility with a pharmacy to be manned by a qualified health officer and a qualified pharmacist. The healthcare facility will be designed such that the community will be able to access it, however the students will always have priority at all times</li>
+            <li>Own supply of treated water from boreholes</li>
+            <li>Solar power generation to ensure that the schools don’t depend on national grid.</li>
+            <li>Boarding facilities for students from age 12.</li>
+          </ul>
+            </li>
+          </ol>
+          <p>Quality Education 4 All, will also include:</p>
+          <ol className="list-decimal">
+            <li>Re-training of teachers on the Smart School system</li>
+            <li>Re-evaluation of teacher salaries, conditions of service, and housing; etc.</li>
+            <li>Complete review of the whole curriculum program.</li>
+            </ol>
         </div>
       </section>
 

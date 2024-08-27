@@ -71,15 +71,19 @@ export default function LandingPage() {
                   Welcome Dear Friend,
                 </h1>
                 <h1 className="text-start font-canarobook md:text-2xl text-center">
-                  I am George Twum-Barimah-Adu, and I want, with your support
-                  and vote, to be your President – to serve you as Head of
-                  State, Head of Government and Commander-In-Chief of the Armed
-                  Forces of Ghana!
+                  I am George Twum-Barimah-Adu 
+                  <br/>
+                  <br/> 
+                  I want your support and vote to be your next President – to serve you as Head of State, Head of Government and Commander-In-Chief of the Armed Forces of Ghana!
+                  <br/>
                   <br />
-                  <br />
-                  God bless Ghana, our Motherland, and make Her Great and
+                  Ghana does not need Used Breath or Re-used Breath. What Ghana needs is Fresh Breath. 
                   Strong!
                   <br />
+                  <br/>
+                  God Bless Ghana and make her Great, Strong, Peaceful and Prosperous.
+                  <br/>
+                  <br/>
                   Thank you!
                 </h1>
                 <div className="flex justify-end">

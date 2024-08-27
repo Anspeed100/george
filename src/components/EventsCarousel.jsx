@@ -3,11 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Image Imports for Carousel
-import asset1 from "../assets/G2.png";
-import asset2 from "../assets/G3.png";
 
-const EventsCarousel = () => {
+
+const  EventsCarousel = ({slides}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -20,23 +18,6 @@ const EventsCarousel = () => {
     adaptiveHeight: true,
   };
 
-  const slides = [
-    {
-      id: 1,
-      image: asset1,
-      showButton: false,
-    },
-    {
-      id: 2,
-      image: asset2,
-      showButton: true,
-    },
-    {
-      id: 3,
-      image: asset1,
-      showButton: true,
-    },
-  ];
 
   return (
     <div className="relative left-36 md:left-0 w-1/2 md:w-full mt-28   rounded-lg ">
