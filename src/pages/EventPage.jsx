@@ -12,6 +12,25 @@ const amShowImagesList = amShowImages.keys().map(image => amShowImages(image))
 const tucImages = require.context('../assets/TUCImages',true);
 const tucImagesList = tucImages.keys().map(image => tucImages(image))
 
+const adomImages = require.context('../assets/AdomTVImages',true);
+const adomImagesList = adomImages.keys().map(image => adomImages(image))
+
+const PFAGImages = require.context('../assets/PFAGImages',true);
+const PFAGImagesList = PFAGImages.keys().map(image => PFAGImages(image))
+
+const NNImages = require.context('../assets/NoahNashImages',true);
+const NNImagesList = NNImages.keys().map(image => NNImages(image))
+
+const ECVisitImages = require.context('../assets/ECVisitImages',true);
+const ECVisitImagesList = ECVisitImages.keys().map(image => ECVisitImages(image))
+
+const ABNImages = require.context('../assets/ABNImages',true);
+const ABNImagesList = ABNImages.keys().map(image => ABNImages(image))
+
+const OnuaImages = require.context('../assets/OnuaImages',true);
+const OnuaImagesList = OnuaImages.keys().map(image => OnuaImages(image))
+
+
 export default function EventsPage() {
 
   const [selectedImages, setSelectedImages] = useState([]);
@@ -87,18 +106,63 @@ export default function EventsPage() {
       gallery: true,
       imageSlideFolders: tucImagesList
     },
-    // {
-    //   id: 4,
-    //   title: "Q4 2024",
-    //   description: "Deployment and monitoring.",
-    //   imgSrc: "https://via.placeholder.com/150",
-    //   backgroundColor: "bg-yellow-100",
-    //   gallery: true,
-    //   imageSlides: ""
-    // },
+    {
+      id: 4,
+      title: "Adom TV News one-on-one with Sergio Manucho 20th May, 2024",
+      description: "",
+      imgSrc: "https://via.placeholder.com/150",
+      backgroundColor: "bg-black",
+      gallery: true,
+      imageSlideFolders: adomImagesList
+    },
+    {
+      id: 5,
+      title: "PFAG Inauguration Ceremony at Navrongo",
+      description: "",
+      imgSrc: "https://via.placeholder.com/150",
+      backgroundColor: "bg-[#BA2026]",
+      gallery: true,
+      imageSlideFolders: PFAGImagesList
+    },
+    {
+      id: 6,
+      title: "GH One one-on-one with Noah Nash",
+      description: "",
+      imgSrc: "https://via.placeholder.com/150",
+      backgroundColor: "bg-[#009845]",
+      gallery: true,
+      imageSlideFolders: NNImagesList
+    },
+    {
+      id: 7,
+      title: "EC Registration Visit ",
+      description: "",
+      imgSrc: "https://via.placeholder.com/150",
+      backgroundColor: "bg-[#B8AE59]",
+      gallery: true,
+      imageSlideFolders: ECVisitImagesList
+    },
+    {
+      id: 8,
+      title: "ABN TV one-on-one with Koo Sibo",
+      description: "",
+      imgSrc: "https://via.placeholder.com/150",
+      backgroundColor: "bg-black",
+      gallery: true,
+      imageSlideFolders: ABNImagesList
+    },
+    {
+      id: 9,
+      title: "Onua TV one-on-one with JB",
+      description: "",
+      imgSrc: "https://via.placeholder.com/150",
+      backgroundColor: "bg-[#BA2026]",
+      gallery: true,
+      imageSlideFolders: OnuaImagesList
+    },
     // {
     //   id: 5,
-    //   title: "Q4 2024",
+    //   title: "Adom TV News one-on-one with Sergio Manucho 20th May, 2024",
     //   description: "Deployment and monitoring.",
     //   imgSrc: "https://via.placeholder.com/150",
     //   backgroundColor: "bg-purple-100",

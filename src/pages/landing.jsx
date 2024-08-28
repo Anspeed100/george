@@ -78,7 +78,6 @@ export default function LandingPage() {
                   <br/>
                   <br />
                   Ghana does not need Used Breath or Re-used Breath. What Ghana needs is Fresh Breath. 
-                  Strong!
                   <br />
                   <br/>
                   God Bless Ghana and make her Great, Strong, Peaceful and Prosperous.

@@ -74,7 +74,7 @@ const donatePage = () => {
             <li>I am at least eighteen years old.</li>
             <li>This contribution is made from my own funds, and funds are not being provided to me by another person or entity for the purpose of making this contribution.
             </li>
-            <li>I am a Ghanaian citizen or lawfully admitted permanent resident (i.e., Ghana card holder).</li>
+            <li>I am a Ghanaian citizen.</li>
           </ul>
         </div>
       </div>
