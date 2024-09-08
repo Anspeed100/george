@@ -77,7 +77,7 @@ export default function LandingPage() {
                   I want your support and vote to be your next President – to serve you as Head of State, Head of Government and Commander-In-Chief of the Armed Forces of Ghana!
                   <br/>
                   <br />
-                  Ghana does not need Used Breath or Re-used Breath. What Ghana needs is Fresh Breath. 
+                  Ghana does not need Used Breath or Re-cycled Breath. What Ghana needs is Fresh Breath. 
                   <br />
                   <br/>
                   God Bless Ghana and make her Great, Strong, Peaceful and Prosperous.
