@@ -40,7 +40,7 @@ export default function Navbar({ useRed }) {
               <div className="flex items-center gap-8">
                 <div className="hidden md:flex items-center">
                   <Link
-                    to="/donate"
+                    to="https://donate4twum.vercel.app/"
                     className="bg-[#b91f26] text-white text-2xl rounded-md px-4 py-2 font-bold"
                   >
                     <span className="button-text">Donate</span>
@@ -80,12 +80,12 @@ export default function Navbar({ useRed }) {
               </Disclosure.Button>
             ))}
             <div className="md:hidden block mt-6">
-              <Link
-                to="/donate"
+              <href
+                a="https://donate4twum.vercel.app/"
                 className="bg-[#b91f26] text-white text-xl rounded-md px-3 py-2 font-semibold"
               >
                 Donate
-              </Link>
+              </href>
             </div>
           </Disclosure.Panel>
         </>

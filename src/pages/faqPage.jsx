@@ -60,9 +60,9 @@ const FAQ = () => {
           onRequestClose={closeModal}
           contentLabel="FAQ Modal"
           className="flex items-center justify-center p-4"
-          overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+          overlayClassName="fixed z-50 inset-0 bg-black bg-opacity-50 flex items-center justify-center"
         >
-          <div className="bg-white z-50 rounded-lg p-6 w-11/12 max-w-2xl relative">
+          <div className="bg-white rounded-lg p-6 w-11/12 max-w-2xl relative">
             <h2 className="text-2xl font-canarobold mb-4">
               {selectedFaq.question}
             </h2>
