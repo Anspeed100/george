@@ -8,12 +8,13 @@ export const PoliciesSection =forwardRef(({
         youth,
         fourDayPolicies,
         educationForAll,
+        createWealth,
       },
       ref
     ) => {
   return (
     <div ref={ref}>
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
+      <section className="flex flex-col items-start md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
         <img
           src={ghanafirst}
           alt="candidate"
@@ -26,21 +27,30 @@ export const PoliciesSection =forwardRef(({
           <p>
             Ghana First within Cost is one of presidential candidate George Twum-Barimah-Adu's policies.
           </p>
-          <p>Under the auspices of the NDPC the policy will entail the:</p>
-          <p>Re-imagining;<br />
-            Re-defining; and<br />
-            Re-purposing<br />
-            of every sector of the economy to ensure that:<br />
-            It is in the interest of Ghana and benefits Ghana<br />
-            It is in the interest of the Ghanaian and benefits the Ghanaian; and<br />
-            It is within cost
+          <p>Under the auspices of the NDPC the policy will entail the:
+            <ul className="list-disc list-inside">
+                <li>Re-imagining;</li>
+                <li>Re-defining; and</li>
+                <li>Re-purposing</li>
+            </ul>
+          </p>
+          <p>The current Growth Oriented Development (GOD) Model with its emphasis on economic growth to a more People Oriented Development (POD) Model with emphasis on both economic growth and people development.  
+          </p>
+          <br/>
+          <p>
+          A Ghana First Within Cost Policy will therefore ensure that policies and decisions taken, and contracts awarded by a Twum-Barimah-Adu administration, will answer the question: 
+          <ul className="list-disc list-inside">
+            <li>It is in the interest of Ghana and benefits Ghana?</li>
+            <li>It is in the interest of the Ghanaian and benefits the Ghanaian? and</li>
+            <li>It is within cost?</li>
+          </ul>
           </p>
           <p>With Ghana Fisrt Within Cost, all decisions made, contracts signed, loans, grants and aids secured, and procurements made by my government will be in the interest and benefit of Ghana, improve the livelihood of the Ghanaian and be within cost.</p>
           <p>Fellow Ghanaians, Ghana First Within Cost is coming!</p>
         </div>
       </section>
 
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
+      <section className="flex flex-col items-start md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
         <img
           src={agricforWealthPic}
           alt="candidate"
@@ -64,6 +74,7 @@ export const PoliciesSection =forwardRef(({
             <li>Seeds (Not GMO)</li>
             <li>Agric Extension Officers</li>
             <li>Irrigation</li>
+            <li>Hydroponics</li>
             <li>Land Zoning</li>
             <li>Scientific Research (ie CSIR / Food Research Institute, Animal Husbandry etc.)</li>
             <li>Good Roads</li>
@@ -79,7 +90,7 @@ export const PoliciesSection =forwardRef(({
         </div>
       </section>
 
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
+      <section className="flex flex-col items-start md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
         <img
           src={ddi}
           alt="candidate"
@@ -99,7 +110,7 @@ export const PoliciesSection =forwardRef(({
         </div>
       </section>
 
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
+      <section className="flex flex-col items-start md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
         <img
           src={esika}
           alt="candidate"
@@ -128,7 +139,7 @@ export const PoliciesSection =forwardRef(({
         </div>
       </section>
 
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
+      <section className="flex flex-col items-start md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
         <img
           src={youth}
           alt="candidate"
@@ -153,7 +164,7 @@ export const PoliciesSection =forwardRef(({
         </div>
       </section>
 
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
+      <section className="flex flex-col items-start md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
         <img
           src={fourDayPolicies}
           alt="candidate"
@@ -174,7 +185,7 @@ export const PoliciesSection =forwardRef(({
         </div>
       </section>
 
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
+      <section className="flex flex-col items-start md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
         <img
           src={educationForAll}
           alt="candidate"
@@ -222,6 +233,57 @@ export const PoliciesSection =forwardRef(({
             <li>Re-evaluation of teacher salaries, conditions of service, and housing; etc.</li>
             <li>Complete review of the whole curriculum program.</li>
             </ol>
+        </div>
+      </section>
+      <section className="flex flex-col items-start md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
+        <img
+          src={createWealth}
+          alt="candidate"
+          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
+        />
+        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
+          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
+           8. CREATE FOR WEALTH
+          </h2>
+          <p>
+          As a people we are created by God with varying degrees of talent, some creative, some industrial, some social, some technological and some entrepreneurial just to name a few. 
+          </p>
+          <p>Culture, <strong className='font-canarobold'>CRE</strong>ative <strong className='font-canarobold'>A</strong>rts, <strong className='font-canarobold'>T</strong>ourism and <strong className='font-canarobold'>E</strong>vents ,<strong className='font-canarobold'>(CREATE FOR WEALTH)</strong> is a policy of Presidential Candidate George Twum-Barimah-Adu for the Cultural, Creative Arts, Tourism and Events Industry.  The Policy is meant to assist those in the CREATE industry to make wealth from their talent and work.</p>
+
+          <p><strong className='font-canarobold'>CREATE FOR WEALTH</strong> will tackle the following areas:</p>
+          <br />
+          <p className='font-canarobold'>TOURISM AND CULTURE INDUSTRY</p>
+          <p>A Twum-Barimah-Adu administration will move the center of the Creative, Cultural, Tourism and Events industry from Accra to each Region under the Regional Minister. This is because tourist sites are in the regions/districts and cultural festivals like: Homowo, Ohum, Aboakyir, Odwira, Yam, Fetu Afahye, Akwambo, Hogbetsosto, Akwasidae, Damba, Bakatue etc.  held by our traditional chiefs takes place in the regions/districts. In partnership with locals and subjects who hail from the area and the traditional chiefs, these festivals will be staged as cultural events tied to tourism in the region/districts the festivals are being held in. My administration will assist and support all Regional Administrations to:
+            <ul className='list-disc list-inside'>
+                <li>Re-tool and resource all regional culture and tourism offices.</li>
+                <li>In partnership with the private and traditional sector, as well as locals and subjects that hail from the area, enhance all tourist sites and roads leading to them in the regions/districts to international standards. </li>
+                <li>Promote and tie tourism in the region/district to the traditional festivals calendar.</li>
+                <li>Develop regional and districts recreational parks and gardens around cultural and museum sites.</li>
+                <li>Support the establishment of regional and traditional museums to capture and showcase the culture, traditions and history of the people and their Chiefs. </li>
+            </ul>
+          </p>
+
+          <br/>
+
+          <p className='font-canarobold'>CREATIVE ARTS INDUSTRY</p>
+          <p>A Twum-Barimah-Adu administration will put in places measures and systems to help those with creative talents to earn a living from their talent and for that matter contribute to the development of the country.
+          A Twum-Barimah-Adu administration will construct in each region a Regional Cultural, Creative Arts and Events Park (The Park). The Park will have:
+          <ul className='list-disc list-inside'>
+                <li>A Regional Theater for the showcase of theater.</li>
+                <li>A Regional Museum and Gallery Center. Whilst the museum will capture and showcase the culture, traditions, customs and history of the region and the various traditional areas and chiefs that make-up the region, the Gallery will provide a commercial outlet for photographers, artist and sculptors (whether wood, glass, metal or stone) to exhibit their creative work for sale; and </li>
+                <li>A Regional Recreational and Garden Center which will host family outings, entertainment and events.</li>
+            </ul>
+            </p>
+
+            <br/>
+
+            <p className='font-canarobold'>MUSICIANS</p>
+            <p>A Twum-Barimah-Adu administration will explore and put in place a local music streaming platform to aid the monetization of music created by artist in the music industry. In this case, all parties including radio stations, clubs, bars, DJ’s etc. who want to play a particular song of an artist will have to go to the site and stream from there. This eliminates any third-party player like GHAMRO taking part of an artist’s money. Government will charge a small percentage of each money made by the artist for maintenance of the site and tax to government. </p>
+
+            <br/>
+
+            <p className='font-canarobold'>COPYRIGHT LAW</p>
+            <p>My government will also review the copyright law in respect to the creative industry and strengthen any section(s) that needs to be strengthened and repeal any section(s) that are inimical to the creative industry.</p>
         </div>
       </section>
       </div>

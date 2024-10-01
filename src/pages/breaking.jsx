@@ -14,6 +14,7 @@ import ddi from '../assets/ddi copy.jpg'
 import esika from '../assets/elevy_.jpg'
 import ghanafirst from '../assets/ghana first.jpg'
 import youth from '../assets/youth.jpg';
+import createWealth from '../assets/CreateWealth.png'
 import fourDayPolicies from '../assets/4 day work week.jpg'
 import Bio1Img from "../assets/bt2Image.png";
 import Divider from "../components/Divider";
@@ -21,6 +22,7 @@ import GeorgeSignImage from '../assets/black_flag.png'
 import { Link } from "react-router-dom";
 import QuoteComponent from "../components/QuoteComponent";
 import { PoliciesSection } from "../components/PoliciesSection";
+
 
 export default function Breakingthe2Page() {
   const sections = [
@@ -197,6 +199,7 @@ export default function Breakingthe2Page() {
   youth={youth} 
   fourDayPolicies={fourDayPolicies} 
   educationForAll={educationForAll} 
+  createWealth={createWealth}
 />
       <div className="hidden lg:block md:block"></div>
 
