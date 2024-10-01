@@ -20,6 +20,7 @@ import Divider from "../components/Divider";
 import GeorgeSignImage from '../assets/black_flag.png'
 import { Link } from "react-router-dom";
 import QuoteComponent from "../components/QuoteComponent";
+import { PoliciesSection } from "../components/PoliciesSection";
 
 export default function Breakingthe2Page() {
   const sections = [
@@ -76,7 +77,7 @@ export default function Breakingthe2Page() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.target === quoteRef.current) {
-            setIsSticky(!entry.isIntersecting);
+             setIsSticky(entry.isIntersecting);
           }
         });
       },
@@ -187,224 +188,87 @@ export default function Breakingthe2Page() {
         </div>
       </div>
 
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
-        <img
-          src={ghanafirst}
-          alt="candidate"
-          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
-        />
-        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
-          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-            1. GHANA FIRST WITHIN COST
-          </h2>
-          <p>
-            Ghana First within Cost is one of presidential candidate George Twum-Barimah-Adu's policies.
-          </p>
-          <p>Under the auspices of the NDPC the policy will entail the:</p>
-          <p>Re-imagining;<br />
-            Re-defining; and<br />
-            Re-purposing<br />
-            of every sector of the economy to ensure that:<br />
-            It is in the interest of Ghana and benefits Ghana<br />
-            It is in the interest of the Ghanaian and benefits the Ghanaian; and<br />
-            It is within cost
-          </p>
-          <p>With Ghana Fisrt Within Cost, all decisions made, contracts signed, loans, grants and aids secured, and procurements made by my government will be in the interest and benefit of Ghana, improve the livelihood of the Ghanaian and be within cost.</p>
-          <p>Fellow Ghanaians, Ghana First Within Cost is coming!</p>
-        </div>
-      </section>
-
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
-        <img
-          src={agricforWealthPic}
-          alt="candidate"
-          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
-        />
-        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
-          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-            2. AGRIC FOR WEALTH
-          </h2>
-          <p>
-            Agric for Wealth is one of presidential candidate George Twum-Barimah-Adu’s policies.
-          </p>
-          <p>In consultation with the ‘relevant bodies’ in the ‘agriculture space’, the Policy’s aim is to ensure that Agriculture (in all its forms) is transformative.</p>
-          <p>My government will prioritize agriculture to ensure that it is enriching to those who partake in it and agricultural outputs cheaper for those who purchase them.</p>
-          <p>To this end Agric For Wealth will cover (but not limited to) the following areas:</p>
-          <ul className="list-disc list-inside">
-            <li>Cost of Finance</li>
-            <li>Promoting Co-Operatives</li>
-            <li>Inputs (eg. Chicks, Fertilizer, Feed, etc.)</li>
-            <li>Machinery</li>
-            <li>Seeds (Not GMO)</li>
-            <li>Agric Extension Officers</li>
-            <li>Irrigation</li>
-            <li>Land Zoning</li>
-            <li>Scientific Research (ie CSIR / Food Research Institute, Animal Husbandry etc.)</li>
-            <li>Good Roads</li>
-            <li>Solar Powered Climate-Controlled Warehouses</li>
-            <li>Markets</li>
-            <li>Exports</li>
-            <li>Buffer Stock</li>
-            <li>Industry</li>
-            <li>School Feeding</li>
-            <li>Wholesale Commercial Markets</li>
-            <li>Retail Commercial Markets</li>
-          </ul>
-        </div>
-      </section>
-
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
-        <img
-          src={ddi}
-          alt="candidate"
-          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
-        />
-        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
-          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-            3. DOMESTIC DIRECT INVESTMENT (DDI)
-          </h2>
-          <p>
-            Every Ghanaian deserves the right to a decent job that for starters pays a ‘living wage’. To this end, it is important that local small, medium and large scale business and industries are supported. It is also important that local labour is re-trained to provide them with modern skills for jobs that are currently in demand. That is why I am introducing an investment policy called Domestic Direct Investments (DDI).
-          </p>
-          <p>Whilst Foreign Direct Investments (FDI) is fashioned to attract and promote foreign investments in the country, Domestic Direct Investment (DDI) does the opposite.</p>
-          <p>This policy ensures that any Company set up in Ghana that sources (at least 70 per cent of) its raw materials in the production of its end product locally enjoys the same benefits as an FDI company, including lower taxes and other government incentives.</p>
-          <p>By putting this policy in action, my government will build our local economy, reduce the weakness on the Ghana Cedi, create good paying jobs, be self-reliant and help free Ghana from foreign aid.</p>
-          <p>Fellow Ghanaians Domestic Direct Investment (DDI) is coming!</p>
-        </div>
-      </section>
-
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
-        <img
-          src={esika}
-          alt="candidate"
-          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
-        />
-        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
-          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-            4. E-SIKA
-          </h2>
-          <p>
-            E-Sika replaces E-Levy and is one of presidential candidate George Twum-Barimah-Adu’s policies.
-          </p>
-          <p>E-Sika is a savings scheme where anyone who pays for anything electronically (including MoMo) is deducted and the money deducted goes into the E-Sika Savings Account of the payer tied to his/her Ghana Card.</p>
-          <p>E-Sika Savings Account will be divided in three parts:</p>
-          <ul className="list-disc list-inside">
-            <li>PENSION- To be paid as a lump sum to the individual upon attaining the age of 60yrs with all interest included. This pension will not be managed by SSNIT.</li>
-            <li>HOUSING- To be used by the individual towards mortgage for his/her home.</li>
-            <li>WELFARE- To be paid out to the individual every 12 months for the individual to use as he/she pleases.</li>
-          </ul>
-          <p>This policy is to ensure that all Ghanaians have pension, own a house and have money for their welfare.
-            <br />
-            With E-Sika, you spend, you save.
-            <br />
-            Fellow Ghanaians E-Sika is coming!
-          </p>
-        </div>
-      </section>
-
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
-        <img
-          src={youth}
-          alt="candidate"
-          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
-        />
-        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
-          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-            5. DISTRICT CONTRACTS FOR THE YOUTH
-          </h2>
-          <p>
-            District Contracts for the Youth (DCY) is one of presidential candidate George Twum-Barimah-Adu’s policies.
-          </p>
-          <p>This policy ensures that contracts that are to be executed by the Government through the District Assemblies are awarded to qualified youths who live in the District.</p>
-          <p>This policy will;</p>
-          <ul className="list-disc list-inside">
-            <li>Grow the local economy,</li>
-            <li>Retain wealth in the district,</li>
-            <li>Create wealth amongst the youth in every district in Ghana; and</li>
-            <li>Prevent the youth from migrating from poorer districts to richer districts.</li>
-          </ul>
-          <p>Fellow Ghanaians District Contracts for the Youth, is coming.</p>
-        </div>
-      </section>
-
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
-        <img
-          src={fourDayPolicies}
-          alt="candidate"
-          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
-        />
-        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
-          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-            6. 4-DAY WORK WEEK
-          </h2>
-          <p>
-            A 4-day work week (termed: Work and Happiness) is one of Presidential Candidate George Twum-Barimah-Adu’s policies.
-          </p>
-          <p>In consultation with the ‘relevant bodies’ in the ‘employment and labour space’, the Policy’s aim, is to introduce a 4-day work week - from Monday to Thursday.  Monday to Thursday is for the employer and Friday to Sunday is for the employee.</p>
-
-          <p>This policy is not only meant to boost productivity but also give the average worker a longer weekend for personal work, rest and family time.</p>
-          <br />
-          <p>Fellow Ghanaians, Work and Happiness is coming!</p>
-        </div>
-      </section>
-
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
-        <img
-          src={educationForAll}
-          alt="candidate"
-          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
-        />
-        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-10 bg-white relative">
-          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-          7. QUALITY EDUCATION 4 ALL
-          </h2>
-          <p>
-          Quality Education 4 All is one Presidential Candidate George Twum-Barimah-Adu’s policies. 
-          </p>
-          <p>In consultation with the ‘relevant bodies’ in the ‘educational space’, the Policy’s aim, is to ensure that all students across the country get the same first-class quality education; irrespective of the area they live, their background and/or the level of their parents’ income.</p>
-          <p>This will be achieved through:</p>
-          <ul className="list-disc">
-            <li>Digitization</li>
-            <li>Construction of smart school enclaves in communities in every district; and</li>
-            <li>Re-evaluation of the educational curriculum to ensure that students are critical thinkers, entrepreneurs and innovators.</li>
-          </ul>
-          <p>The Smart School Enclaves which will cover from Kindergarten to SHS 3, will have and entail the following:</p>
-          <ol className="list-decimal">
-            <li>Facilities that qualify a school to be classified as a “Smart School”, including fast, stable and cheap internet connectivity.</li>
-            <li>All teaching will be online. Same first-class quality teacher teaching a subject (eg Math) being piped at the same time to all students in the region through the internet.</li>
-            <li>Teachers in the classroom will assist with homework and when the student has a question on the subject being taught; etc.
-            </li>
-            <li>Learning materials and teaching materials will be online.</li>
-            <li>Schools will be on large acres of land that will have the following:
-            <ul className="list-disc list-inside">
-            <li>Fully walled compound.</li>
-            <li>Living quarters for teachers.</li>
-            <li>Dining and kitchen facilities for students.</li>
-            <li>Library</li>
-            <li>Convenient shop for teachers and students.</li>
-            <li>School farm comprising all aspects of agriculture to aid in the practical teaching of agriculture in schools.</li>
-            <li>Healthcare facility with a pharmacy to be manned by a qualified health officer and a qualified pharmacist. The healthcare facility will be designed such that the community will be able to access it, however the students will always have priority at all times</li>
-            <li>Own supply of treated water from boreholes</li>
-            <li>Solar power generation to ensure that the schools don’t depend on national grid.</li>
-            <li>Boarding facilities for students from age 12.</li>
-          </ul>
-            </li>
-          </ol>
-          <p>Quality Education 4 All, will also include:</p>
-          <ol className="list-decimal">
-            <li>Re-training of teachers on the Smart School system</li>
-            <li>Re-evaluation of teacher salaries, conditions of service, and housing; etc.</li>
-            <li>Complete review of the whole curriculum program.</li>
-            </ol>
-        </div>
-      </section>
-
+      <PoliciesSection
+      ref={quoteRef}
+  ghanafirst={ghanafirst} 
+  agricforWealthPic={agricforWealthPic} 
+  ddi={ddi} 
+  esika={esika} 
+  youth={youth} 
+  fourDayPolicies={fourDayPolicies} 
+  educationForAll={educationForAll} 
+/>
       <div className="hidden lg:block md:block"></div>
 
-      <QuoteComponent
-        ref={quoteRef}
-        quoteText="Since independence, the political norm has been that a political party going into an election must sing praises of its past achievements and make high-sounding promises for the future. At the same time, a political party must paint its opponents in the worst possible light. We have mastered this art, and in the process, we have forgotten that politics should be about the future of our children and our motherland. We have reduced election campaigns to bitter struggles between competitors seeking power for the wrong reasons.”"
-        authorText="- Kwaku Kwarteng; MP, Obuasi West"
+      <div className="flex flex-col justify-center items-center bg-[#BA2026] px-4">
+  <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
+    <h1 className="mb-6 mt-6 text-center text-4xl text-white font-canarobold">
+    ILLEGAL MINING: A FAILURE OF OUR CURRENT DEVELOPMENTAL MODEL.
+    </h1>
+    <p className="mb-6 text-left text-white font-canarobook">
+    Article 36 clause 9 under Chapter 6 of the 1992 Constitution of Ghana, states that “the state shall take appropriate measures needed to protect and safeguard the national environment for posterity … .” 
+      <br /><br />
+      Instead, today what we see and read is the crass and blatant destruction of our national environment including water bodies and forest cover by all manner of persons including state actors (politicians). What is happening today is environmental genocide which has the potential to affect the survivability of our nation and people. The overhyped political infrastructural development is of no consequence to a nation when the very foundation of its life is under threat.
+      <br /><br />
+      The Colonial Policy of appropriating community natural resources for central control and exploitation is the root cause of the current illegal mining saga. This age-long colonial policy of appropriating minerals and other natural resources of value from the communities for crown control has outlived its relevance and is the main reason for the devastation of our forest resources and Water bodies through politically engineered concessions from Accra. Which side-steps and clips the wings of Traditional Leaders, whose primary mandate is to protect the forests, and water bodies, not only as communal resource heritage and sanctuaries of their gods but also the life of the unborn generation.
+      <br /><br />
+      The interlocking colonial crown policy of granting concessions from Accra and the exclusion of The Traditional Sector in the current unipolar institutional governance model constitute the dysfunctional process mechanism being weaponized against our very existence as humans. 
+      <br /><br />
+      The historiography of colonial/crown land use policies in Africa were driven by exploitation as the principal interest and that underpinned all acts governing lands and resource management of which Ghana is not an exception.  
+      <br /><br />
+      The British manipulation of laws to take over the land and other resources of the people for crown control has continued to date after independence when colonial structures were left intact. 
+      <br /><br /></p>
+      
+      <h2 className="mb-6 mt-6 text-center text-2xl text-white font-canarobold">The matrix of open-access resource security and community exigencies </h2>
+      <p className="mb-6 text-left text-white font-canarobook">
+      Open-Access Resources (Land, Flora & Fauna/Mineral resources within) are integral part of Communities Resource Area and Heritage (CORAH). 
+      <br /><br />
+      There are customary laws and conventions that govern the use and preservation of these open-access resources. 
+      <br /><br />
+      The moment an external entity appropriates the right to exploit these resources under the ruse of state interest to the exclusion of the indigenous community; and the indigenous community is made to bear the cost of exploitation, the community is compelled to take an offensive posture against their resources area with dire consequences. It is this crown colonial policy mentality over resource exploitation from the communities that underlies the current danger which could be appropriately described as a crime against humanity.
+      <br /><br /></p>
+      <h2 className="mb-6 mt-6 text-center text-2xl text-white font-canarobold">The Environmental Protection (Mining in Forest Reserves) Regulation LI 2462</h2>
+      <p className="mb-6 text-left text-white font-canarobook">
+      The passage of this legislation in November 2022 giving the President the authority to allow mining and prospecting in forest reserves if he deems it necessary in the national interest bears all the hallmarks of colonial land control systems for exploitation by a predatory political culture. The quest for independence was but a substitution of white rule for indigenous tyranny whilst the structures of exploitation remained intact.</p>
+      <br /><br />
+      <h2 className="mb-6 mt-6 text-center text-2xl text-white font-canarobold">The The Traditional Sector Partnership in the Management of Open-Access Resources: The Triple Helix Partnership Approach</h2>
+      <p className="mb-6 text-left text-white font-canarobook">
+      The time has now come for a new framework for consensus building towards a Developmental Model, with the inclusion of the Traditional Sector as partners in the Agreement, Management and Benefit sharing of Land Resources as well as its preservation within the framework of the Communities/Traditional Area Values and Heritage systems. </p>
+      <br /><br />
+
+      <h2 className="mb-6 mt-6 text-center text-2xl text-white font-canarobold">Poverty Eradication and Sustainable Environmental Management</h2>
+      <p className="mb-6 text-left text-white font-canarobook">
+        
+      Poverty eradication and sustainable environmental management can only become a reality under an all-inclusive Public-Private-Traditional Sector Partnership, especially in the management of Open-Access Resources, which is part of the Traditional Sector Resource Area, but for which an age-old crown colonial policy excluded communities.
+
+      <br /><br />
+      When the Resource Area Proximate Traditional Sector/Community is excluded from the Management and Benefit sharing of open-access resources, the indigenes are compelled by coping exigencies to take an offensive posture against their own environment as a survival coping strategy especially in the absence of any meaningful job prospect and a definite accountability policy. 
+      <br /><br />
+      Ghana is said to be currently Africa’s top gold producer and an oil producing county, yet poverty is widespread and further exacerbated by the Neo-Colonial-Debt -Trap and its taxing consequences on businesses and the population, including pensioners. How can one justify and celebrate this status when thousands of schools are still under trees; Twenty-first century major inter-national and intra-national roads are still in single-lanes and poorly lit, devouring breadwinning Ghanaians in horrific numbers on regular basis through head-on collisions and the frightening threat of staggering youth unemployment. 
+      <br /><br />
+      If the Existing Regime and order cannot protect our forests resources and water bodies, secure our wellbeing and welfare and guarantee dividends from these resources to the communities, the fundamental thing for Ghana and Ghanaians to do on December 7th, 2024, is Break the current duopoly (that has caged Ghana and Ghanaians) for thirty-two years and usher in a New Order. 
+      <br /><br />
+      As President, Head of State, Head of Government and Commander-In-Chief of the Armed Forces of Ghana, my pledge to Ghana and Ghanaians is to fight the menace of illegal mining (galamsey) without fear nor favour, with:
+      <br />
+      1. Full enforcement of existing laws.
+      <br />
+      2. Repealing LI 2462.
+      <br />
+      3. Passing new laws where necessary.
+      <br />
+      4. Tightening loopholes in existing laws.
+      <br />
+      5. Providing alternative livelihoods such as: Carbon Credit harvesting and a legal industrial hemp industry to the youth in illegal mining (galamsey) and other Ghanaians who want to venture into those areas; and
+
+      <br />
+      6. Establishing a new developmental framework involving public-private-traditional sectors.
+    </p>
+  </div>
+</div>
+<QuoteComponent
+        quoteText="The time has now come for a new framework for consensus building towards a new Developmental Mode, with the inclusion of the Traditional Sector as partners in the Agreement, Management and Benefit sharing of Land Resources as well as its preservation within the framework of the Communities/Traditional Area Values and Heritage systems."
+        authorText="Nyaaba-Aweeba Azongo."
+        roleText="Vice-Presidential Candidate to George Twum-Barimah-Adu"
         backgroundColor={'#b92026'}
       />
 
@@ -483,6 +347,11 @@ export default function Breakingthe2Page() {
     />
   </div>
 </div>
+<QuoteComponent
+        quoteText="Since independence, the political norm has been that a political party going into an election must sing praises of its past achievements and make high-sounding promises for the future. At the same time, a political party must paint its opponents in the worst possible light. We have mastered this art, and in the process, we have forgotten that politics should be about the future of our children and our motherland. We have reduced election campaigns to bitter struggles between competitors seeking power for the wrong reasons.”"
+        authorText="- Kwaku Kwarteng; MP, Obuasi West"
+        backgroundColor={'#b92026'}
+      />
 
 
       <div className="flex flex-col items-center bg-[#009845] px-4">
@@ -517,9 +386,8 @@ export default function Breakingthe2Page() {
       </div>
 
       <QuoteComponent
-        ref={quoteRef}
-        quoteText="The horse is prepared for the day of battle, but the victory belongs to the LORD."
-        authorText="- Proverbs 21 v 31 NLT"
+        quoteText="If the Existing Regime and order cannot protect our forests resources and water bodies, secure our wellbeing and welfare and guarantee dividends from these resources to the communities, the fundamental thing for Ghana and Ghanaians to do on December 7th, 2024, is Break the current duopoly (that has caged Ghana and Ghanaians) for thirty-two years and usher in a New Order."
+        roleText="Vice-Presidential Candidate to George Twum-Barimah-Adu"
         backgroundColor={'#b92026'}
       />
     </div>

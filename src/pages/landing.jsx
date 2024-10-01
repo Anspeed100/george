@@ -71,18 +71,21 @@ export default function LandingPage() {
                   Welcome Dear Friend,
                 </h1>
                 <h1 className="text-start font-canarobook md:text-2xl text-center">
-                  I am George Twum-Barimah-Adu 
-                  <br/>
-                  <br/> 
+                  I am George Twum-Barimah-Adu
+                  <br />
+                  <br />
                   I want your support and vote to be your next President – to serve you as Head of State, Head of Government and Commander-In-Chief of the Armed Forces of Ghana!
-                  <br/>
                   <br />
-                  Ghana does not need Used Breath or Re-cycled Breath. What Ghana needs is Fresh Breath. 
                   <br />
-                  <br/>
+                  Ghana does not need Used Breath or Re-cycled Breath. What Ghana needs is Fresh Breath.
+                  <br />
+                  <br />
+                  So together, let us unite, Break the 2 and build a dignified, strong and prosperous nation that is self-reliant and free from foreign aid.
+                  <br />
+                  <br />
                   God Bless Ghana and make her Great, Strong, Peaceful and Prosperous.
-                  <br/>
-                  <br/>
+                  <br />
+                  <br />
                   Thank you!
                 </h1>
                 <div className="flex justify-end">
@@ -263,6 +266,20 @@ export default function LandingPage() {
                       Ghanaians shall be truly free and enjoy the boons God has
                       so generously bestowed upon us.
                     </p>
+                    <br />
+                    <p>
+                      As President, Head of State, Head of Government and Commander-In-Chief of the Armed Forces of Ghana, my pledge to Ghana and Ghanaians is to fight the menace of illegal mining (galamsey) without fear nor favour, with:
+                    </p>
+                    <br/>
+                    <ul className="list-disc">
+                      <li>Full enforcement of existing laws.</li>
+                      <li>Repealing LI 2462.</li>
+                      <li>Passing new laws where necessary.</li>
+                      <li>Tightening loopholes in existing laws.</li>
+                      <li>Providing alternative livelihoods such as: Carbon Credit harvesting and a legal industrial hemp industry to the youth in illegal mining (galamsey) and other Ghanaians who want to venture into those areas; and</li>
+                      <li>Establishing a new developmental framework involving public-private-traditional sectors.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -375,8 +392,8 @@ export default function LandingPage() {
 
           <QuoteComponent
             backgroundColor={"#500909"}
-            quoteText="Dear friends, together, let us unite, Break the 2 and build a dignified, strong and prosperous nation that is self-reliant and free from foreign aid."
-            authorText="- George Twum-Barimah-Adu"
+            quoteText="The horse is prepared for the day of battle, but victory belongs to the Lord"
+            authorText="- Proverbs 21 v 31 NLT"
           />
         </div>
       </div>
