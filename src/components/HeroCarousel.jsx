@@ -38,7 +38,7 @@ const HeroCarousel = () => {
   ];
 
   return (
-    <div className="relative w-full mt-28">
+    <div className="relative w-full bg-[#b92026] mt-28">
       <Slider {...settings}>
         {slides.map((slide) => (
           <div

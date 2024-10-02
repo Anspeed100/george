@@ -164,27 +164,6 @@ export const PoliciesSection =forwardRef(({
         </div>
       </section>
 
-      <section className="flex flex-col items-start md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
-        <img
-          src={fourDayPolicies}
-          alt="candidate"
-          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
-        />
-        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
-          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-            6. 4-DAY WORK WEEK
-          </h2>
-          <p>
-            A 4-day work week (termed: Work and Happiness) is one of Presidential Candidate George Twum-Barimah-Adu’s policies.
-          </p>
-          <p>In consultation with the ‘relevant bodies’ in the ‘employment and labour space’, the Policy’s aim, is to introduce a 4-day work week - from Monday to Thursday.  Monday to Thursday is for the employer and Friday to Sunday is for the employee.</p>
-
-          <p>This policy is not only meant to boost productivity but also give the average worker a longer weekend for personal work, rest and family time.</p>
-          <br />
-          <p>Fellow Ghanaians, Work and Happiness is coming!</p>
-        </div>
-      </section>
-
       <section className="flex flex-col items-start md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#B2444C] w-full">
         <img
           src={educationForAll}
@@ -193,7 +172,7 @@ export const PoliciesSection =forwardRef(({
         />
         <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-10 bg-white relative">
           <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-          7. QUALITY EDUCATION 4 ALL
+          6. QUALITY EDUCATION 4 ALL
           </h2>
           <p>
           Quality Education 4 All is one Presidential Candidate George Twum-Barimah-Adu’s policies. 
@@ -243,7 +222,7 @@ export const PoliciesSection =forwardRef(({
         />
         <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
           <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
-           8. CREATE FOR WEALTH
+           7. CREATE FOR WEALTH
           </h2>
           <p>
           As a people we are created by God with varying degrees of talent, some creative, some industrial, some social, some technological and some entrepreneurial just to name a few. 
@@ -284,6 +263,27 @@ export const PoliciesSection =forwardRef(({
 
             <p className='font-canarobold'>COPYRIGHT LAW</p>
             <p>My government will also review the copyright law in respect to the creative industry and strengthen any section(s) that needs to be strengthened and repeal any section(s) that are inimical to the creative industry.</p>
+        </div>
+      </section>
+
+      <section className="flex flex-col items-start md:flex-row md:justify-center gap-5 md:gap-10 p-5 md:px-10 bg-[#9B3A45] w-full">
+        <img
+          src={fourDayPolicies}
+          alt="candidate"
+          className="w-full h-auto max-w-xs md:max-w-md md:h-[400px]"
+        />
+        <div className="flex flex-col font-canarobook justify-center items-start w-full md:w-[40%] gap-3 p-5 bg-white relative">
+          <h2 className="font-bold font-canarobold text-3xl text-[#b91f26] uppercase pb-5">
+            8. 4-DAY WORK WEEK
+          </h2>
+          <p>
+            A 4-day work week (termed: Work and Happiness) is one of Presidential Candidate George Twum-Barimah-Adu’s policies.
+          </p>
+          <p>In consultation with the ‘relevant bodies’ in the ‘employment and labour space’, the Policy’s aim, is to introduce a 4-day work week - from Monday to Thursday.  Monday to Thursday is for the employer and Friday to Sunday is for the employee.</p>
+
+          <p>This policy is not only meant to boost productivity but also give the average worker a longer weekend for personal work, rest and family time.</p>
+          <br />
+          <p>Fellow Ghanaians, Work and Happiness is coming!</p>
         </div>
       </section>
       </div>

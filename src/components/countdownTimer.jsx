@@ -31,7 +31,7 @@ export default function CountdownTimer() {
         return () => clearInterval(timer);
       }, []);
   return (
-    <div className="flex flex-col items-center bg-[#b92026] pt-4 space-y-4 px-4">
+    <div className="flex flex-col items-center bg-[#b92026] pt-4 pb-4 space-y-4 px-4">
       <h1 className="text-2xl text-white font-canarobold md:text-4xl">Countdown to Elections</h1>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 w-full max-w-md sm:max-w-xl">
         <div className="p-4 bg-white text-black rounded-lg text-center">

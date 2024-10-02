@@ -55,6 +55,7 @@ export default function LandingPage() {
   return (
     <>
       <HeroCarousel />
+      <CountdownTimer/>
       <div className="transition-container">
         <div className="relative mb-">
           <div className="lg:flex md:flex flex-col relative mt-8">
@@ -112,7 +113,7 @@ export default function LandingPage() {
               />
             </div>
           </div>
-          <CountdownTimer/>
+          
           <QuoteComponent
             backgroundColor={"#b92026"}
             quoteText="Countrymen, the task ahead is great indeed, and heavy is the responsibility; and yet it is a noble and glorious challenge - a challenge which calls for the courage to dream, the courage to believe, the courage to dare, the courage to do, the courage to envision, the courage to fight, the courage to work, the courage to achieve - to achieve the highest excellencies and the fullest greatness of man. Dare we ask for more in life?"
