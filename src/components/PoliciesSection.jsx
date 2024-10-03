@@ -231,23 +231,23 @@ export const PoliciesSection =forwardRef(({
 
           <p><strong className='font-canarobold'>CREATE FOR WEALTH</strong> will tackle the following areas:</p>
           <br />
-          <p className='font-canarobold'>TOURISM AND CULTURE INDUSTRY</p>
+          <p className='font-canarobold'>a. TOURISM AND CULTURE INDUSTRY</p>
           <p>A Twum-Barimah-Adu administration will move the center of the Creative, Cultural, Tourism and Events industry from Accra to each Region under the Regional Minister. This is because tourist sites are in the regions/districts and cultural festivals like: Homowo, Ohum, Aboakyir, Odwira, Yam, Fetu Afahye, Akwambo, Hogbetsosto, Akwasidae, Damba, Bakatue etc.  held by our traditional chiefs takes place in the regions/districts. In partnership with locals and subjects who hail from the area and the traditional chiefs, these festivals will be staged as cultural events tied to tourism in the region/districts the festivals are being held in. My administration will assist and support all Regional Administrations to:
-            <ul className='list-disc list-inside'>
+            <ol className='list-decimal list-inside'>
                 <li>Re-tool and resource all regional culture and tourism offices.</li>
                 <li>In partnership with the private and traditional sector, as well as locals and subjects that hail from the area, enhance all tourist sites and roads leading to them in the regions/districts to international standards. </li>
                 <li>Promote and tie tourism in the region/district to the traditional festivals calendar.</li>
                 <li>Develop regional and districts recreational parks and gardens around cultural and museum sites.</li>
                 <li>Support the establishment of regional and traditional museums to capture and showcase the culture, traditions and history of the people and their Chiefs. </li>
-            </ul>
+            </ol>
           </p>
 
           <br/>
 
-          <p className='font-canarobold'>CREATIVE ARTS INDUSTRY</p>
+          <p className='font-canarobold'>b. CREATIVE ARTS INDUSTRY</p>
           <p>A Twum-Barimah-Adu administration will put in places measures and systems to help those with creative talents to earn a living from their talent and for that matter contribute to the development of the country.
           A Twum-Barimah-Adu administration will construct in each region a Regional Cultural, Creative Arts and Events Park (The Park). The Park will have:
-          <ul className='list-disc list-inside'>
+          <ul className='list-decimal list-inside'>
                 <li>A Regional Theater for the showcase of theater.</li>
                 <li>A Regional Museum and Gallery Center. Whilst the museum will capture and showcase the culture, traditions, customs and history of the region and the various traditional areas and chiefs that make-up the region, the Gallery will provide a commercial outlet for photographers, artist and sculptors (whether wood, glass, metal or stone) to exhibit their creative work for sale; and </li>
                 <li>A Regional Recreational and Garden Center which will host family outings, entertainment and events.</li>
@@ -256,12 +256,12 @@ export const PoliciesSection =forwardRef(({
 
             <br/>
 
-            <p className='font-canarobold'>MUSICIANS</p>
+            <p className='font-canarobold'>MUSICIANS/ARTISTS</p>
             <p>A Twum-Barimah-Adu administration will explore and put in place a local music streaming platform to aid the monetization of music created by artist in the music industry. In this case, all parties including radio stations, clubs, bars, DJ’s etc. who want to play a particular song of an artist will have to go to the site and stream from there. This eliminates any third-party player like GHAMRO taking part of an artist’s money. Government will charge a small percentage of each money made by the artist for maintenance of the site and tax to government. </p>
 
             <br/>
 
-            <p className='font-canarobold'>COPYRIGHT LAW</p>
+            <p className='font-canarobold'>c. COPYRIGHT LAW</p>
             <p>My government will also review the copyright law in respect to the creative industry and strengthen any section(s) that needs to be strengthened and repeal any section(s) that are inimical to the creative industry.</p>
         </div>
       </section>

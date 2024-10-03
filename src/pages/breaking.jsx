@@ -7,6 +7,7 @@ import Assets14Img from "../assets/assets_14.png";
 import Assets15Img from "../assets/GhanaIcon.png";
 import Assets16Img from "../assets/assets_16.png";
 import Assets17Img from "../assets/assets_17.png";
+import galamseyImage from "../assets/galamsey b.jpg";
 import manifestoImage from '../assets/breaking_user_square.png';
 import agricforWealthPic from '../assets/agric for wealth.jpg'
 import educationForAll from '../assets/quality education for all.jpg'
@@ -203,13 +204,13 @@ export default function Breakingthe2Page() {
 />
       <div className="hidden lg:block md:block"></div>
 
-      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 md:px-5 pb-3 w-full">
-        {/* <img
-          src={manifestoImage}
+      <section className="flex flex-col items-center md:flex-row md:justify-center gap-5 md:gap-10 md:px-5 pb-3 pt-3 w-full">
+        <img
+          src={galamseyImage}
           alt="candidate"
           className="h-[300px] md:h-[400px]"
-        /> */}
-        <div className="flex flex-col font-canarobook justify-center items-center md:items-start md:w-[80%] gap-3 px-10 bg-white p-5 relative md:h-[400px] md:justify-center">
+        />
+        <div className="flex flex-col font-canarobook justify-center items-center md:items-start md:w-[50%] gap-3 px-10 bg-white p-5 relative md:h-[400px] md:justify-center">
           <h2 className="font-bold text-3xl text-[#b91f26] pb-5">
             My Illegal Mininig Pledge
           </h2>
