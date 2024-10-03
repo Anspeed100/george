@@ -211,8 +211,8 @@ export default function Breakingthe2Page() {
           className="h-[300px] md:h-[400px]"
         />
         <div className="flex flex-col font-canarobook justify-center items-center md:items-start md:w-[50%] gap-3 px-10 bg-white p-5 relative md:h-[400px] md:justify-center">
-          <h2 className="font-bold text-3xl text-[#b91f26] pb-5">
-            My Illegal Mininig Pledge
+          <h2 className="font-canarobold text-3xl text-[#b91f26] pb-5">
+            My Illegal Mining Pledge
           </h2>
           <p>
           Article 36 clause 9 under Chapter 6 of the 1992 Constitution of Ghana, states that “the state shall take appropriate measures needed to protect and safeguard the national environment for posterity … .” 
