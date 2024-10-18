@@ -30,9 +30,33 @@ export default function AboutPage() {
             </h4>
             <div className="font-canarobook">
               <p>
-                George Twum-Barimah-Adu (uncle George) was born on 18 August 1963, the third child of the late Frank Brako Adu Snr, (Teacher Adu), a public servant and the late Beatrice Mariam Ama Acheampong, a government school teacher at Old Tafo. Uncle George is the nephew of the late Kwaku Boateng Esq, a former government Minister in the government of Osagyefo Dr. Kwame Nkrumah. A brother to Magaret Mary Adu (MD Aomega Lodges), Frank Brako Adu Jnr. (former MD of CAL Bank PLC); and the late Joseph Boakye-Danquah-Adu, (former MP of Abuakwa North Constituecy).
-                Uncle George attended Castle Road Methodist Primary School (Adabraka), Englebert School (Airport Residential Area), and Garrison Primary (Burma Camp), before attending Presbyterian Boys’ Secondary School (PRESEC, Legon) now Presbyterian Boys’ Senior High School; from 1975 to 1980.
-                After secondary school uncle George pursued a bachelor's degree in International Relations from the College of Arts and Sciences, Florida International University (FIU), Miami, Florida. And later a Master of Arts in International Studies at the same university; graduating on April 19, 1991.  At FIU he was a student Senator, representing the College of Arts and Sciences, Chairman of the Board of Governors for the North Miami Campus, a Faculty Scholar, Member Faculty Scholars Executive Board and Chairman of the Faculty Scholars Committee on Housing.
+                George Twum-Barimah-Adu (uncle George) was born on 18 August
+                1963, the third child of the late Frank Brako Adu Snr, (Teacher
+                Adu), a public servant and the late Beatrice Mariam Ama
+                Acheampong, a government school teacher at Old Tafo. Uncle
+                George is the nephew of the late Kwaku Boateng Esq, a former
+                government Minister in the government of Osagyefo Dr. Kwame
+                Nkrumah. A brother to Magaret Mary Adu (MD Aomega Lodges), Frank
+                Brako Adu Jnr. (former MD of CAL Bank PLC); and the late Joseph
+                Boakye-Danquah-Adu, (former MP of Abuakwa North Constituecy).</p>
+                <br/>
+                <p>
+                Uncle George attended Castle Road Methodist Primary School
+                (Adabraka), Englebert School (Airport Residential Area), and
+                Garrison Primary (Burma Camp), before attending Presbyterian
+                Boys’ Secondary School (PRESEC, Legon) now Presbyterian Boys’
+                Senior High School; from 1975 to 1980.</p>
+                <br/>
+                <p> After secondary school
+                uncle George pursued a bachelor's degree in International
+                Relations from the College of Arts and Sciences, Florida
+                International University (FIU), Miami, Florida. And later a
+                Master of Arts in International Studies at the same university;
+                graduating on April 19, 1991. At FIU he was a student Senator,
+                representing the College of Arts and Sciences, Chairman of the
+                Board of Governors for the North Miami Campus, a Faculty
+                Scholar, Member Faculty Scholars Executive Board and Chairman of
+                the Faculty Scholars Committee on Housing.
               </p>
             </div>
           </div>
@@ -48,11 +72,7 @@ export default function AboutPage() {
             </h4>
             <div className="font-canarobook">
               <p>
-                Uncle George returned to Ghana in 1993 and started working with
-                the National Insurance Commission in October of the same year. He
-                left the Commission in April 2000 to prepare to enter the
-                private sector. In 2001 he became an Executive Director of
-                Fun Games Limited, developers of Arrive Alive Board Game. In 2006 he authored the HIV and AIDS book titled Behaviour Brings Success, which is currently in its Fourth Edition. In 2009 he developed the Road User Playing Cards (which is the Ghana Highway Code in a card game format), Bonanza Card Game, and Nudu Board Game which are currently licensed to Dominion Games Limited, developers of WordMeetsTee mobile Word game and other digital products.
+              Uncle George returned to Ghana in 1993 and started worked with National Insurance Commission in October of the same year. He left the Commission in April 2000 to prepare to enter the private sector. In 2001 he became an Executive Director of Fun Games Limited; developers of Arrive Alive Board Game. In 2006 in authored the HIV and AIDS book titled Behaviour Brings Success, which is currently in its Fourth Edition. In 2009 he developed the Road User Playing Cards (which is the Ghana Highway Code in a card game format), Bonanza Card Game, and Nudu Board Game which are currently licensed to Dominion Games Limited, developers of WordMeetsTee mobile Word game and other digital products.  
               </p>
             </div>
           </div>

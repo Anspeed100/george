@@ -9,7 +9,7 @@ const IllegalMiningPage = () => {
 
       <div className="flex flex-col items-center justify-center min-h-screen bg-[url('/src/assets/georgeSignImage.png')] bg-cover bg-center px-4">
         <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-4xl mx-auto">
-        <p className="mb-6 text-left text-black font-canarobook">
+        <p className="mb-6 text-justify text-black font-canarobook">
     Article 36 clause 9 under Chapter 6 of the 1992 Constitution of Ghana, states that “the state shall take appropriate measures needed to protect and safeguard the national environment for posterity … .” 
       <br /><br />
       Instead, today what we see and read is the crass and blatant destruction of our national environment including water bodies and forest cover by all manner of persons including state actors (politicians). What is happening today is environmental genocide which has the potential to affect the survivability of our nation and people. The overhyped political infrastructural development is of no consequence to a nation when the very foundation of its life is under threat.
@@ -24,7 +24,7 @@ const IllegalMiningPage = () => {
       <br /><br /></p>
       
       <h2 className="mb-6 mt-6 text-center text-2xl text-black font-canarobold">The matrix of open-access resource security and community exigencies </h2>
-      <p className="mb-6 text-left text-black font-canarobook">
+      <p className="mb-6 text-justify text-black font-canarobook">
       Open-Access Resources (Land, Flora & Fauna/Mineral resources within) are integral part of Communities Resource Area and Heritage (CORAH). 
       <br /><br />
       There are customary laws and conventions that govern the use and preservation of these open-access resources. 
@@ -32,16 +32,16 @@ const IllegalMiningPage = () => {
       The moment an external entity appropriates the right to exploit these resources under the ruse of state interest to the exclusion of the indigenous community; and the indigenous community is made to bear the cost of exploitation, the community is compelled to take an offensive posture against their resources area with dire consequences. It is this crown colonial policy mentality over resource exploitation from the communities that underlies the current danger which could be appropriately described as a crime against humanity.
       <br /><br /></p>
       <h2 className="mb-6 mt-6 text-center text-2xl text-black font-canarobold">The Environmental Protection (Mining in Forest Reserves) Regulation LI 2462</h2>
-      <p className="mb-6 text-left text-black font-canarobook">
+      <p className="mb-6 text-justify text-black font-canarobook">
       The passage of this legislation in November 2022 giving the President the authority to allow mining and prospecting in forest reserves if he deems it necessary in the national interest bears all the hallmarks of colonial land control systems for exploitation by a predatory political culture. The quest for independence was but a substitution of white rule for indigenous tyranny whilst the structures of exploitation remained intact.</p>
       <br /><br />
       <h2 className="mb-6 mt-6 text-center text-2xl text-black font-canarobold">The The Traditional Sector Partnership in the Management of Open-Access Resources: The Triple Helix Partnership Approach</h2>
-      <p className="mb-6 text-left text-black font-canarobook">
+      <p className="mb-6 text-justify text-black font-canarobook">
       The time has now come for a new framework for consensus building towards a Developmental Model, with the inclusion of the Traditional Sector as partners in the Agreement, Management and Benefit sharing of Land Resources as well as its preservation within the framework of the Communities/Traditional Area Values and Heritage systems. </p>
       <br /><br />
 
       <h2 className="mb-6 mt-6 text-center text-2xl text-black font-canarobold">Poverty Eradication and Sustainable Environmental Management</h2>
-      <p className="mb-6 text-left text-black font-canarobook">
+      <p className="mb-6 text-justify text-black font-canarobook">
         
       Poverty eradication and sustainable environmental management can only become a reality under an all-inclusive Public-Private-Traditional Sector Partnership, especially in the management of Open-Access Resources, which is part of the Traditional Sector Resource Area, but for which an age-old crown colonial policy excluded communities.
 

@@ -79,13 +79,11 @@ export default function Navbar({ useRed }) {
                 {item.name}
               </Disclosure.Button>
             ))}
-            <div className="md:hidden block mt-6">
-              <href
-                a="https://donate4twum.vercel.app/"
-                className="bg-[#b91f26] text-white text-xl rounded-md px-3 py-2 font-semibold"
-              >
-                Donate
-              </href>
+            <div className="md:hidden block mt-6 mb-6">
+              <Link to="https://donate4twum.vercel.app/" className="bg-[#b91f26] text-white text-xl rounded-md px-3 py-2 font-semibold">
+              
+                <span className="button-text">Donate</span>
+                </Link>
             </div>
           </Disclosure.Panel>
         </>

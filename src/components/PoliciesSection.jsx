@@ -261,8 +261,15 @@ export const PoliciesSection =forwardRef(({
 
             <br/>
 
+            <p className='font-canarobold'>CALLER RING BACK TONES (CRBT)</p>
+            <p>A Twum-Barimah-Adu government will also ensure that musicians get a fair percentage from the telcos in respect to Caller Ring Back Tones (CRBT). Including telcos compensating artist for the performance rights of their creations.</p>
+
+            <br/>
+
             <p className='font-canarobold'>c. COPYRIGHT LAW</p>
             <p>My government will also review the copyright law in respect to the creative industry and strengthen any section(s) that needs to be strengthened and repeal any section(s) that are inimical to the creative industry.</p>
+
+
         </div>
       </section>
 
