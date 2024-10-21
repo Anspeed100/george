@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 // Image Imports for Carousel
 import SlideImage_1 from "../assets/LandingPageCarouselImage_1.png";
 import SlideImage_2 from "../assets/LandingPageCarouselImage_2.png";
+import donateImage from "../assets/donateSliderImage.png";
 
 const HeroCarousel = () => {
   const settings = {
@@ -31,9 +32,16 @@ const HeroCarousel = () => {
     {
       id: 2,
       image: SlideImage_2,
-      showButton: true,
+      showButton: false,
       buttonText: "Read More",
       buttonLink: "/learn-more",
+    },
+    {
+      id: 3,
+      image: donateImage,
+      showButton: true,
+      buttonText: "Donate",
+      buttonLink: "https://donate4twum.vercel.app/",
     },
   ];
 
