@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import SlideImage_1 from "../assets/LandingPageCarouselImage_1.png";
 import SlideImage_2 from "../assets/LandingPageCarouselImage_2.png";
 import donateImage from "../assets/donateSliderImage.png";
+import sliderImage_4 from "../assets/mt2 copy.png";
+import sliderImage_5 from "../assets/pair hd.png";
 
 const HeroCarousel = () => {
   const settings = {
@@ -43,6 +45,22 @@ const HeroCarousel = () => {
       buttonText: "Donate",
       buttonLink: "https://donate4twum.vercel.app/",
     },
+    {
+      id: 3,
+      image: sliderImage_4,
+      showButton: false,
+      buttonText: "",
+      buttonLink: "",
+    },
+    {
+      id: 3,
+      image: sliderImage_5,
+      showButton: false,
+      buttonText: "",
+      buttonLink: "",
+    },
+
+    
   ];
 
   return (

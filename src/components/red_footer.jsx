@@ -27,10 +27,10 @@ export default function RedFooter() {
             +233 (050) 900-1207
           </p>
           <a
-            href="mailto:email@gmail.com"
+            href="mailto:info@georgetwumbarimahadu.com"
             className="text-lg  md:text-xl lg:text-2xl font-semibold font-canarobook text-white"
           >
-            info@georgetwumbarimah.com
+            info@georgetwumbarimahadu.com
           </a>
         </div>
         <div className="flex flex-col justify-center items-center">
