@@ -10,6 +10,8 @@ import CountdownTimer from "../components/countdownTimer";
 import { useEffect } from "react";
 import "../scroll.scss";
 import { Link } from "react-router-dom";
+import Divider from "../components/Divider";
+import pairImageHd from "../assets/pair hd.png";
 
 const parallaxEffect = () => {
   const parallaxElements = document.querySelectorAll("[data-parallax]");
@@ -68,7 +70,7 @@ export default function LandingPage() {
                 />
               </div>
               <div className="flex flex-1 flex-col gap-2 justify-start m-auto p-12 z-10">
-                <h1 className="text-3xl md:text-5xl font-bold">
+                <h1 className="text-3xl md:text-5xl font-canarobold">
                   Welcome Dear Friend,
                 </h1>
                 <h1 className="text-start font-canarobook md:text-2xl text-center">
@@ -94,7 +96,7 @@ export default function LandingPage() {
                     to="/register"
                     className="button-green-primary mt-2 mb-10"
                   >
-                    <span className="button-text font-bold">Take Action</span>
+                    <span className="button-text text-2xl font-canarobold">Take Action</span>
                   </Link>
                   {/* <div className="absolute bottom-0 z-20">
                     <img src={Vote4UGImg} alt="vote for UG" className="w-full max-w-xs md:max-w-md lg:max-w-lg" />
@@ -120,29 +122,45 @@ export default function LandingPage() {
             authorText="- Osagyefo Dr Kwame Nkrumah"
           />
 
-          <div className="flex flex-col md:flex-row md:h-[35rem]">
-            <div className="md:justify-start items-center w-full md:w-1/2">
-              <img
-                src={G3Img}
-                alt="Candidate"
-                className="w-full h-auto max-w-md"
-              />
-            </div>
-            <div className="flex flex-1 flex-col justify-center items-center">
-              <h1 className="text-xl pt-3 md:text-3xl font-bold text-center">
-                Meet George Twum-Barimah-Adu
-              </h1>
-              <h1 className="text-start p-4 font-canarobook md:text-2xl">
-                George Twum-Barimah-Adu (Uncle George) was born on 18 August
-                1963, the third child of the late Frank Brako Adu Snr, (Teacher
-                Adu), a public servant and the late Beatrice Mariam Ama
-                Acheampong, a government school teacher at Old Tafo.
-              </h1>
-              <Link to="/about" className="button-green-primary mt-2 mb-2">
-                <span className="button-text font-bold">Learn More</span>
-              </Link>
-            </div>
-          </div>
+<div className="flex flex-col pt-5 md:flex-row md:h-[35rem]">
+  {/* Left Section - Image */}
+  <div className="flex justify-center items-center w-full md:w-1/2">
+    <img src={G3Img} alt="Candidate" className="w-full rounded-xl h-auto md:max-h-[35rem] object-contain" />
+  </div>
+
+  {/* Right Section - Content */}
+  <div className="flex flex-1 flex-col justify-center items-center p-4 md:pl-8">
+    <h1 className="text-xl pt-3 md:text-3xl font-canarobold text-center md:text-left">
+      Meet George Twum-Barimah-Adu
+    </h1>
+    <p className="text-start font-canarobook text-base md:text-2xl mt-4">
+      George Twum-Barimah-Adu (Uncle George) was born on 18 August 1963, the third child of the late Frank Brako Adu Snr, (Teacher Adu), a public servant, and the late Beatrice Mariam Ama Acheampong, a government school teacher at Old Tafo.
+    </p>
+    <Link to="/about" className="button-green-primary mt-6 mb-2">
+      <span className="button-text text-2xl font-canarobold">Learn More</span>
+    </Link>
+  </div>
+</div>
+<Divider marginY="24px" width="90%"/>
+<div className="flex flex-col-reverse md:flex-row md:h-[35rem] mt-8">
+  {/* Left Section - Content */}
+  <div className="flex flex-1 flex-col justify-center items-center p-4 md:pr-8">
+    <h1 className="text-xl pt-3 md:text-3xl font-canarobold text-center md:text-left">
+      Meet My Running Mate
+    </h1>
+    <p className="text-start font-canarobook text-base md:text-2xl mt-4">
+      George Twum-Barimah-Adu (Uncle George) was born on 18 August 1963, the third child of the late Frank Brako Adu Snr, (Teacher Adu), a public servant, and the late Beatrice Mariam Ama Acheampong, a government school teacher at Old Tafo.
+    </p>
+    <Link to="/myrunningmate" className="button-green-primary mt-6 mb-2">
+      <span className="button-text text-2xl font-canarobold">Learn More</span>
+    </Link>
+  </div>
+
+  {/* Right Section - Image */}
+  <div className="flex justify-center items-center w-full md:w-1/2">
+    <img src={pairImageHd} alt="Candidate" className="w-full rounded-xl h-auto md:max-h-[35rem] object-contain" />
+  </div>
+</div>
 
           <div className="relative flex flex-col justify-center items-center overflow-hidden">
             <div

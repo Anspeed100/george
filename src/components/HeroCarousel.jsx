@@ -4,13 +4,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Image Imports for Carousel
-import SlideImage_1 from "../assets/LandingPageCarouselImage_1.png";
+//import SlideImage_1 from "../assets/LandingPageCarouselImage_1.png";
 import SlideImage_2 from "../assets/LandingPageCarouselImage_2.png";
 import donateImage from "../assets/donateSliderImage.png";
-import sliderImage_4 from "../assets/mt2 copy.png";
+//import sliderImage_4 from "../assets/mt2 copy.png";
 import sliderImage_5 from "../assets/pair hd.png";
 
+
+
+
+
 const HeroCarousel = () => {
+
+  var isDonateSlide = false;
+
+
   const settings = {
     dots: true,
     infinite: true,
@@ -18,19 +26,21 @@ const HeroCarousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: isDonateSlide ? 8000 :5000,
     arrows: false,
     adaptiveHeight: true,
   };
 
+  
+
   const slides = [
-    {
-      id: 1,
-      image: SlideImage_1,
-      showButton: false,
-      buttonText: "Learn More",
-      buttonLink: "/learn-more",
-    },
+    // {
+    //   id: 1,
+    //   image: SlideImage_1,
+    //   showButton: false,
+    //   buttonText: "Learn More",
+    //   buttonLink: "/learn-more",
+    // },
     {
       id: 2,
       image: SlideImage_2,
@@ -45,13 +55,13 @@ const HeroCarousel = () => {
       buttonText: "Donate",
       buttonLink: "https://donate4twum.vercel.app/",
     },
-    {
-      id: 3,
-      image: sliderImage_4,
-      showButton: false,
-      buttonText: "",
-      buttonLink: "",
-    },
+    // {
+    //   id: 3,
+    //   image: sliderImage_4,
+    //   showButton: false,
+    //   buttonText: "",
+    //   buttonLink: "",
+    // },
     {
       id: 3,
       image: sliderImage_5,
@@ -71,6 +81,7 @@ const HeroCarousel = () => {
             key={slide.id}
             className="relative w-full flex items-center justify-center"
           >
+          {isDonateSlide = slide.id === 3}
             <img
               src={slide.image}
               alt={`Slide ${slide.id}`}
@@ -81,7 +92,7 @@ const HeroCarousel = () => {
                 <div className="p-2 sm:p-3 rounded-md text-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
                   <a
                     href={slide.buttonLink}
-                    className="inline-block px-4 py-2 text-xs sm:px-6 sm:py-3 sm:text-sm md:px-8 md:py-4 md:text-base lg:px-10 lg:py-5 lg:text-lg bg-green-500 text-white font-bold rounded-md hover:bg-green-700 transition"
+                    className="inline-block px-4 py-2 text-5xl sm:px-6 sm:py-3 sm:text-sm md:px-8 md:py-4 md:text-3xl lg:px-10 lg:py-5 lg:text-lg bg-green-500 text-white font-canarobold rounded-md hover:bg-green-700 transition"
                   >
                     {slide.buttonText}
                   </a>

@@ -571,7 +571,7 @@ body {
   height: 400px !important;
   width: -moz-available !important; /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
-  width: fill-available !important;
+  width: stretch !important;
   background-position: center bottom !important;
 }
 

@@ -9,7 +9,7 @@ const AboutPage = React.lazy(() => import('./pages/about'))
 const TakeActionPage = React.lazy(() => import('./pages/take_action'))
 const EventsPage = React.lazy(() => import('./pages/EventPage'))
 const BreakingPage = React.lazy(() => import('./pages/breaking'))
-const DonatePage = React.lazy(() => import('./pages/donatePage'))
+const RunningMatePage = React.lazy(() => import('./pages/myrunningmate'))
 const TakeActionRegisterForm = React.lazy(() => import('./pages/takeactionRegisterForm'))
 const MyManifestoPage = React.lazy(() => import('./pages/myManifestoPage'))
 const MySpeechPage = React.lazy(() => import('./pages/mySpeechPage'))
@@ -25,6 +25,7 @@ const App = () => {
         <Route exact path='/about' element={<AboutPage/>}></Route>
         <Route exact path='/take-action' element={<TakeActionPage/>}></Route>
         <Route exact path='/events' element={<EventsPage/>}></Route>
+        <Route exact path='/myrunningmate' element={<RunningMatePage/>}></Route>
         <Route exact path='/breakingthe2' element={<BreakingPage/>}></Route>
         <Route exact path='/illegalminingpledge' element={<IllegalMiningPledge/>}></Route>
         <Route exact path='/register' element={<TakeActionRegisterForm/>}></Route>
