@@ -8,10 +8,7 @@ import { Link } from 'react-router-dom'
 export default function myRunMate() {
   return (
     <div className="min-h-screen bg-white pt-32">
-    <header className="bg-[#BA2026] h-32 flex items-center px-4">
-      <h1 className="text-white font-bold text-4xl">My Speech</h1>
-    </header>
-
+   
     <div className="flex flex-col items-center justify-center min-h-screen bg-[url('/src/assets/georgeSignImage.png')] bg-cover bg-center px-4">
       <div className="bg-opacity-0 p-8 rounded-lg w-full max-w-5xl mx-auto">
       <img 
