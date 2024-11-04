@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Divider = ({ height, color, width, marginY }) => {
+const Divider = ({ height, color, width, marginY  }) => {
   return (
     <div
       className="mx-auto"
