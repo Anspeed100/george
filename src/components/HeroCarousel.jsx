@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import SlideImage_2 from "../assets/LandingPageCarouselImage_2.png";
 import donateImage from "../assets/donateSliderImage.png";
 //import sliderImage_4 from "../assets/mt2 copy.png";
-import sliderImage_5 from "../assets/pair hd.png";
+import sliderImage_5 from "../assets/pair final.png";
 
 
 

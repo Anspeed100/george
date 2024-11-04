@@ -11,7 +11,7 @@ import { useEffect } from "react";
 import "../scroll.scss";
 import { Link } from "react-router-dom";
 import Divider from "../components/Divider";
-import pairImageHd from "../assets/pair hd.png";
+import pairImageHd from "../assets/pair final.png";
 
 const parallaxEffect = () => {
   const parallaxElements = document.querySelectorAll("[data-parallax]");
@@ -149,10 +149,10 @@ export default function LandingPage() {
       Meet My Running Mate
     </h1>
     <p className="text-start font-canarobook text-base md:text-2xl mt-4">
-      George Twum-Barimah-Adu (Uncle George) was born on 18 August 1963, the third child of the late Frank Brako Adu Snr, (Teacher Adu), a public servant, and the late Beatrice Mariam Ama Acheampong, a government school teacher at Old Tafo.
+    It gives me the greatest pleasure to formally present my Vice-Presidential Candidate Nyaaba-Aweeba Azongo to the Ghanaian public to complete my Presidential ticket for elections 2024....
     </p>
     <Link to="/myrunningmate" className="button-green-primary mt-6 mb-2">
-      <span className="button-text text-2xl font-canarobold">Learn More</span>
+      <span className="button-text text-2xl font-canarobold">Read More</span>
     </Link>
   </div>
 
@@ -185,9 +185,9 @@ export default function LandingPage() {
             ></div>
             <section className="products w-full bg-black text-white py-10">
               <div className="flex flex-col justify-center items-center">
-                <h2 className="text-3xl font-bold mb-5 font-canarobook text-black">
+                <h1 className="text-5xl mb-5 font-canarobold text-black">
                   My Flag
-                </h2>
+                </h1>
 
                 <div className="wrap bg-black mb-10 text-white p-2 w-[90%] md:w-[80%] lg:w-[40%] z-10">
                   <img src={G5Img} alt="g5" className="mb-6 mt-6 w-full" />
