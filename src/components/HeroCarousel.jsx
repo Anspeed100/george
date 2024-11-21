@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 // Image Imports for Carousel
 //import SlideImage_1 from "../assets/LandingPageCarouselImage_1.png";
 import SlideImage_2 from "../assets/LandingPageCarouselImage_2.png";
-import donateImage from "../assets/donateSliderImage.png";
+//import donateImage from "../assets/donateSliderImage.png";
 import sliderImage_4 from "../assets/mt2 copy.png";
 import sliderImage_5 from "../assets/pair final.png";
 
@@ -45,13 +45,13 @@ const HeroCarousel = () => {
       buttonText: "Read More",
       buttonLink: "/learn-more",
     },
-    {
-      id: 3,
-      image: donateImage,
-      showButton: false,
-      buttonText: "Donate",
-      buttonLink: "https://donate4twum.vercel.app/",
-    },
+    // {
+    //   id: 3,
+    //   image: donateImage,
+    //   showButton: false,
+    //   buttonText: "Donate",
+    //   buttonLink: "https://donate4twum.vercel.app/",
+    // },
     {
       id: 3,
       image: sliderImage_4,
