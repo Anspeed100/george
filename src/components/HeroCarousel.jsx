@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 //import SlideImage_1 from "../assets/LandingPageCarouselImage_1.png";
 import SlideImage_2 from "../assets/LandingPageCarouselImage_2.png";
 import donateImage from "../assets/donateSliderImage.png";
-//import sliderImage_4 from "../assets/mt2 copy.png";
+import sliderImage_4 from "../assets/mt2 copy.png";
 import sliderImage_5 from "../assets/pair final.png";
 
 
@@ -16,9 +16,6 @@ import sliderImage_5 from "../assets/pair final.png";
 
 const HeroCarousel = () => {
 
-  var isDonateSlide = false;
-
-
   const settings = {
     dots: true,
     infinite: true,
@@ -26,7 +23,7 @@ const HeroCarousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: isDonateSlide ? 8000 :5000,
+    autoplaySpeed: 5000,
     arrows: false,
     adaptiveHeight: true,
   };
@@ -51,17 +48,17 @@ const HeroCarousel = () => {
     {
       id: 3,
       image: donateImage,
-      showButton: true,
+      showButton: false,
       buttonText: "Donate",
       buttonLink: "https://donate4twum.vercel.app/",
     },
-    // {
-    //   id: 3,
-    //   image: sliderImage_4,
-    //   showButton: false,
-    //   buttonText: "",
-    //   buttonLink: "",
-    // },
+    {
+      id: 3,
+      image: sliderImage_4,
+      showButton: false,
+      buttonText: "",
+      buttonLink: "",
+    },
     {
       id: 3,
       image: sliderImage_5,
@@ -81,7 +78,6 @@ const HeroCarousel = () => {
             key={slide.id}
             className="relative w-full flex items-center justify-center"
           >
-          {isDonateSlide = slide.id === 3}
             <img
               src={slide.image}
               alt={`Slide ${slide.id}`}

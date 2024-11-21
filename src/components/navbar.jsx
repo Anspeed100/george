@@ -40,14 +40,14 @@ export default function Navbar({ useRed }) {
                 <img alt="Logo" className="w-full h-auto" src={Logo} />
               </Link>
               <div className="flex items-center gap-8">
-                <div className="hidden md:flex items-center">
+                {/* <div className="hidden md:flex items-center">
                   <Link
                     to="https://donate4twum.vercel.app/"
                     className="bg-[#b91f26] text-white text-2xl rounded-md px-4 py-2 font-bold"
                   >
                     <span className="button-text">Donate</span>
                   </Link>
-                </div>
+                </div> */}
                 {/* BURGER BUTTON */}
                 <Disclosure.Button className="z-30 w-12 inline-flex items-center justify-center text-red-700 p-2">
                   {open ? (
@@ -81,12 +81,12 @@ export default function Navbar({ useRed }) {
                 {item.name}
               </Disclosure.Button>
             ))}
-            <div className="md:hidden block mt-6 mb-6">
+            {/* <div className="md:hidden block mt-6 mb-6">
               <Link to="https://donate4twum.vercel.app/" className="bg-[#b91f26] text-white text-xl rounded-md px-3 py-2 font-semibold">
               
                 <span className="button-text">Donate</span>
                 </Link>
-            </div>
+            </div> */}
           </Disclosure.Panel>
         </>
       )}
